@@ -5,12 +5,12 @@ const Footer = () => {
   return (
     <div className="text-gray-600 body-font bg-[#003D6A]">
      
-      <div className="container px-5 py-24 flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col w-[1300px] mx-auto">
-        <div className="w-44 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left ">
-          <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+      <div className="container px-5 py-24 flex items-center md:flex-row md:flex-nowrap flex-wrap flex-col w-[1300px] mx-auto">
+        <div className="w-[210px] items-center">
+          
             <img src="../../src/images/steelsmith-logo-white.png" />
-          </a>
-         <p className='text-white text-sm p-1 mt-4'> Steel-Smith pioneered the development of Toggle Clamps in India over 50 years ago and still manufactures the country’s widest and most recognized line of these useful and adaptable tools.</p>
+          
+         <p className='text-white text-sm p-1 mt-4'> </p>
           {/* <p class="mt-2 text-sm text-gray-500">Air plant banjo lyft occupy retro adaptogen indego</p> */}
         </div>
         <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">

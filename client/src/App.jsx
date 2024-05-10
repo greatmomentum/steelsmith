@@ -10,6 +10,11 @@ import Products from "./pages/Products";
 import ProductModels from './pages/ProductModels';
 import ProductSingle from './pages/ProductSingle';
 import ContactUs from './pages/ContactUs';
+import Events from './pages/Events';
+import News from './pages/News';
+import Downloads from './pages/Downloads';
+import Markets from './pages/Markets';
+import DealerNetwork from './pages/DealerNetwork';
 
 
 function App() {
@@ -24,6 +29,11 @@ function App() {
           <Route path="/ProductModels" element={<ProductModels />} />
           <Route path="/ProductSingle" element={<ProductSingle />} />
           <Route path="/ContactUs" element={<ContactUs />} />
+          <Route path="/Events" element={<Events />} />
+          <Route path="/News" element={<News />} />
+          <Route path="/Downloads" element={<Downloads />} />
+          <Route path="/Markets" element={<Markets />} />
+          <Route path="/DealerNetwork" element={<DealerNetwork />} />
         </Routes>
       </MainLayout>
     </Router>

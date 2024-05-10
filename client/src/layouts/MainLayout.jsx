@@ -6,7 +6,7 @@ const MainLayout = ({ children }) => {
   return (
     <div>
       <Header />
-      <main style={{ minHeight: 'calc(100vh - 100px)' }}> {/* Adjust height as needed */}
+      <main style={{ minHeight: 'calc(100vh - 100px)', paddingTop: '20px' }}> {/* Adjust padding top as needed */}
         {children}
       </main>
       <Footer />

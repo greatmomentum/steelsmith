@@ -1,75 +1,18 @@
 import React from 'react'
-
+import '../dropdown.css';
+import { Carousel } from "flowbite-react";
 
 const Home = () => {
   return (
 
-    <div className=" w-full mx-auto ">
+    <div className=''>
 
-      
-      {/* #2 Hero Section Banner */}
-      <section className="text-gray-600 relative pt-20">
-        {/* Carousel */}
-        <div
-          id="carouselId"
-          className="carousel slide h-[420px] text-slate-800 pt-4"
-          data-bs-ride="carousel"
-        >
-          <ol className="carousel-indicators">
-            <li
-              data-bs-target="#carouselId"
-              data-bs-slide-to={0}
-              className="active"
-              aria-current="true"
-              aria-label={1}
-            />
-            <li
-              data-bs-target="#carouselId"
-              data-bs-slide-to={1}
-              aria-label={2}
-            />
-            <li
-              data-bs-target="#carouselId"
-              data-bs-slide-to={2}
-              aria-label={3}
-            />
-          </ol>
-          <div className="carousel-inner px-28" role="listbox">
-            <div className="carousel-item active">
-              {/*slide 1 Content */}
-              <div className="container mx-auto flex px-5 py-2 md:flex-row flex-col items-center">
-                <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                  <h1 className="sm:text-4xl text-left text-3xl mb-4 font-bold text-gray-900">
-                    Steel-Smith
-                    <br className="lg:inline-block font-customFont" />
-                    Toggle Clamps
-                  </h1>
-                  <p className="mb-8 text-left leading-relaxed">
-                    Browse through our selection today and experience the
-                    difference that quality toggle clamps can make in your
-                    workshop.
-                  </p>
-                  <div className="flex justify-center">
-                    <button className="inline-flex text-white bg-[#003D6A] border-0 py-1 px-6 focus:outline-none hover:bg-slate-800 rounded text-base">
-                      More Information
-                    </button>
-                    <button className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-1 px-6 focus:outline-none hover:bg-gray-200 rounded text-base">
-                      Video
-                    </button>
-                  </div>
-                </div>
-                <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-                  <img
-                    className="object-cover object-center rounded"
-                    alt="hero"
-                    src="./src/images/products-img.jpg"
-                  />
-                </div>
-              </div>
-              {/*  */}
-            </div>
-            <div className="carousel-item">
-              {/*slide 2  Content*/}
+      {/* #1 Hero Section Banner */}
+      <div className='bg-white'>
+        <div className='w-[1300px] mt-[60px] h-[400px] mx-auto items-center'>
+          <Carousel>
+            {/* Slider1 */}
+            <div className="flex items-center justify-center   ">
               <div className="container mx-auto flex px-5 py-2 md:flex-row flex-col items-center">
                 <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 ">
                   <h1 className="sm:text-4xl text-left text-3xl mb-4 font-bold text-gray-900">
@@ -99,12 +42,12 @@ const Home = () => {
                   />
                 </div>
               </div>
-              {/*  */}
             </div>
-            <div className="carousel-item">
-              {/*slide 3 Content */}
+
+            {/* Slider 2 */}
+            <div className="flex h-full items-center justify-center">
               <div className="container mx-auto flex px-5 py-2 md:flex-row flex-col items-center">
-                <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 ">
                   <h1 className="sm:text-4xl text-left text-3xl mb-4 font-bold text-gray-900">
                     Steel-Smith
                     <br className="lg:inline-block " />
@@ -133,29 +76,42 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <button
-              className="carousel-control-prev p-4"
-              type="button"
-              data-bs-target="#carouselId"
-              data-bs-slide="prev"
-            >
-              {/* <span className="carousel-control-prev-icon text-orange-500" aria-hidden="true" /> */}
-              <span className='p-1 text-gray-700'><img class="lg:w-10 p-1" src="./src/images/arrow-left.png" alt="arrow left" /></span>
-              <span className="visually-hidden">Previous</span>
-            </button>
-            <button
-              className="carousel-control-next text-slate-800 p-4"
-              type="button"
-              data-bs-target="#carouselId"
-              data-bs-slide="next"
-            >
-              {/* <span className="carousel-control-next-icon text-orange-500" aria-hidden="true" /> */}
-              <span className='p-1 text-gray-700'><img class="lg:w-10 p-1" src="./src/images/arrow-right.png" alt="arrow right" /></span>
-              <span className="visually-hidden">Next</span>
-            </button>
-          </div>
+
+            {/* slider 3 */}
+            <div className="flex h-full items-center justify-center ">
+              <div className="container mx-auto flex px-5 py-2 md:flex-row flex-col items-center">
+                <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 ">
+                  <h1 className="sm:text-4xl text-left text-3xl mb-4 font-bold text-gray-900">
+                    Steel-Smith
+                    <br className="lg:inline-block " />
+                    Toggle Clamps
+                  </h1>
+                  <p className="mb-8 text-left leading-relaxed">
+                    Browse through our selection today and experience the
+                    difference that quality toggle clamps can make in your
+                    workshop.
+                  </p>
+                  <div className="flex justify-center">
+                    <button className="inline-flex text-white bg-[#003D6A] border-0 py-1 px-6 focus:outline-none hover:bg-slate-800 rounded text-base">
+                      More Information
+                    </button>
+                    <button className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-1 px-6 focus:outline-none hover:bg-gray-200 rounded text-base">
+                      Video
+                    </button>{" "}
+                  </div>
+                </div>
+                <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                  <img
+                    className="object-cover object-center rounded"
+                    alt="hero"
+                    src="./src/images/products-img.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+          </Carousel>
         </div>
-      </section>
+      </div>
 
       {/* #3. Intro About Steel Smith  */}
       <section className="text-gray-900 ">
@@ -1094,16 +1050,16 @@ const Home = () => {
       {/* Newsletter */}
       <div className="border-t border-gray-200 bg-white w-full">
         <div className=" px-5 py-1 flex items-center">
-          
-            <div className="inline-flex mx-auto items-center">
-              <span className="text-2xl pb-6 mt-4 fw-bold text-[#003D6A]"><img src="./src/images/envelope.jpg" width="70px" height="70px" /></span>
-              <span className="text-2xl pb-6 mt-4 pr-5 font-semibold text-[#003D6A]">Subscribe to our Newsletter</span>
-              <span className="w-[300px] text-2xl pr-2 font-semibold text-[#003D6A]"><input type="text" id="footer-field" placeholder="Subscribe to Newsletter" name="footer-field" className=" w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:ring-2 py-1 focus:bg-transparent focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 px-3 leading-8 transition-colors duration-200 ease-in-out" /></span>
-              <span><button className="inline-flex text-white bg-[#003D6A] border-0  py-2 px-6 focus:outline-none hover:bg-gray-700 rounded">Subscribe</button></span>
-            </div>
-          
 
-          
+          <div className="inline-flex mx-auto items-center">
+            <span className="text-2xl pb-6 mt-4 fw-bold text-[#003D6A]"><img src="./src/images/envelope.jpg" width="70px" height="70px" /></span>
+            <span className="text-2xl pb-6 mt-4 pr-5 font-semibold text-[#003D6A]">Subscribe to our Newsletter</span>
+            <span className="w-[300px] text-2xl pr-2 font-semibold text-[#003D6A]"><input type="text" id="footer-field" placeholder="Subscribe to Newsletter" name="footer-field" className=" w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:ring-2 py-1 focus:bg-transparent focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 px-3 leading-8 transition-colors duration-200 ease-in-out" /></span>
+            <span><button className="inline-flex text-white bg-[#003D6A] border-0  py-2 px-6 focus:outline-none hover:bg-gray-700 rounded">Subscribe</button></span>
+          </div>
+
+
+
         </div>
       </div>
     </div>
