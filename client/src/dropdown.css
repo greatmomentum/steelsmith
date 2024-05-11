@@ -2,12 +2,58 @@
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(15 15 15 / var(--tw-ring-opacity));
 }
-/* 
-.carousel-control-prev-icon {
-  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="%23000000" viewBox="0 0 8 8"%3E%3Cpath d="M6 1.5L1.5 4 6 6.5V1.5z"/%3E%3C/svg%3E');
+
+
+
+.custom-dropdown {
+  padding-left: 0 !important; /* Remove left padding */
+  background-color: blue;
 }
 
+ul {
+  padding-left: 1px !important;
+ }
+
+ .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="%23000000" viewBox="0 0 8 8"%3E%3Cpath d="M2 1.5v5l4.5-2.5L2 1.5z"/%3E%3C/svg%3E');
-} */
-    /* ENDS ---- Carousel Slides on the Homepage */
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+}
+
+.group:focus .group-focus\:ring-white {
+  background-color: rgb(95, 95, 95, 0.5) !important;
+  
+}
+
+.bg-white\/30 {
+  background-color: rgb(95, 95, 95, 0.5) !important;
+  
+}
+
+/*
+
+[aria-label="Slide 3"] {
+
+  color: black;
+  background-color: rgb(95, 95, 95, 0.5) !important;
+
+}
+
+[aria-label="Slide 2"] {
+
+  color: black;
+  background-color: rgb(95, 95, 95, 0.5) !important;
+
+}
+
+[aria-label="Slide 1"] {
+
+  color: black;
+  background-color: rgb(95, 95, 95, 0.5) !important;
+
+}
+
+.-translate-x-1\/2{
+  background-color: rgb(95, 95, 95, 0.5) !important;
+} 
+
+*/

@@ -15,6 +15,7 @@ import News from './pages/News';
 import Downloads from './pages/Downloads';
 import Markets from './pages/Markets';
 import DealerNetwork from './pages/DealerNetwork';
+import Register from './pages/Register';
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
           <Route path="/Downloads" element={<Downloads />} />
           <Route path="/Markets" element={<Markets />} />
           <Route path="/DealerNetwork" element={<DealerNetwork />} />
+          <Route path="/Register" element={<Register />} />
         </Routes>
       </MainLayout>
     </Router>

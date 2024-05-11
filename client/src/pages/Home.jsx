@@ -14,7 +14,7 @@ const Home = () => {
             {/* Slider1 */}
             <div className="flex items-center justify-center   ">
               <div className="container mx-auto flex px-5 py-2 md:flex-row flex-col items-center">
-                <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 ">
+                <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 pl-6 ">
                   <h1 className="sm:text-4xl text-left text-3xl mb-4 font-bold text-gray-900">
                     Steel-Smith
                     <br className="lg:inline-block " />
@@ -47,7 +47,7 @@ const Home = () => {
             {/* Slider 2 */}
             <div className="flex h-full items-center justify-center">
               <div className="container mx-auto flex px-5 py-2 md:flex-row flex-col items-center">
-                <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 ">
+                <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 pl-6 ">
                   <h1 className="sm:text-4xl text-left text-3xl mb-4 font-bold text-gray-900">
                     Steel-Smith
                     <br className="lg:inline-block " />
@@ -80,7 +80,7 @@ const Home = () => {
             {/* slider 3 */}
             <div className="flex h-full items-center justify-center ">
               <div className="container mx-auto flex px-5 py-2 md:flex-row flex-col items-center">
-                <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 ">
+                <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 pl-6 ">
                   <h1 className="sm:text-4xl text-left text-3xl mb-4 font-bold text-gray-900">
                     Steel-Smith
                     <br className="lg:inline-block " />
@@ -593,7 +593,7 @@ const Home = () => {
       {/* #4 Products */}
       <section className="text-slate-800 body-font pb-12">
         <div className="text-center mb-6">
-          <p className="text-center text-2xl pt-12 m-2 fw-bold">Products</p>
+          <p className="text-center text-2xl pt-12 m-2 fw-bold">Featured Products</p>
           <span className="text-center">
             Take a look at our latest additions to Steel-Smith
           </span>
@@ -601,7 +601,7 @@ const Home = () => {
         <div className=" px-5 py-4 w-[1300px] mx-auto">
           <div className="flex flex-wrap -m-4">
             <div className="p-2 md:w-1/4">
-              <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden hover:bg-white hover:shadow-lg">
+              <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden hover:bg-white transition delay-100 ease-in-out hover:shadow-xl">
                 <img
                   className="lg:h-48 w-auto mx-auto"
                   src="./src/images/thumb-product1.jpg"
@@ -639,7 +639,7 @@ const Home = () => {
               </div>
             </div>
             <div className="p-2 md:w-1/4">
-              <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden hover:bg-white hover:shadow-lg">
+              <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden hover:bg-white transition delay-100 ease-in-out hover:shadow-xl">
                 <img
                   className="lg:h-48 w-auto mx-auto"
                   src="./src/images/thumb-product2.jpg"
@@ -677,7 +677,7 @@ const Home = () => {
               </div>
             </div>
             <div className="p-2 md:w-1/4">
-              <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden hover:bg-white hover:shadow-lg">
+              <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden hover:bg-white transition delay-100 ease-in-out hover:shadow-xl">
                 <img
                   className="lg:h-48 w-auto mx-auto"
                   src="./src/images/thumb-product3.jpg"
@@ -715,7 +715,7 @@ const Home = () => {
               </div>
             </div>
             <div className="p-2 md:w-1/4">
-              <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden hover:bg-white hover:shadow-lg">
+              <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden hover:bg-white transition delay-100 ease-in-out hover:shadow-xl">
                 <img
                   className="lg:h-48 w-auto mx-auto"
                   src="./src/images/thumb-product4.jpg"
