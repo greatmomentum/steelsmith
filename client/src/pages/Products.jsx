@@ -76,8 +76,8 @@ const Products = () => {
 
           {/* Right Top Row */}
           <div className='w-full flex justify-between items-end p-4 bg-white'>
-            <h2 className="text-xl font-bold text-gray-800 p-2">Vertical Hold Down Action</h2>
-            <a href="#" className="inline-block rounded-lg border bg-white px-4 py-2 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:px-8 md:py-3 md:text-base">Show more</a>
+            <span className="text-xl font-bold text-gray-800 p-2">Vertical Hold Down Action</span>
+            {/* <span><a href="#" className="inline-block rounded-lg border bg-white px-4  text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:px-8 md:py-3 md:text-base">Show more</a></span> */}
           </div>
 
           {/* Products List */}
@@ -95,7 +95,7 @@ const Products = () => {
                     alt="Vertical Hold Down Action Heavy Duty Flanged Base"
                     className="h-[220px] w-full object-cover object-center transition duration-200 group-hover:scale-110"
                   />
-                  <span className="absolute left-0 top-0 rounded-rt-lg bg-red-500 px-3 py-1.5 text-sm uppercase tracking-wider text-white">
+                  <span className="absolute left-0 top-0 rounded-rt-lg bg-red-500 px-3 py-1 text-xs uppercase tracking-wider text-white">
                     NEW
                   </span>
                 </a>
@@ -119,7 +119,31 @@ const Products = () => {
                     alt="Vertical Hold Down Action Heavy Duty Flanged Base"
                     className="h-[220px] w-full object-cover object-center transition duration-200 group-hover:scale-110"
                   />
-                  <span className="absolute left-0 top-0 rounded-rt-lg bg-red-500 px-3 py-1.5 text-sm uppercase tracking-wider text-white">
+                  {/* <span className="absolute left-0 top-0 rounded-rt-lg bg-red-500 px-3 py-1.5 text-sm uppercase tracking-wider text-white">
+                    NEW
+                  </span> */}
+                </a>
+                <div className='p-2'>
+                  <a href="#" className="leading-none hover:gray-800 mb-1 text-gray-800 transition duration-100 no-underline ">
+                    Vertical Hold Down Action Heavy Duty Flanged Base
+                  </a>
+
+                </div>
+              </div>
+              {/* product - end */}
+              {/* product - start */}
+              <div className='transition duration-100 hover:shadow-xl border divide-x divide-dashed'>
+                <a
+                  href="#"
+                  className="group relative mb-2 block overflow-hidden bg-gray-100 lg:mb-3"
+                >
+                  <img
+                    src="../src/images/product1-img.jpg"
+                    loading="lazy"
+                    alt="Vertical Hold Down Action Heavy Duty Flanged Base"
+                    className="h-[220px] w-full object-cover object-center transition duration-200 group-hover:scale-110"
+                  />
+                  <span className="absolute left-0 top-0 rounded-rt-lg bg-red-500 px-3 py-1 text-xs uppercase tracking-wider text-white">
                     NEW
                   </span>
                 </a>
@@ -143,7 +167,7 @@ const Products = () => {
                     alt="Vertical Hold Down Action Heavy Duty Flanged Base"
                     className="h-[220px] w-full object-cover object-center transition duration-200 group-hover:scale-110"
                   />
-                  <span className="absolute left-0 top-0 rounded-rt-lg bg-red-500 px-3 py-1.5 text-sm uppercase tracking-wider text-white">
+                  <span className="absolute left-0 top-0 rounded-rt-lg bg-red-500 px-3 py-1 text-xs uppercase tracking-wider text-white">
                     NEW
                   </span>
                 </a>
@@ -167,9 +191,9 @@ const Products = () => {
                     alt="Vertical Hold Down Action Heavy Duty Flanged Base"
                     className="h-[220px] w-full object-cover object-center transition duration-200 group-hover:scale-110"
                   />
-                  <span className="absolute left-0 top-0 rounded-rt-lg bg-red-500 px-3 py-1.5 text-sm uppercase tracking-wider text-white">
+                  {/* <span className="absolute left-0 top-0 rounded-rt-lg bg-red-500 px-3 py-1.5 text-sm uppercase tracking-wider text-white">
                     NEW
-                  </span>
+                  </span> */}
                 </a>
                 <div className='p-2'>
                   <a href="#" className="leading-none hover:gray-800 mb-1 text-gray-800 transition duration-100 no-underline ">
@@ -191,9 +215,9 @@ const Products = () => {
                     alt="Vertical Hold Down Action Heavy Duty Flanged Base"
                     className="h-[220px] w-full object-cover object-center transition duration-200 group-hover:scale-110"
                   />
-                  <span className="absolute left-0 top-0 rounded-rt-lg bg-red-500 px-3 py-1.5 text-sm uppercase tracking-wider text-white">
+                  {/* <span className="absolute left-0 top-0 rounded-rt-lg bg-red-500 px-3 py-1.5 text-sm uppercase tracking-wider text-white">
                     NEW
-                  </span>
+                  </span> */}
                 </a>
                 <div className='p-2'>
                   <a href="#" className="leading-none hover:gray-800 mb-1 text-gray-800 transition duration-100 no-underline ">
@@ -215,9 +239,9 @@ const Products = () => {
                     alt="Vertical Hold Down Action Heavy Duty Flanged Base"
                     className="h-[220px] w-full object-cover object-center transition duration-200 group-hover:scale-110"
                   />
-                  <span className="absolute left-0 top-0 rounded-rt-lg bg-red-500 px-3 py-1.5 text-sm uppercase tracking-wider text-white">
+                  {/* <span className="absolute left-0 top-0 rounded-rt-lg bg-red-500 px-3 py-1.5 text-sm uppercase tracking-wider text-white">
                     NEW
-                  </span>
+                  </span> */}
                 </a>
                 <div className='p-2'>
                   <a href="#" className="leading-none hover:gray-800 mb-1 text-gray-800 transition duration-100 no-underline ">
@@ -239,33 +263,9 @@ const Products = () => {
                     alt="Vertical Hold Down Action Heavy Duty Flanged Base"
                     className="h-[220px] w-full object-cover object-center transition duration-200 group-hover:scale-110"
                   />
-                  <span className="absolute left-0 top-0 rounded-rt-lg bg-red-500 px-3 py-1.5 text-sm uppercase tracking-wider text-white">
+                  {/* <span className="absolute left-0 top-0 rounded-rt-lg bg-red-500 px-3 py-1.5 text-sm uppercase tracking-wider text-white">
                     NEW
-                  </span>
-                </a>
-                <div className='p-2'>
-                  <a href="#" className="leading-none hover:gray-800 mb-1 text-gray-800 transition duration-100 no-underline ">
-                    Vertical Hold Down Action Heavy Duty Flanged Base
-                  </a>
-
-                </div>
-              </div>
-              {/* product - end */}
-              {/* product - start */}
-              <div className='transition duration-100 hover:shadow-xl border divide-x divide-dashed'>
-                <a
-                  href="#"
-                  className="group relative mb-2 block overflow-hidden bg-gray-100 lg:mb-3"
-                >
-                  <img
-                    src="../src/images/product1-img.jpg"
-                    loading="lazy"
-                    alt="Vertical Hold Down Action Heavy Duty Flanged Base"
-                    className="h-[220px] w-full object-cover object-center transition duration-200 group-hover:scale-110"
-                  />
-                  <span className="absolute left-0 top-0 rounded-rt-lg bg-red-500 px-3 py-1.5 text-sm uppercase tracking-wider text-white">
-                    NEW
-                  </span>
+                  </span> */}
                 </a>
                 <div className='p-2'>
                   <a href="#" className="leading-none hover:gray-800 mb-1 text-gray-800 transition duration-100 no-underline ">

@@ -23,13 +23,13 @@ const Header = () => {
         <div className="flex-auto inline-flex">
 
 
-          <div className="flex-auto inline-flex justify-start items-center mr-1 bg-white pl-4">
+          <div className="flex-auto inline-flex justify-start items-center mr-1 bg-white pl-4 px-1">
             <div><NavLink className='p-2 mx-1 text-base no-underline text-[#003D6A] hover:bg-[#003D6A] hover:text-white hover:no-underline rounded' to="/" activeClassName="active">Home</NavLink></div>
             <div><NavLink className='p-2 mx-1 text-base no-underline text-[#003D6A] hover:bg-[#003D6A] hover:text-white hover:no-underline rounded' to="/aboutus" activeClassName="active">About us</NavLink></div>
-            <div> <MegaMenu.Dropdown toggle={<>Products</>}>
+            <div className='p-2 mx-1 text-base no-underline text-[#003D6A] hover:bg-[#003D6A] hover:text-white hover:no-underline rounded'> <MegaMenu.Dropdown toggle={<>Products</>}>
               <div className="space-y-4 p-4">
                 <li>
-                  <a href="/products" className="hover:text-primary-600 dark:hover:text-primary-500">
+                  <a href="/productcategories" className="hover:text-primary-600 dark:hover:text-primary-500">
                     Steel Smith
                   </a>
                 </li>
@@ -50,8 +50,8 @@ const Header = () => {
                 </li>
               </div> </MegaMenu.Dropdown>
             </div>
-            <div><NavLink className='p-2 mx-1 text-base  no-underline text-[#003D6A] hover:bg-[#003D6A] hover:text-white hover:no-underline rounded' to="/dealernetwork" activeClassName="active">Dealer Network</NavLink></div>
-            <div>
+            <div><NavLink className='p-2 mx-1 text-base no-underline text-[#003D6A] hover:bg-[#003D6A] hover:text-white hover:no-underline rounded' to="/dealernetwork" activeClassName="active">Dealer Network</NavLink></div>
+            <div className='p-2 mx-1 text-base no-underline text-[#003D6A] hover:bg-[#003D6A] hover:text-white hover:no-underline rounded'>
               <MegaMenu.Dropdown toggle={<>Media</>}>
                 <ul className="space-y-4 p-4 text-base text-gray-800"> {/* Apply your custom class */}
                   <li><NavLink to="/news">News</NavLink></li>
