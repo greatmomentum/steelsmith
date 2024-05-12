@@ -16,6 +16,7 @@ import Downloads from './pages/Downloads';
 import Markets from './pages/Markets';
 import DealerNetwork from './pages/DealerNetwork';
 import Register from './pages/Register';
+import EnquiryCart from './pages/EnquiryCart';
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
           <Route path="/Markets" element={<Markets />} />
           <Route path="/DealerNetwork" element={<DealerNetwork />} />
           <Route path="/Register" element={<Register />} />
+          <Route path="/EnquiryCart" element={<EnquiryCart />} />
         </Routes>
       </MainLayout>
     </Router>

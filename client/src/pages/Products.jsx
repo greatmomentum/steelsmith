@@ -1,6 +1,7 @@
 import React from 'react'
 import { Breadcrumb } from "flowbite-react";
 import { HiHome } from "react-icons/hi";
+import { Label, RangeSlider } from "flowbite-react";
 
 const Products = () => {
 
@@ -64,12 +65,48 @@ const Products = () => {
                 <div class="form-check"><input type="checkbox" class="form-check-input" id="formCheck-14" /><label class="form-check-label" for="formCheck-14">Straight</label></div>
               </div>
             </div>
+
             <div className="filter-item bg-white mt-2 rounded">
               <h6 className='border-slate-200 border-b-[1px] pl-4 pt-2 pb-2'>Base Material</h6>
               <div className='pl-4 pb-4'>
                 <div class="form-check"><input type="checkbox" class="form-check-input" id="formCheck-15" /><label class="form-check-label" for="formCheck-15">Steel</label></div>
               </div>
             </div>
+
+            <div className="filter-item bg-white mt-2 rounded">
+              <h6 className='border-slate-200 border-b-[1px] pl-4 pt-2 pb-2'>Holding Capacity</h6>
+              <div className='pl-4 pb-4 px-4'>
+                <label for="default-range" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">1kn - 14kn</label>
+                <RangeSlider id="default-range" />
+              </div>
+            </div>
+
+            <div className="filter-item bg-white mt-2 rounded">
+              <h6 className='border-slate-200 border-b-[1px] pl-4 pt-2 pb-2'>Length</h6>
+              <div className='pl-4 pb-4 px-4'>
+                <label for="default-range" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">1kn - 14kn</label>
+                <RangeSlider id="default-range" />
+              </div>
+            </div>
+
+            <div className="filter-item bg-white mt-2 rounded">
+              <h6 className='border-slate-200 border-b-[1px] pl-4 pt-2 pb-2'>Width</h6>
+              <div className='pl-4 pb-4 px-4'>
+                <label for="default-range" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">1kn - 14kn</label>
+                <RangeSlider id="default-range" />
+              </div>
+            </div>
+
+            <div className="filter-item bg-white mt-2 rounded">
+              <h6 className='border-slate-200 border-b-[1px] pl-4 pt-2 pb-2'>Height</h6>
+              <div className='pl-4 pb-4 px-4'>
+                <label for="default-range" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">1kn - 14kn</label>
+                <RangeSlider id="default-range" />
+              </div>
+            </div>
+
+
+
           </div>
         </div>
         <div className='w-3/4 h-auto'>
@@ -170,6 +207,174 @@ const Products = () => {
                   <span className="absolute left-0 top-0 rounded-rt-lg bg-red-500 px-3 py-1 text-xs uppercase tracking-wider text-white">
                     NEW
                   </span>
+                </a>
+                <div className='p-2'>
+                  <a href="#" className="leading-none hover:gray-800 mb-1 text-gray-800 transition duration-100 no-underline ">
+                    Vertical Hold Down Action Heavy Duty Flanged Base
+                  </a>
+
+                </div>
+              </div>
+              {/* product - end */}
+              {/* product - start */}
+              <div className='transition duration-100 hover:shadow-xl border divide-x divide-dashed'>
+                <a
+                  href="#"
+                  className="group relative mb-2 block overflow-hidden bg-gray-100 lg:mb-3"
+                >
+                  <img
+                    src="../src/images/product1-img.jpg"
+                    loading="lazy"
+                    alt="Vertical Hold Down Action Heavy Duty Flanged Base"
+                    className="h-[220px] w-full object-cover object-center transition duration-200 group-hover:scale-110"
+                  />
+                  {/* <span className="absolute left-0 top-0 rounded-rt-lg bg-red-500 px-3 py-1.5 text-sm uppercase tracking-wider text-white">
+                    NEW
+                  </span> */}
+                </a>
+                <div className='p-2'>
+                  <a href="#" className="leading-none hover:gray-800 mb-1 text-gray-800 transition duration-100 no-underline ">
+                    Vertical Hold Down Action Heavy Duty Flanged Base
+                  </a>
+
+                </div>
+              </div>
+              {/* product - end */}
+              {/* product - start */}
+              <div className='transition duration-100 hover:shadow-xl border divide-x divide-dashed'>
+                <a
+                  href="#"
+                  className="group relative mb-2 block overflow-hidden bg-gray-100 lg:mb-3"
+                >
+                  <img
+                    src="../src/images/product1-img.jpg"
+                    loading="lazy"
+                    alt="Vertical Hold Down Action Heavy Duty Flanged Base"
+                    className="h-[220px] w-full object-cover object-center transition duration-200 group-hover:scale-110"
+                  />
+                  {/* <span className="absolute left-0 top-0 rounded-rt-lg bg-red-500 px-3 py-1.5 text-sm uppercase tracking-wider text-white">
+                    NEW
+                  </span> */}
+                </a>
+                <div className='p-2'>
+                  <a href="#" className="leading-none hover:gray-800 mb-1 text-gray-800 transition duration-100 no-underline ">
+                    Vertical Hold Down Action Heavy Duty Flanged Base
+                  </a>
+
+                </div>
+              </div>
+              {/* product - end */}
+              {/* product - start */}
+              <div className='transition duration-100 hover:shadow-xl border divide-x divide-dashed'>
+                <a
+                  href="#"
+                  className="group relative mb-2 block overflow-hidden bg-gray-100 lg:mb-3"
+                >
+                  <img
+                    src="../src/images/product1-img.jpg"
+                    loading="lazy"
+                    alt="Vertical Hold Down Action Heavy Duty Flanged Base"
+                    className="h-[220px] w-full object-cover object-center transition duration-200 group-hover:scale-110"
+                  />
+                  {/* <span className="absolute left-0 top-0 rounded-rt-lg bg-red-500 px-3 py-1.5 text-sm uppercase tracking-wider text-white">
+                    NEW
+                  </span> */}
+                </a>
+                <div className='p-2'>
+                  <a href="#" className="leading-none hover:gray-800 mb-1 text-gray-800 transition duration-100 no-underline ">
+                    Vertical Hold Down Action Heavy Duty Flanged Base
+                  </a>
+
+                </div>
+              </div>
+              {/* product - end */}
+              {/* product - start */}
+              <div className='transition duration-100 hover:shadow-xl border divide-x divide-dashed'>
+                <a
+                  href="#"
+                  className="group relative mb-2 block overflow-hidden bg-gray-100 lg:mb-3"
+                >
+                  <img
+                    src="../src/images/product1-img.jpg"
+                    loading="lazy"
+                    alt="Vertical Hold Down Action Heavy Duty Flanged Base"
+                    className="h-[220px] w-full object-cover object-center transition duration-200 group-hover:scale-110"
+                  />
+                  {/* <span className="absolute left-0 top-0 rounded-rt-lg bg-red-500 px-3 py-1.5 text-sm uppercase tracking-wider text-white">
+                    NEW
+                  </span> */}
+                </a>
+                <div className='p-2'>
+                  <a href="#" className="leading-none hover:gray-800 mb-1 text-gray-800 transition duration-100 no-underline ">
+                    Vertical Hold Down Action Heavy Duty Flanged Base
+                  </a>
+
+                </div>
+              </div>
+              {/* product - end */}
+              {/* product - start */}
+              <div className='transition duration-100 hover:shadow-xl border divide-x divide-dashed'>
+                <a
+                  href="#"
+                  className="group relative mb-2 block overflow-hidden bg-gray-100 lg:mb-3"
+                >
+                  <img
+                    src="../src/images/product1-img.jpg"
+                    loading="lazy"
+                    alt="Vertical Hold Down Action Heavy Duty Flanged Base"
+                    className="h-[220px] w-full object-cover object-center transition duration-200 group-hover:scale-110"
+                  />
+                  {/* <span className="absolute left-0 top-0 rounded-rt-lg bg-red-500 px-3 py-1.5 text-sm uppercase tracking-wider text-white">
+                    NEW
+                  </span> */}
+                </a>
+                <div className='p-2'>
+                  <a href="#" className="leading-none hover:gray-800 mb-1 text-gray-800 transition duration-100 no-underline ">
+                    Vertical Hold Down Action Heavy Duty Flanged Base
+                  </a>
+
+                </div>
+              </div>
+              {/* product - end */}
+              {/* product - start */}
+              <div className='transition duration-100 hover:shadow-xl border divide-x divide-dashed'>
+                <a
+                  href="#"
+                  className="group relative mb-2 block overflow-hidden bg-gray-100 lg:mb-3"
+                >
+                  <img
+                    src="../src/images/product1-img.jpg"
+                    loading="lazy"
+                    alt="Vertical Hold Down Action Heavy Duty Flanged Base"
+                    className="h-[220px] w-full object-cover object-center transition duration-200 group-hover:scale-110"
+                  />
+                  {/* <span className="absolute left-0 top-0 rounded-rt-lg bg-red-500 px-3 py-1.5 text-sm uppercase tracking-wider text-white">
+                    NEW
+                  </span> */}
+                </a>
+                <div className='p-2'>
+                  <a href="#" className="leading-none hover:gray-800 mb-1 text-gray-800 transition duration-100 no-underline ">
+                    Vertical Hold Down Action Heavy Duty Flanged Base
+                  </a>
+
+                </div>
+              </div>
+              {/* product - end */}
+              {/* product - start */}
+              <div className='transition duration-100 hover:shadow-xl border divide-x divide-dashed'>
+                <a
+                  href="#"
+                  className="group relative mb-2 block overflow-hidden bg-gray-100 lg:mb-3"
+                >
+                  <img
+                    src="../src/images/product1-img.jpg"
+                    loading="lazy"
+                    alt="Vertical Hold Down Action Heavy Duty Flanged Base"
+                    className="h-[220px] w-full object-cover object-center transition duration-200 group-hover:scale-110"
+                  />
+                  {/* <span className="absolute left-0 top-0 rounded-rt-lg bg-red-500 px-3 py-1.5 text-sm uppercase tracking-wider text-white">
+                    NEW
+                  </span> */}
                 </a>
                 <div className='p-2'>
                   <a href="#" className="leading-none hover:gray-800 mb-1 text-gray-800 transition duration-100 no-underline ">

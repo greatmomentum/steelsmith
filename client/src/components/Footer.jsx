@@ -74,9 +74,7 @@ const Footer = () => {
       </div>
       <div className="bg-[#003D6A] border border-[#004d80] border-t-1">
         <div className="container mx-auto py-3 px-5 flex flex-wrap flex-col sm:flex-row w-[1300px]">
-          <p className="text-gray-100 text-sm text-center sm:text-left">
-            © 2024 Steel-Smith. Copyrights Reserved
-          </p>
+          <p className="text-gray-100 text-sm text-center sm:text-left">© 2024 Steel-Smith. Copyrights Reserved</p>
           <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
             <a className="text-gray-200">
               <svg

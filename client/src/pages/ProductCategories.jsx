@@ -3,6 +3,7 @@ import { Breadcrumb } from "flowbite-react";
 import { HiHome } from "react-icons/hi";
 
 
+
 const ProductCategories = () => {
   return (
 
@@ -22,7 +23,7 @@ const ProductCategories = () => {
 
           {/* Right Top Row */}
           <div className='w-full flex justify-between items-end p-4 bg-white'>
-            <span className="text-xl font-bold text-gray-800 p-2">Vertical Hold Down Action</span>
+            <span className="text-xl font-bold text-gray-800 p-2">Toggle Clamps</span>
             {/* <span><a href="#" className="inline-block rounded-lg border bg-white px-4  text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:px-8 md:py-3 md:text-base">Show more</a></span> */}
           </div>
 
