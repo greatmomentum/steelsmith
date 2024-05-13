@@ -29,6 +29,96 @@ ul {
   
 }
 
+/* --- Gallery Images Start --- */
+
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.preview-image-container {
+  margin-bottom: 20px; /* Adjust as needed */
+}
+
+.preview-image {
+  max-width: 100%; /* Adjust as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.thumbnail-container {
+  display: flex;
+}
+
+.thumbnail-image {
+  width: 100px; /* Adjust as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Adjust spacing between thumbnails */
+  cursor: pointer;
+}
+
+.thumbnail-image:hover,
+.thumbnail-image.active {
+  border: 2px solid blue; /* Example border on hover or when active */
+}
+.preview-image-container {
+  position: relative;
+}
+
+.preview-image {
+  max-width: 100%;
+  max-height: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.preview-image.zoomed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 1000;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  cursor: pointer;
+}
+
+.thumbnail-container {
+  display: flex;
+}
+
+.thumbnail-image {
+  width: 100px;
+  height: auto;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.thumbnail-image:hover,
+.thumbnail-image.active {
+  border: 2px solid blue;
+}
+
+[aria-label="breadcrumb"] ol,
+[aria-label="breadcrumb"] ul {
+  padding-left: 6px;
+  list-style: none; /* Remove default list styles */
+}
+
+
+
+
+  /* --- Gallery Images End --- */
+
+
 /*
 
 [aria-label="Slide 3"] {

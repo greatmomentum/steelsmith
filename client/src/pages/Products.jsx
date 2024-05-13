@@ -123,7 +123,7 @@ const Products = () => {
               {/* product - start */}
               <div className='transition duration-100 hover:shadow-xl border divide-x divide-dashed'>
                 <a
-                  href="#"
+                  href="/productmodels"
                   className="group relative mb-2 block overflow-hidden bg-gray-100 lg:mb-3"
                 >
                   <img
@@ -195,7 +195,7 @@ const Products = () => {
               {/* product - start */}
               <div className='transition duration-100 hover:shadow-xl border divide-x divide-dashed'>
                 <a
-                  href="#"
+                  href="/productmodels"
                   className="group relative mb-2 block overflow-hidden bg-gray-100 lg:mb-3"
                 >
                   <img
