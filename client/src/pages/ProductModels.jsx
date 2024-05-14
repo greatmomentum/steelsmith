@@ -58,7 +58,7 @@ const ProductModels = () => {
           {/* button end */}
         </div>
         <div className='w-1/2  p-6 '>
-          <span className="text-xl font-bold text-gray-800p-2"> Vertical Hold Down Action T – Handle Flanged Base</span>
+          <span className="text-xl font-bold text-gray-800p-2"> <a href='/productsingle' className=' no-underline text-[#003d6a]'>Vertical Hold Down Action T – Handle Flanged Base</a></span>
           {/* section 1 */}
           <div className='pt-3'>
             <p className='p-2'>

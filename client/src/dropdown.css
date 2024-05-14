@@ -114,6 +114,23 @@ ul {
 }
 
 
+[aria-label="cart"] {
+  padding-left: 0; /* Apply padding as per your requirement */
+}
+
+[aria-label="dropmenu1"] {
+  background-color: #003D6A !important; /* Apply padding as per your requirement */
+}
+
+[aria-label="Pills"] {
+  background-color: #003D6A !important; /* Apply padding as per your requirement */
+}
+
+
+
+
+
+
 
 
   /* --- Gallery Images End --- */

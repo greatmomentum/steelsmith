@@ -117,16 +117,16 @@ const Register = () => {
 
 
             <div class="sm:col-span-2">
-              
+
 
               <label for="city" className="mb-2 inline-block text-sm text-gray-800 sm:text-base">City</label>
-              
+
 
               <input name="city" className="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring" />
             </div>
 
             <div>
-              
+
               <label for="username" className="mb-2 inline-block text-sm text-gray-800 sm:text-base">State*</label>
               <select className="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring">
                 <option value="fruit">Maharashtra</option>
@@ -165,20 +165,20 @@ const Register = () => {
             </div>
 
 
-            
+
 
             <div class="sm:col-span-2 flex">
               <Checkbox className='mt-3 p-2'></Checkbox> <p className='p-2 mt-1 text-base'>I would like to subscribe to newsletter list</p>
-           
+
             </div>
             <div className="text-xs text-gray-400">By signing up to our newsletter you agree to our <a href="#" class="underline transition duration-100 hover:text-indigo-500 active:text-indigo-600">Privacy Policy</a>.
-</div>
+            </div>
 
 
 
             <div class="flex items-center justify-between sm:col-span-2 pb-20">
               <button class="inline-block rounded-lg bg-[#003D6A] px-8 py-2 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 md:text-base">Register</button>
-              
+
             </div>
           </form>
         </div>

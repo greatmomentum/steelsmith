@@ -6,6 +6,7 @@ import MainLayout from './layouts/MainLayout';
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import ProductCategories from "./pages/ProductCategories";
+import AllProducts from "./pages/AllProducts";
 import Products from "./pages/Products";
 import ProductModels from './pages/ProductModels';
 import ProductSingle from './pages/ProductSingle';
@@ -27,6 +28,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/AboutUs" element={<AboutUs />} />
           <Route path="/ProductCategories" element={<ProductCategories />} />
+          <Route path="/AllProducts" element={<AllProducts />} />
           <Route path="/Products" element={<Products />} />
           <Route path="/ProductModels" element={<ProductModels />} />
           <Route path="/ProductSingle" element={<ProductSingle />} />
