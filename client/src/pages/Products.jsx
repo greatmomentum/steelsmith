@@ -14,66 +14,66 @@ const Products = () => {
         </Breadcrumb.Item>
         <Breadcrumb.Item href="#">Products</Breadcrumb.Item>
         <Breadcrumb.Item href="#">SteelSmith</Breadcrumb.Item>
-        <Breadcrumb.Item href="#">Toggle Clamps</Breadcrumb.Item>
+        <Breadcrumb.Item href="/productcategories">Toggle Clamps</Breadcrumb.Item>
         <Breadcrumb.Item>Vertical Hold Down Action</Breadcrumb.Item>
       </Breadcrumb></div>
       <div className='flex '>
         <div className='w-1/4 h-auto p-3 bg-slate-100'>
 
           <div class="filters">
-            <div className="filter-item bg-white rounded">
+            <div className="filter-item bg-white ">
               <h6 className='border-slate-200 border-b-[1px] pl-4 pt-2 pb-2'>Handle Type</h6>
               <div className='pl-4 pb-4'>
-                <div class="form-check"><input type="checkbox" class="form-check-input" id="formCheck-1" /><label class="form-check-label" for="formCheck-1">Vertical</label></div>
-                <div class="form-check"><input type="checkbox" class="form-check-input" id="formCheck-2" /><label class="form-check-label" for="formCheck-2">Horizontal</label></div>
+                <div class="form-check"><input type="checkbox" class="form-check-input" id="formCheck-1" /><label class="form-check-label text-sm" for="formCheck-1">Vertical</label></div>
+                <div class="form-check"><input type="checkbox" class="form-check-input" id="formCheck-2" /><label class="form-check-label text-sm" for="formCheck-2">Horizontal</label></div>
               </div>
             </div>
-            <div className="filter-item bg-white mt-2 rounded">
+            <div className="filter-item bg-white mt-2 ">
               <h6 className='border-slate-200 border-b-[1px] pl-4 pt-2 pb-2'>Product Type</h6>
               <div className='pl-4 pb-4'>
-                <div class="form-check"><input type="checkbox" class="form-check-input" id="formCheck-3" /><label class="form-check-label" for="formCheck-3">Light Duty</label></div>
-                <div class="form-check"><input type="checkbox" class="form-check-input" id="formCheck-4" /><label class="form-check-label" for="formCheck-4">Medium Duty</label></div>
-                <div class="form-check"><input type="checkbox" class="form-check-input" id="formCheck-5" /><label class="form-check-label" for="formCheck-5">Heavy Duty</label></div>
+                <div class="form-check"><input type="checkbox" class="form-check-input" id="formCheck-3" /><label class="form-check-label text-sm" for="formCheck-3">Light Duty</label></div>
+                <div class="form-check"><input type="checkbox" class="form-check-input" id="formCheck-4" /><label class="form-check-label text-sm" for="formCheck-4">Medium Duty</label></div>
+                <div class="form-check"><input type="checkbox" class="form-check-input" id="formCheck-5" /><label class="form-check-label text-sm" for="formCheck-5">Heavy Duty</label></div>
               </div>
             </div>
-            <div className="filter-item bg-white mt-2 rounded">
+            <div className="filter-item bg-white mt-2 ">
               <h6 className='border-slate-200 border-b-[1px] pl-4 pt-2 pb-2'>Standard Material</h6>
               <div className='pl-4 pb-4'>
-                <div class="form-check"><input type="checkbox" class="form-check-input" id="formCheck-6" /><label class="form-check-label" for="formCheck-6">Steel</label></div>
-                <div class="form-check"><input type="checkbox" class="form-check-input" id="formCheck-7" /><label class="form-check-label" for="formCheck-7">Stainless Steel</label></div>
+                <div class="form-check"><input type="checkbox" class="form-check-input" id="formCheck-6" /><label class="form-check-label text-sm" for="formCheck-6">Steel</label></div>
+                <div class="form-check"><input type="checkbox" class="form-check-input" id="formCheck-7" /><label class="form-check-label text-sm" for="formCheck-7">Stainless Steel</label></div>
               </div>
             </div>
-            <div className="filter-item bg-white mt-2 rounded">
+            <div className="filter-item bg-white mt-2 ">
               <h6 className='border-slate-200 border-b-[1px] pl-4 pt-2 pb-2'>Additional Locking Mechanism</h6>
               <div className='pl-4 pb-4'>
-                <div class="form-check"><input type="checkbox" class="form-check-input" id="formCheck-8" /><label class="form-check-label" for="formCheck-8">Yes</label></div>
+                <div class="form-check"><input type="checkbox" class="form-check-input" id="formCheck-8" /><label class="form-check-label text-sm" for="formCheck-8">Yes</label></div>
               </div>
             </div>
-            <div className="filter-item bg-white mt-2 rounded">
+            <div className="filter-item bg-white mt-2 ">
               <h6 className='border-slate-200 border-b-[1px] pl-4 pt-2 pb-2'>Clamp Arm Style</h6>
               <div className='pl-4 pb-4'>
-                <div class="form-check"><input type="checkbox" class="form-check-input" id="formCheck-9" /><label class="form-check-label" for="formCheck-9">Adjustable Arm</label></div>
-                <div class="form-check"><input type="checkbox" class="form-check-input" id="formCheck-10" /><label class="form-check-label" for="formCheck-10">Solid Arm - Weldable</label></div>
-                <div class="form-check"><input type="checkbox" class="form-check-input" id="formCheck-11" /><label class="form-check-label" for="formCheck-11">Spindle Fixed</label></div>
+                <div class="form-check"><input type="checkbox" class="form-check-input" id="formCheck-9" /><label class="form-check-label text-sm" for="formCheck-9">Adjustable Arm</label></div>
+                <div class="form-check"><input type="checkbox" class="form-check-input" id="formCheck-10" /><label class="form-check-label text-sm" for="formCheck-10">Solid Arm - Weldable</label></div>
+                <div class="form-check"><input type="checkbox" class="form-check-input" id="formCheck-11" /><label class="form-check-label text-sm" for="formCheck-11">Spindle Fixed</label></div>
               </div>
             </div>
-            <div className="filter-item bg-white mt-2 rounded">
+            <div className="filter-item bg-white mt-2 ">
               <h6 className='border-slate-200 border-b-[1px] pl-4 pt-2 pb-2'>Base Mounting Style</h6>
               <div className='pl-4 pb-4'>
-                <div class="form-check"><input type="checkbox" class="form-check-input" id="formCheck-12" /><label class="form-check-label" for="formCheck-12">Flange</label></div>
-                <div class="form-check"><input type="checkbox" class="form-check-input" id="formCheck-13" /><label class="form-check-label" for="formCheck-13">Front Mounting</label></div>
-                <div class="form-check"><input type="checkbox" class="form-check-input" id="formCheck-14" /><label class="form-check-label" for="formCheck-14">Straight</label></div>
+                <div class="form-check"><input type="checkbox" class="form-check-input" id="formCheck-12" /><label class="form-check-label text-sm" for="formCheck-12">Flange</label></div>
+                <div class="form-check"><input type="checkbox" class="form-check-input" id="formCheck-13" /><label class="form-check-label text-sm" for="formCheck-13">Front Mounting</label></div>
+                <div class="form-check"><input type="checkbox" class="form-check-input" id="formCheck-14" /><label class="form-check-label text-sm" for="formCheck-14">Straight</label></div>
               </div>
             </div>
 
-            <div className="filter-item bg-white mt-2 rounded">
+            <div className="filter-item bg-white mt-2 ">
               <h6 className='border-slate-200 border-b-[1px] pl-4 pt-2 pb-2'>Base Material</h6>
               <div className='pl-4 pb-4'>
-                <div class="form-check"><input type="checkbox" class="form-check-input" id="formCheck-15" /><label class="form-check-label" for="formCheck-15">Steel</label></div>
+                <div class="form-check"><input type="checkbox" class="form-check-input" id="formCheck-15" /><label class="form-check-label text-sm" for="formCheck-15">Steel</label></div>
               </div>
             </div>
 
-            <div className="filter-item bg-white mt-2 rounded">
+            <div className="filter-item bg-white mt-2 ">
               <h6 className='border-slate-200 border-b-[1px] pl-4 pt-2 pb-2'>Holding Capacity</h6>
               <div className='pl-4 pb-4 px-4'>
                 <label for="default-range" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">1kn - 14kn</label>
@@ -81,7 +81,7 @@ const Products = () => {
               </div>
             </div>
 
-            <div className="filter-item bg-white mt-2 rounded">
+            <div className="filter-item bg-white mt-2">
               <h6 className='border-slate-200 border-b-[1px] pl-4 pt-2 pb-2'>Length</h6>
               <div className='pl-4 pb-4 px-4'>
                 <label for="default-range" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">1kn - 14kn</label>
@@ -89,7 +89,7 @@ const Products = () => {
               </div>
             </div>
 
-            <div className="filter-item bg-white mt-2 rounded">
+            <div className="filter-item bg-white mt-2">
               <h6 className='border-slate-200 border-b-[1px] pl-4 pt-2 pb-2'>Width</h6>
               <div className='pl-4 pb-4 px-4'>
                 <label for="default-range" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">1kn - 14kn</label>
@@ -97,7 +97,7 @@ const Products = () => {
               </div>
             </div>
 
-            <div className="filter-item bg-white mt-2 rounded">
+            <div className="filter-item bg-white mt-2">
               <h6 className='border-slate-200 border-b-[1px] pl-4 pt-2 pb-2'>Height</h6>
               <div className='pl-4 pb-4 px-4'>
                 <label for="default-range" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">1kn - 14kn</label>

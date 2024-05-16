@@ -8,18 +8,18 @@ const ContactUs = () => {
       {/* Form */}
       <>
         {/* ====== Contact Section Start */}
-        <section className="py-[120px]">
+        <section className="pt-[120px]">
           <div className="container mx-auto">
             <div className="flex flex-wrap -mx-4 lg:justify-between">
               <div className="w-1/2 ">
-                <div className="mb-12 lg:mb-0 p-10 bg-white">
+                <div className=" lg:mb-0 p-10 bg-white">
 
-                  <h2 className="text-dark dark:text-white mb-6 text-lg font-bold uppercase">
-                    GET IN TOUCH WITH US
+                  <h2 className="text-dark dark:text-white mb-6 text-2xl font-medium ">
+                   Get in touch with us
                   </h2>
 
                   <div className="mb-8 flex w-full">
-                    <div className="bg-primary/5 text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded sm:h-[70px] sm:max-w-[70px]">
+                    <div className="bg-primary/5 text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden  sm:h-[70px] sm:max-w-[70px]">
                       <svg
                         width={32}
                         height={32}
@@ -34,7 +34,7 @@ const ContactUs = () => {
                       </svg>
                     </div>
                     <div className="w-full">
-                      <h4 className="mb-1 text-lg font-semibold text-dark dark:text-white">
+                      <h4 className="mb-1 text-base font-semibold text-dark dark:text-white">
                         Our Location
                       </h4>
                       <p className="text-base text-body-color dark:text-dark-6">
@@ -43,7 +43,7 @@ const ContactUs = () => {
                     </div>
                   </div>
                   <div className="mb-8 flex w-full max-w-[370px]">
-                    <div className="bg-primary/5 text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded sm:h-[70px] sm:max-w-[70px]">
+                    <div className="bg-primary/5 text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden  sm:h-[70px] sm:max-w-[70px]">
                       <svg
                         width={32}
                         height={32}
@@ -73,7 +73,7 @@ const ContactUs = () => {
                       </svg>
                     </div>
                     <div className="w-full">
-                      <h4 className="mb-1 text-lg font-semibold text-dark dark:text-white">
+                      <h4 className="mb-1 text-base font-semibold text-dark dark:text-white">
                         Phone Number
                       </h4>
                       <ul>
@@ -85,7 +85,7 @@ const ContactUs = () => {
                     </div>
                   </div>
                   <div className="mb-8 flex w-full ">
-                    <div className="bg-primary/5 text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded sm:h-[70px] sm:max-w-[70px]">
+                    <div className="bg-primary/5 text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden  sm:h-[70px] sm:max-w-[70px]">
                       <svg
                         width={32}
                         height={32}
@@ -100,7 +100,7 @@ const ContactUs = () => {
                       </svg>
                     </div>
                     <div className="w-full">
-                      <h4 className="mb-1 text-lg font-semibold text-dark dark:text-white">
+                      <h4 className="mb-1 text-base font-semibold text-dark dark:text-white">
                         Email Address
                       </h4>
                       <ul>
@@ -112,41 +112,41 @@ const ContactUs = () => {
                 </div>
               </div>
               <div className="w-1/2 ">
-                <div className="p-8 bg-slate-100 rounded-lg shadow-sm dark:bg-dark-2 sm:p-12">
+                <div className="p-8 bg-slate-100 -lg shadow-sm dark:bg-dark-2 sm:p-12">
                   <form>
                     <div className="mb-3">
                       <input
                         type="text"
                         placeholder="Your Name"
-                        className="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded border py-[10px] px-[14px] text-base outline-none"
+                        className="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full  border py-[10px] px-[14px] text-base outline-none"
                       />
                     </div>
                     <div className="mb-3">
                       <input
                         type="email"
                         placeholder="Your Email"
-                        className="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded border py-[10px] px-[14px] text-base outline-none"
+                        className="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full  border py-[10px] px-[14px] text-base outline-none"
                       />
                     </div>
                     <div className="mb-3">
                       <input
                         type="text"
                         placeholder="Your Phone"
-                        className="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded border py-[10px] px-[14px] text-base outline-none"
+                        className="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full  border py-[10px] px-[14px] text-base outline-none"
                       />
                     </div>
                     <div className="mb-3">
                       <textarea
                         rows={6}
                         placeholder="Your Message"
-                        className="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full resize-none rounded border py-3 px-[14px] text-base outline-none"
+                        className="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full resize-none  border py-3 px-[14px] text-base outline-none"
                         defaultValue={""}
                       />
                     </div>
                     <div>
                       <button
                         type="submit"
-                        className="w-full bg-[#003D6A] p-[10px] text-white transition border rounded hover:bg-opacity-90"
+                        className="w-full bg-[#003D6A] p-[10px] text-white transition border  hover:bg-opacity-90"
                       >
                         Send Message
                       </button>
@@ -166,10 +166,10 @@ const ContactUs = () => {
       {/* information */}
 
       <section class="text-gray-600 body-font">
-        <div class="container px-5 mb-14 mx-auto">
+        <div class="container px-5 pt-10 mb-14 mx-auto">
           <div class="flex flex-col text-center w-full ">
-            <h2 class="text-xs text-blue-800 tracking-widest font-medium title-font mb-1">Our Talented Team Makes it Possible</h2>
-            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Our Team</h1>
+            <h2 class="text-xs text-[#003D6A] tracking-widest font-medium  mb-1">Our Talented Team Makes it Possible</h2>
+            <span class="text-2xl font-medium mb-4 py-2 text-gray-900">Our Team</span>
             {/* <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p> */}
           </div>
           <div class="flex flex-wrap justify-center">

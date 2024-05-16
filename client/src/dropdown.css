@@ -104,7 +104,7 @@ ul {
 
 .thumbnail-image:hover,
 .thumbnail-image.active {
-  border: 2px solid blue;
+  border: 2px solid #003D6A;
 }
 
 [aria-label="breadcrumb"] ol,
@@ -120,10 +120,25 @@ ul {
 
 [aria-label="dropmenu1"] {
   background-color: #003D6A !important; /* Apply padding as per your requirement */
+  border-radius: 0 !important;
 }
 
 [aria-label="Pills"] {
   background-color: #003D6A !important; /* Apply padding as per your requirement */
+}
+
+table th {
+  background-color: #003D6A !important;
+  outline: 0.7px solid white !important;
+  border: 1.5px solid white !important;
+}
+
+.rounded-t {
+border-radius: 0 !important;
+}
+
+.rounded-lg {
+  border-radius: 0 !important;
 }
 
 

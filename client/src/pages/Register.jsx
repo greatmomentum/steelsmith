@@ -87,32 +87,32 @@ const Register = () => {
           <form class="mx-auto grid  gap-4 sm:grid-cols-2">
             <div>
               <label for="first-name" class="mb-2 inline-block text-sm text-gray-800 sm:text-base">First name*</label>
-              <input name="first-name" class="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring" />
+              <input name="first-name" class="w-full  border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring" />
             </div>
 
             <div>
               <label for="last-name" class="mb-2 inline-block text-sm text-gray-800 sm:text-base">Last name*</label>
-              <input name="last-name" class="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring" />
+              <input name="last-name" class="w-full  border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring" />
             </div>
 
             <div>
               <label for="email" class="mb-2 inline-block text-sm text-gray-800 sm:text-base">Email*</label>
-              <input name="email" class="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring" />
+              <input name="email" class="w-full  border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring" />
             </div>
 
             <div>
               <label for="mobile" class="mb-2 inline-block text-sm text-gray-800 sm:text-base">Mobile*</label>
-              <input name="mobile" class="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring" />
+              <input name="mobile" class="w-full  border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring" />
             </div>
 
             <div>
               <label for="username" class="mb-2 inline-block text-sm text-gray-800 sm:text-base">Username*</label>
-              <input name="username" class="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring" />
+              <input name="username" class="w-full  border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring" />
             </div>
 
             <div>
               <label for="password" class="mb-2 inline-block text-sm text-gray-800 sm:text-base">Password*</label>
-              <input name="password" class="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring" />
+              <input name="password" class="w-full  border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring" />
             </div>
 
 
@@ -122,13 +122,13 @@ const Register = () => {
               <label for="city" className="mb-2 inline-block text-sm text-gray-800 sm:text-base">City</label>
 
 
-              <input name="city" className="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring" />
+              <input name="city" className="w-full  border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring" />
             </div>
 
             <div>
 
               <label for="username" className="mb-2 inline-block text-sm text-gray-800 sm:text-base">State*</label>
-              <select className="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring">
+              <select className="w-full  border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring">
                 <option value="fruit">Maharashtra</option>
                 <option value="vegetable">Punjab</option>
                 <option value="meat">Haryana</option>
@@ -149,7 +149,7 @@ const Register = () => {
 
             <div>
               <label for="username" className="mb-2 inline-block text-sm text-gray-800 sm:text-base">Country*</label>
-              <select className="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring">
+              <select className="w-full  border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring">
                 <option value="fruit">India</option>
                 <option value="vegetable">Australia</option>
                 <option value="meat">Austria</option>
@@ -177,7 +177,7 @@ const Register = () => {
 
 
             <div class="flex items-center justify-between sm:col-span-2 pb-20">
-              <button class="inline-block rounded-lg bg-[#003D6A] px-8 py-2 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 md:text-base">Register</button>
+              <button class="inline-block -lg bg-[#003D6A] px-8 py-2 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 md:text-base">Register</button>
 
             </div>
           </form>

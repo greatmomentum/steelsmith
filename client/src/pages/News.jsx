@@ -7,8 +7,8 @@ const News = () => {
 <div class=" w-full bg-white mt-2  sm:py-8 lg:py-6">
   <div class="mx-auto ">
 
-    <div class="mb-14  bg-slate-100 py-6" >
-      <span class="flex justify-center text-xl font-bold text-gray-800 lg:text-xl">News</span>
+    <div class="mb-14   py-6" >
+    <span class="flex justify-center text-xl font-medium text-gray-800 lg:text-xl">News</span>
 
       {/* <p class="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">This is a section of some simple filler text, also known as placeholder text. It shares some characteristics of a real written text but is random or otherwise generated.</p> */}
     </div>

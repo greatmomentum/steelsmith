@@ -44,8 +44,8 @@ const Downloads = () => {
   return (
     <div class=" w-full bg-white mt-8  sm:py-8 lg:py-6">
 
-      <div class="mb-14  bg-slate-100 py-6" >
-        <span class="flex justify-center text-xl font-bold text-gray-800 lg:text-xl">Downloads</span>
+      <div class="mb-14  py-6" >
+        <span class="flex justify-center text-xl font-medium text-gray-800 lg:text-xl">Downloads</span>
 
         {/* <p class="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">This is a section of some simple filler text, also known as placeholder text. It shares some characteristics of a real written text but is random or otherwise generated.</p> */}
       </div>
@@ -54,7 +54,7 @@ const Downloads = () => {
         {/* 1 */}
         <div className="flex justify-center">
           <button
-            className={`py-1 px-4 ${activeTab === 'CAD' ? 'bg-[#003D6A] rounded text-lg w-[300px] h-[40px] text-white' : 'bg-gray-200 w-[300px] rounded mx-1 h-[40px] text-lg text-gray-700'
+            className={`py-1 px-4 ${activeTab === 'CAD' ? 'bg-[#003D6A]  text-lg w-[300px] h-[40px] text-white' : 'bg-gray-200 w-[300px]  mx-1 h-[40px] text-lg text-gray-700'
               }`}
             onClick={() => handleTabClick('CAD')}
           >
@@ -64,7 +64,7 @@ const Downloads = () => {
               CAD</span>
           </button>
           <button
-            className={`py-1 px-4 ${activeTab === 'Catalogue' ? 'bg-[#003D6A] rounded text-lg w-[300px] h-[40px] text-white' : 'bg-gray-200 w-[300px] rounded text-lg mx-1 h-[40px] text-gray-700'
+            className={`py-1 px-4 ${activeTab === 'Catalogue' ? 'bg-[#003D6A]  text-lg w-[300px] h-[40px] text-white' : 'bg-gray-200 w-[300px]  text-lg mx-1 h-[40px] text-gray-700'
               }`}
             onClick={() => handleTabClick('Catalogue')}
           > <span className='flex justify-center'><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 mr-2">
