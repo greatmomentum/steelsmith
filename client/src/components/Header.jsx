@@ -1,22 +1,54 @@
-import React, { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import React, { useState, useRef, useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import { Button, MegaMenu, Modal, TextInput, Label, Checkbox, Drawer } from 'flowbite-react';
 import '../dropdown.css';
 import EnquiryCart from '../pages/EnquiryCart';
 
 
 
+
 const Header = () => {
-  const [openModal, setOpenModal] = useState(false);
+  const [openLoginModal, setOpenLoginModal] = useState(false); // State for login modal
+  const [openSearchModal, setOpenSearchModal] = useState(false); // State for search modal
   const [email, setEmail] = useState('');
+  const modalRef = useRef();
 
   const [isOpen, setIsOpen] = useState(false);
   const handleClose = () => setIsOpen(false);
 
   const onCloseModal = () => {
-    setOpenModal(false);
+    setOpenLoginModal(false);
+    setOpenSearchModal(false);
     setEmail('');
   };
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (modalRef.current && !modalRef.current.contains(event.target)) {
+        onCloseModal();
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
+  const handleLoginButtonClick = () => {
+    setOpenLoginModal(true);
+  };
+
+  const handleSearchIconClick = () => {
+    setOpenSearchModal(true);
+  };
+  // const [isDropdownVisible, setIsDropdownVisible] = useState(false);
+
+  // const toggleDropdown = () => {
+  //   setIsDropdownVisible((prev) => !prev);
+  // };
+
 
 
   return (
@@ -34,7 +66,12 @@ const Header = () => {
             <div><NavLink className='p-2 mx-1 text-base no-underline text-[#003D6A] hover:bg-[#003D6A] hover:text-white hover:no-underline ' to="/" activeClassName="active">Home</NavLink></div>
             <div><NavLink className='p-2 mx-1 text-base no-underline text-[#003D6A] hover:bg-[#003D6A] hover:text-white hover:no-underline ' to="/aboutus" activeClassName="active">About us</NavLink></div>
 
-            <div className='p-2 mx-1 text-base no-underline  text-[#003D6A] hover:bg-[#003D6A] hover:text-white hover:no-underline  '> <MegaMenu.Dropdown toggle={<>Products</>}>
+
+
+
+
+            <div className='p-2 mx-1 text-base no-underline  text-[#003D6A] hover:bg-[#003D6A] hover:text-white hover:no-underline  '>  <MegaMenu.Dropdown toggle={<>Products</>}>
+              {/* <div className={isDropdownVisible ? 'visible' : 'hidden'}> */}
               <div className="hidden w-full overflow-hidden  -lg lg:block bg-gray-100 ">
 
                 <div className="mx-auto flex items-center p-8">
@@ -43,89 +80,110 @@ const Header = () => {
                   <div>
                     <div className="grid grid-cols-4 gap-2">
 
-                      <a href="/products" className="group border p-4 bg-white ">
-                        <div className="justify-center">
-                          <img className="lg:w-152" src="./src/images/brand-1.jpg" alt="Logo" />
-                        </div>
-
+                      {/* Box 1 */}
+                      <div className="group border p-4 bg-white ">
+                        <a href="/products" >
+                          <div className="justify-center">
+                            <img className="lg:w-152" src="./src/images/brand-1.jpg" alt="Logo" />
+                          </div>
+                        </a>
                         <div>
-                          <div className="mb-1 font-semibold no-underline "> <a className='text-[#003d6a] no-underline' href="/products">Steelsmith</a></div>
+                          <div className='py-2 flex justify-center'><Link className='no-underline font-semibold text-[#003D6A]' to={"./ProductCategories"}>Steel-Smith</Link></div>
                           <p className="text-sm text-gray-500">
-                            <ul className='no-underline'>
-                              <li><a href='/productcategories'>Toggle Clamps</a></li>
-                              <li>Latches</li>
-                              <li>Additional Locking Mechanism</li>
-                              <li>Automotive Clamps</li>
-                              <li>Roto-Moulding Clamps</li>
-                              <li>Leveling Pads</li>
-                            </ul>
+                            <nav>
+                              <ul>
+                                <li><Link className='no-underline text-[#003D6A]' to={"./Products"}>Toggle Clamps</Link></li>
+                                <li><Link className='no-underline text-[#003D6A]' to={"./Products"}>Additional Locking Mechanism</Link></li>
+                                <li><Link className='no-underline text-[#003D6A]' to={"./Products"}>Automotive Clamps</Link></li>
+                                <li><Link className='no-underline text-[#003D6A]' to={"./Products"}>Roto-Moulding Clamps</Link></li>
+                                <li><Link className='no-underline text-[#003D6A]' to={"./Products"}>Leveling Pads</Link></li>
+                              </ul>
+                            </nav>
                           </p>
                           <p className='text-sm'>View All</p>
                         </div>
-                      </a>
 
-                      <a href="#" className="group gap-4 border p-4 bg-white ">
-                        <div className="">
-                          <img className="lg:w-152" src="./src/images/brand-2.jpg" alt="Logo" />
-                        </div>
+                      </div>
 
+                      {/* Box 2 */}
+                      <div className="group border p-4 bg-white ">
+                        <a href="/products" >
+                          <div className="justify-center">
+                            <img className="lg:w-152" src="./src/images/brand-2.jpg" alt="Logo" />
+                          </div>
+                        </a>
                         <div>
-                          <div className="mb-1 font-semibold text-[#003d6a]">Imao</div>
+                          <div className='py-2 flex justify-center'><Link className='no-underline font-semibold text-[#003D6A]' to={"./ProductCategories"}>IMAO</Link></div>
                           <p className="text-sm text-gray-500">
-                            <ul>
-                              <li>One Touch Fasteners</li>
-                              <li>One Touch Clamps</li>
-                              <li>One Touch Sliding Locks</li>
-                              <li>OD & ID Holding Clamps</li>
-                              <li>Flex Locators</li>
-                              <li>Clamps & Stops</li>
-                            </ul>
+                            <nav>
+                              <ul>
+                                <li><Link className='no-underline text-[#003D6A]' to={"./Products"}>One Touch Fasteners</Link></li>
+                                <li><Link className='no-underline text-[#003D6A]' to={"./Products"}>One Touch Clamps</Link></li>
+                                <li><Link className='no-underline text-[#003D6A]' to={"./Products"}>One Touch Sliding Locks</Link></li>
+                                <li><Link className='no-underline text-[#003D6A]' to={"./Products"}>OD & ID Holding Clamps</Link></li>
+                                <li><Link className='no-underline text-[#003D6A]' to={"./Products"}>Flex Locators</Link></li>
+                                <li><Link className='no-underline text-[#003D6A]' to={"./Products"}>Clamps & Stops</Link></li>
+                              </ul>
+                            </nav>
                           </p>
                           <p className='text-sm'>View All</p>
                         </div>
-                      </a>
+                      </div>
 
-                      <a href="#" className="group gap-4 border p-4 bg-white ">
-                        <div className="">
-                          <img className="lg:w-152" src="./src/images/brand-3.jpg" alt="Logo" />
-                        </div>
-
+                      {/* Box 3 */}
+                      <div className="group border p-4 bg-white ">
+                        <a href="/products" >
+                          <div className="justify-center">
+                            <img className="lg:w-152" src="./src/images/brand-3.jpg" alt="Logo" />
+                          </div>
+                        </a>
                         <div>
-                          <div className="mb-1 font-semibold text-[#003d6a]">Kipp</div>
+                          <div className='py-2 flex justify-center'><Link className='no-underline font-semibold text-[#003D6A]' to={"./ProductCategories"}>KIPP</Link></div>
                           <p className="text-sm text-gray-500">
-                            <ul>
-                              <li>Buffer elements</li>
-                              <li>Spring Plungers</li>
-                              <li>Material Handling</li>
-                              <li>Indexing Plungers</li>
-                              <li>Grips and Knobs</li>
-                              <li>Quater-Turn Locks</li>
-                            </ul>
+                            <nav>
+                              <ul>
+                                <li><Link className='no-underline text-[#003D6A]' to={"./Products"}>Buffer elements</Link></li>
+                                <li><Link className='no-underline text-[#003D6A]' to={"./Products"}>Spring Plungers</Link></li>
+                                <li><Link className='no-underline text-[#003D6A]' to={"./Products"}>Material Handling</Link></li>
+                                <li><Link className='no-underline text-[#003D6A]' to={"./Products"}>Indexing Plungers</Link></li>
+                                <li><Link className='no-underline text-[#003D6A]' to={"./Products"}>Grips and Knobs</Link></li>
+                                <li><Link className='no-underline text-[#003D6A]' to={"./Products"}>Quater-Turn Locks</Link></li>
+                              </ul>
+                            </nav>
                           </p>
                           <p className='text-sm'>View All</p>
                         </div>
-                      </a>
+                      </div>
 
-                      <a href="#" className="group gap-4 border p-4 bg-white ">
-                        <div className="">
-                          <img className="lg:w-152" src="./src/images/brand-4.jpg" alt="Logo" />
-                        </div>
 
+                      {/* Box 4 */}
+                      <div className="group border p-4 bg-white ">
+                        <a href="/products" >
+                          <div className="justify-center">
+                            <img className="lg:w-152" src="./src/images/brand-4.jpg" alt="Logo" />
+                          </div>
+                        </a>
                         <div>
-                          <div className="mb-1 font-semibold text-[#003d6a]">TurnLock</div>
+                          <div className='py-2 flex justify-center'><Link className='no-underline font-semibold text-[#003D6A]' to={"./ProductCategories"}>TurnLock</Link></div>
                           <p className="text-sm text-gray-500">
-                            <ul>
-                              <li>Buffer elements</li>
-                              <li>Spring Plungers</li>
-                              <li>Material Handling</li>
-                              <li>Indexing Plungers</li>
-                              <li>Grips and Knobs</li>
-                              <li>Quater-Turn Locks</li>
-                            </ul>
+                            <nav>
+                              <ul>
+                                <li><Link className='no-underline text-[#003D6A]' to={"./Products"}>Buffer elements</Link></li>
+                                <li><Link className='no-underline text-[#003D6A]' to={"./Products"}>Spring Plungers</Link></li>
+                                <li><Link className='no-underline text-[#003D6A]' to={"./Products"}>Material Handling</Link></li>
+                                <li><Link className='no-underline text-[#003D6A]' to={"./Products"}>Indexing Plungers</Link></li>
+                                <li><Link className='no-underline text-[#003D6A]' to={"./Products"}>Grips and Knobs</Link></li>
+                                <li><Link className='no-underline text-[#003D6A]' to={"./Products"}>Quater-Turn Locks</Link></li>
+                              </ul>
+                            </nav>
                           </p>
                           <p className='text-sm'>View All</p>
                         </div>
-                      </a>
+                      </div>
+
+                      {/* End of Boxes */}
+
+
                     </div>
                     <div className='flex justify-center'>
                       <a className=' text-white p-2 mt-4 no-underline' href='/allproducts'>
@@ -161,6 +219,7 @@ const Header = () => {
 
               </div>
 
+
             </MegaMenu.Dropdown>
             </div>
             <div><NavLink className='p-2 mx-1 text-base no-underline text-[#003D6A] hover:bg-[#003D6A] hover:text-white hover:no-underline ' to="/dealernetwork" activeClassName="active">Dealer Network</NavLink></div>
@@ -181,52 +240,122 @@ const Header = () => {
         <div className="flex-none inline-flex items-center mr-4">
           <span><NavLink className='p-2 mx-1 text-base no-underline text-[#003D6A] hover:bg-[#003D6A] hover:text-white hover:no-underline ' to="/register" activeClassName="active">Register</NavLink></span>
           {/* <span><a href="#" className="mr-1 no-underline -lg px-4 py-2 text-sm font-medium text-gray-800 hover:bg-gray-50 focus:outline-none focus:ring-1 focus:ring-gray-300 dark:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-800 md:mr-2 md:px-5 "> Login </a></span> */}
-          <span><NavLink className='p-2 mx-1 text-base no-underline bg-[#003D6A] text-white hover:bg-[#003D6A] hover:text-white hover:no-underline ' onClick={() => setOpenModal(true)}>Login</NavLink></span>
-          <span><Modal show={openModal} size="md" onClose={onCloseModal} popup>
-            <Modal.Header />
-            <Modal.Body>
-              <div className="space-y-6">
-                <h3 className="text-xl font-medium text-gray-900 dark:text-white">Sign in to our platform</h3>
-                <div>
-                  <div className="mb-2 block">
-                    <Label htmlFor="email" value="Your email" />
+          <span>
+            <NavLink
+              className='p-2 mx-1 text-base no-underline bg-[#003D6A] text-white hover:bg-[#003D6A] hover:text-white hover:no-underline'
+              onClick={handleLoginButtonClick} // Use handleLoginButtonClick
+            >
+              Login
+            </NavLink>
+          </span>
+          <span>
+            <Modal show={openLoginModal} size="md" onClose={onCloseModal} popup>
+              <div ref={modalRef}>
+                <Modal.Header />
+                <Modal.Body>
+                  <div className="space-y-6">
+                    <h3 className="text-xl font-medium text-gray-900 dark:text-white">Sign in to our platform</h3>
+                    <div>
+                      <div className="mb-2 block">
+                        <Label htmlFor="email" value="Your email" />
+                      </div>
+                      <TextInput
+                        id="email"
+                        placeholder="name@company.com"
+                        value={email}
+                        onChange={(event) => setEmail(event.target.value)}
+                        required
+                      />
+                    </div>
+                    <div>
+                      <div className="mb-2 block">
+                        <Label htmlFor="password" value="Your password" />
+                      </div>
+                      <TextInput id="password" type="password" required />
+                    </div>
+                    <div className="flex justify-between">
+                      <div className="flex items-center gap-2">
+                        <Checkbox id="remember" />
+                        <Label htmlFor="remember">Remember me</Label>
+                      </div>
+                      <a href="#" className="text-sm text-[#003D6A] hover:underline dark:text-[#003D6A]">Lost Password?</a>
+                    </div>
+                    <div className="w-full">
+                      <Button className='bg-[#003D6A] hover:bg-blue-800'>Log in to your account</Button>
+                    </div>
+                    <div className="flex justify-between text-sm font-medium text-gray-500 dark:text-gray-300">
+                      Not registered?&nbsp;
+                      <a href="#" className="text-[#003D6A] hover:underline dark:text-[#003D6A]">Create account</a>
+                    </div>
                   </div>
-                  <TextInput
-                    id="email"
-                    placeholder="name@company.com"
-                    value={email}
-                    onChange={(event) => setEmail(event.target.value)}
-                    required
-                  />
-                </div>
-                <div>
-                  <div className="mb-2 block">
-                    <Label htmlFor="password" value="Your password" />
-                  </div>
-                  <TextInput id="password" type="password" required />
-                </div>
-                <div className="flex justify-between">
-                  <div className="flex items-center gap-2">
-                    <Checkbox id="remember" />
-                    <Label htmlFor="remember">Remember me</Label>
-                  </div>
-                  <a href="#" className="text-sm text-[#003D6A] hover:underline dark:text-[#003D6A]">Lost Password?</a>
-                </div>
-                <div className="w-full">
-                  <Button className='bg-[#003D6A] hover:bg-blue-800'>Log in to your account</Button>
-                </div>
-                <div className="flex justify-between text-sm font-medium text-gray-500 dark:text-gray-300">
-                  Not registered?&nbsp;
-                  <a href="#" className="text-[#003D6A] hover:underline dark:text-[#003D6A]">Create account</a>
-                </div>
+                </Modal.Body>
               </div>
-            </Modal.Body>
-          </Modal></span>
+            </Modal>
+          </span>
 
 
         </div>
         <div className="flex-none inline-flex justify-end items-center text-white mr-1 bg-white ">
-          <span className='p-1 text-gray-700'><img className="lg:w-7 transition ease-in-out delay-2 p-1 hover:-translate-1 hover:scale-110" src="./src/images/search.png" alt="Search" /></span>
+
+          {/* Starts - Search Icon Modal Box */}
+
+          <span className='p-1 text-gray-700'><button onClick={handleSearchIconClick}><img className="lg:w-7 transition ease-in-out delay-2 p-1 hover:-translate-1 hover:scale-110" src="./src/images/search.png" alt="Search" /></button></span>
+          <span>
+            <Modal show={openSearchModal} size="xl" id="searchmodal"  onClose={onCloseModal} popup>
+              <div aria-hidden="searchmodal"  ref={modalRef}>
+                <Modal.Header />
+                <Modal.Body >
+
+                    
+                    <div className="space-y-6">
+                      <h3 className="text-xl font-medium text-gray-900 dark:text-white">Search for Products like Toogle Clamps, VTC-6561</h3>
+                      <div>
+                        <div className="flex items-center border border-gray-300 rounded-md px-3 py-2 focus-within:border-blue-500 focus-within:ring-blue-500">
+                          <input
+                            type="text"
+                            className="block w-full border-0 p-0 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-0"
+                            placeholder="Search products..."
+                          />
+                          <span className="text-gray-400 cursor-pointer ml-2">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor"
+                              className="w-5 h-5"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M9 5l7 7-7 7"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                        <div className="absolute z-10 mt-1 w-2/3  bg-white border border-gray-300 rounded-md shadow-lg">
+                          {/* Suggestions */}
+                          <ul className="py-1">
+                            {/* Dummy entries */}
+                            <li className="px-3 py-2 hover:bg-gray-50 cursor-pointer">Toggle Clamp 1</li>
+                            <li className="px-3 py-2 hover:bg-gray-50 cursor-pointer">Toggle Clamp 2</li>
+                            <li className="px-3 py-2 hover:bg-gray-50 cursor-pointer">Toggle Clamp 3</li>
+                            {/* Add more dummy entries as needed */}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                  
+                </Modal.Body>
+              </div>
+            </Modal>
+          </span>
+
+          {/* Ends - Search Icon Modal Box */}
+
+
+
           {/* <span className='p-1 text-gray-700'><img className="lg:w-8 transition ease-in-out delay-2 p-1 hover:-translate-1 hover:scale-110" src="./src/images/people.png" alt="User" /></span> */}
           <span className='p-1 text-gray-700'><button onClick={() => setIsOpen(true)}><img className="lg:w-8 transition ease-in-out delay-2 mt-1 p-1 hover:-translate-1 hover:scale-110" src="./src/images/shopping-cart.png" alt="Enquiry Cart" /></button></span>
 
@@ -310,7 +439,15 @@ const Header = () => {
               </div>
             </div>
             <div className='pt-6'>
-              <span><NavLink className='px-8 py-2 mx-1 text-base no-underline bg-[#003D6A] text-white hover:bg-[#003D6A] hover:text-white hover:no-underline -sm' to="/enquirycart" activeClassName="active">Send Enquiry</NavLink></span>
+              <span>
+
+                <NavLink className='flex justify-center py-2 mx-1 text-base no-underline bg-[#003D6A] text-white hover:bg-[#003D6A] hover:text-white hover:no-underline -sm' to="/enquirycart" activeClassName="active">
+                  <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 mx-2 text-white">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
+                  </svg></span>
+                  <span>Send Enquiry</span>
+
+                </NavLink></span>
 
 
             </div>

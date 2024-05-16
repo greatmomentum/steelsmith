@@ -135,9 +135,9 @@ const Home = () => {
         </div>
       </section>
       {/* #4. New Brands  */}
-      <section className=" text-gray-600 body-font bg-slate-100 h-[650px]">
-        <div className="container px-5 py-12  w-[1300px] mx-auto">
-          <div className="flex flex-wrap w-full my-10">
+      <section className=" text-gray-600 body-font bg-slate-100 h-auto ">
+        <div className="py-12  w-[1300px] mx-auto">
+          <div className="flex flex-wrap w-full my-10 px-5">
             <div className="lg:w-1/3 w-full my-4 lg:mb-0">
               <p className="text-2xl font-bold title-font mb-2 text-slate-800">
                 Our Brands
@@ -152,6 +152,493 @@ const Home = () => {
               reliability.
             </p>
           </div>
+
+
+          <div className='grid grid-cols-2 gap-3 p-4 w-[1100px] mx-auto'>
+
+            {/* col1 */}
+            <div className='flex flex-grow items-center border-[1px]  border-gray-100 transition duration-250 ease-out hover:ease-in  hover:scale-[1.02] hover:shadow-xl bg-white'>
+              <div className='w-[197px] p-3'>
+                <img src='../src/images/img1v-steelsmith.jpg' />
+              </div>
+              <div className='flex-auto  w-1/2 h-full'>
+                <div className='h-full grid grid-row-3 '>
+                  <div className='h-10% flex items-center '>
+                    {/* logo */}
+                    <div>
+                      <span><img className="w-[220px]" src="./src/images/brand-1.jpg" alt="content" /></span>
+                    </div>
+                  </div>
+                  <div className='items-stretch space-y-1 px-4'>
+                    {/* 1 */}
+                    <div className=" flex">
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={3}
+                        className="mt-1 text-gray-800 w-3 h-3  mr-2"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+                        <path d="M22 4L12 14.01l-3-3" />
+                      </svg>
+                      <span className="text-sm text-gray-800">Toggle Clamps</span>
+                    </div>
+                    {/* 1 */}
+                    <div className=" flex">
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={3}
+                        className="mt-1 text-gray-800 w-3 h-3  mr-2"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+                        <path d="M22 4L12 14.01l-3-3" />
+                      </svg>
+                      <span className="text-sm text-gray-800">Toggle Clamps</span>
+                    </div>
+                    {/* 1 */}
+                    <div className=" flex">
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={3}
+                        className="mt-1 text-gray-800 w-3 h-3  mr-2"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+                        <path d="M22 4L12 14.01l-3-3" />
+                      </svg>
+                      <span className="text-sm text-gray-800">Toggle Clamps</span>
+                    </div>
+                    {/* 1 */}
+                    <div className=" flex">
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={3}
+                        className="mt-1 text-gray-800 w-3 h-3  mr-2"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+                        <path d="M22 4L12 14.01l-3-3" />
+                      </svg>
+                      <span className="text-sm text-gray-800">Toggle Clamps</span>
+                    </div>
+                    {/* 1 */}
+                    <div className=" flex">
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={3}
+                        className="mt-1 text-gray-800 w-3 h-3  mr-2"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+                        <path d="M22 4L12 14.01l-3-3" />
+                      </svg>
+                      <span className="text-sm text-gray-800">Toggle Clamps</span>
+                    </div>
+                  </div>
+                  <div className='h-10% flex items-center '>
+                    <div className="w-full items-center justify-between inline-flex px-4">
+                      <a className="text-gray-800 text-sm items-center md:mb-2 lg:mb-0">
+                        View Products</a>
+                      <svg
+                        className=" text-gray-800 w-4 h-4 ml-2 "
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                        fill="none"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <path d="M5 12h14" />
+                        <path d="M12 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* col2 */}
+            <div className='flex flex-grow items-center border-[1px]  border-gray-100 transition duration-250 ease-out hover:ease-in  hover:scale-[1.02] hover:shadow-xl bg-white'>
+              <div className='w-[197px] p-3'>
+                <img src='../src/images/img2v-imao.jpg' />
+              </div>
+              <div className='flex-auto  w-1/2 h-full'>
+                <div className='h-full grid grid-row-3 '>
+                  <div className='h-10% flex items-center '>
+                    {/* logo */}
+                    <div>
+                      <span><img className="w-[220px]" src="./src/images/brand-2.jpg" alt="content" /></span>
+                    </div>
+                  </div>
+                  <div className='items-stretch space-y-1 px-4'>
+                    {/* 1 */}
+                    <div className=" flex">
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={3}
+                        className="mt-1 text-gray-800 w-3 h-3  mr-2"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+                        <path d="M22 4L12 14.01l-3-3" />
+                      </svg>
+                      <span className="text-sm text-gray-800">Toggle Clamps</span>
+                    </div>
+                    {/* 1 */}
+                    <div className=" flex">
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={3}
+                        className="mt-1 text-gray-800 w-3 h-3  mr-2"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+                        <path d="M22 4L12 14.01l-3-3" />
+                      </svg>
+                      <span className="text-sm text-gray-800">Toggle Clamps</span>
+                    </div>
+                    {/* 1 */}
+                    <div className=" flex">
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={3}
+                        className="mt-1 text-gray-800 w-3 h-3  mr-2"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+                        <path d="M22 4L12 14.01l-3-3" />
+                      </svg>
+                      <span className="text-sm text-gray-800">Toggle Clamps</span>
+                    </div>
+                    {/* 1 */}
+                    <div className=" flex">
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={3}
+                        className="mt-1 text-gray-800 w-3 h-3  mr-2"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+                        <path d="M22 4L12 14.01l-3-3" />
+                      </svg>
+                      <span className="text-sm text-gray-800">Toggle Clamps</span>
+                    </div>
+                    {/* 1 */}
+                    <div className=" flex">
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={3}
+                        className="mt-1 text-gray-800 w-3 h-3  mr-2"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+                        <path d="M22 4L12 14.01l-3-3" />
+                      </svg>
+                      <span className="text-sm text-gray-800">Toggle Clamps</span>
+                    </div>
+                  </div>
+                  <div className='h-10% flex items-center '>
+                    <div className="w-full items-center justify-between inline-flex px-4">
+                      <a className="text-gray-800 text-sm items-center md:mb-2 lg:mb-0">
+                        View Products</a>
+                      <svg
+                        className=" text-gray-800 w-4 h-4 ml-2 "
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                        fill="none"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <path d="M5 12h14" />
+                        <path d="M12 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* col 2 ends */}
+
+            {/* col 3 starts */}
+
+            <div className='flex flex-grow items-center border-[1px]  border-gray-100 transition duration-250 ease-out hover:ease-in  hover:scale-[1.02] hover:shadow-xl bg-white'>
+              <div className='w-[197px] p-3'>
+                <img src='../src/images/img3v-kipp.jpg' />
+              </div>
+              <div className='flex-auto  w-1/2 h-full'>
+                <div className='h-full grid grid-row-3 '>
+                  <div className='h-10% flex items-center '>
+                    {/* logo */}
+                    <div>
+                      <span><img className="w-[220px]" src="./src/images/brand-3.jpg" alt="content" /></span>
+                    </div>
+                  </div>
+                  <div className='items-stretch space-y-1 px-4'>
+                    {/* 1 */}
+                    <div className=" flex">
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={3}
+                        className="mt-1 text-gray-800 w-3 h-3  mr-2"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+                        <path d="M22 4L12 14.01l-3-3" />
+                      </svg>
+                      <span className="text-sm text-gray-800">Toggle Clamps</span>
+                    </div>
+                    {/* 1 */}
+                    <div className=" flex">
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={3}
+                        className="mt-1 text-gray-800 w-3 h-3  mr-2"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+                        <path d="M22 4L12 14.01l-3-3" />
+                      </svg>
+                      <span className="text-sm text-gray-800">Toggle Clamps</span>
+                    </div>
+                    {/* 1 */}
+                    <div className=" flex">
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={3}
+                        className="mt-1 text-gray-800 w-3 h-3  mr-2"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+                        <path d="M22 4L12 14.01l-3-3" />
+                      </svg>
+                      <span className="text-sm text-gray-800">Toggle Clamps</span>
+                    </div>
+                    {/* 1 */}
+                    <div className=" flex">
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={3}
+                        className="mt-1 text-gray-800 w-3 h-3  mr-2"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+                        <path d="M22 4L12 14.01l-3-3" />
+                      </svg>
+                      <span className="text-sm text-gray-800">Toggle Clamps</span>
+                    </div>
+                    {/* 1 */}
+                    <div className=" flex">
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={3}
+                        className="mt-1 text-gray-800 w-3 h-3  mr-2"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+                        <path d="M22 4L12 14.01l-3-3" />
+                      </svg>
+                      <span className="text-sm text-gray-800">Toggle Clamps</span>
+                    </div>
+                  </div>
+                  <div className='h-10% flex items-center '>
+                    <div className="w-full items-center justify-between inline-flex px-4">
+                      <a className="text-gray-800 text-sm items-center md:mb-2 lg:mb-0">
+                        View Products</a>
+                      <svg
+                        className=" text-gray-800 w-4 h-4 ml-2 "
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                        fill="none"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <path d="M5 12h14" />
+                        <path d="M12 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            {/* col 3 ends */}
+
+            {/* col 4 starts */}
+
+            <div className='flex flex-grow items-center border-[1px]  border-gray-100 transition duration-250 ease-out hover:ease-in  hover:scale-[1.02] hover:shadow-xl bg-white'>
+              <div className='w-[197px] p-3'>
+                <img src='../src/images/img4v-turnlock.jpg' />
+              </div>
+              <div className='flex-auto  w-1/2 h-full'>
+                <div className='h-full grid grid-row-3 '>
+                  <div className='h-10% flex items-center '>
+                    {/* logo */}
+                    <div>
+                      <span><img className="w-[220px]" src="./src/images/brand-4.jpg" alt="content" /></span>
+                    </div>
+                  </div>
+                  <div className='items-stretch space-y-1 px-4'>
+                    {/* 1 */}
+                    <div className=" flex">
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={3}
+                        className="mt-1 text-gray-800 w-3 h-3  mr-2"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+                        <path d="M22 4L12 14.01l-3-3" />
+                      </svg>
+                      <span className="text-sm text-gray-800">Toggle Clamps</span>
+                    </div>
+                    {/* 1 */}
+                    <div className=" flex">
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={3}
+                        className="mt-1 text-gray-800 w-3 h-3  mr-2"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+                        <path d="M22 4L12 14.01l-3-3" />
+                      </svg>
+                      <span className="text-sm text-gray-800">Toggle Clamps</span>
+                    </div>
+                    {/* 1 */}
+                    <div className=" flex">
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={3}
+                        className="mt-1 text-gray-800 w-3 h-3  mr-2"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+                        <path d="M22 4L12 14.01l-3-3" />
+                      </svg>
+                      <span className="text-sm text-gray-800">Toggle Clamps</span>
+                    </div>
+                    {/* 1 */}
+                    <div className=" flex">
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={3}
+                        className="mt-1 text-gray-800 w-3 h-3  mr-2"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+                        <path d="M22 4L12 14.01l-3-3" />
+                      </svg>
+                      <span className="text-sm text-gray-800">Toggle Clamps</span>
+                    </div>
+                    {/* 1 */}
+                    <div className=" flex">
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={3}
+                        className="mt-1 text-gray-800 w-3 h-3  mr-2"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+                        <path d="M22 4L12 14.01l-3-3" />
+                      </svg>
+                      <span className="text-sm text-gray-800">Toggle Clamps</span>
+                    </div>
+                  </div>
+                  <div className='h-10% flex items-center '>
+                    <div className="w-full items-center justify-between inline-flex px-4">
+                      <a className="text-gray-800 text-sm items-center md:mb-2 lg:mb-0">
+                        View Products</a>
+                      <svg
+                        className=" text-gray-800 w-4 h-4 ml-2 "
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                        fill="none"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <path d="M5 12h14" />
+                        <path d="M12 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            {/* col 4 ends */}
+
+
+
+          </div>
+
+          {/* Our Brands Start*/}
           <div className="flex flex-wrap">
             <div className="xl:w-1/5 md:w-1/2 p-1 ">
               <div className="bg-white p-6 -lg h-[320px]">
@@ -589,6 +1076,9 @@ const Home = () => {
               </div>
             </div>
           </div>
+          {/* Our Brands End*/}
+
+
         </div>
       </section>
       {/* #4 Products */}
