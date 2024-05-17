@@ -1,4 +1,13 @@
 import React from 'react';
+import { Card, CardContent } from "@/components/ui/card";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+
 
 const AboutUs = () => {
   return (
@@ -24,12 +33,12 @@ const AboutUs = () => {
           <div className="mb-8 flex flex-wrap justify-between md:mb-16">
             <div className="mb-6 flex w-full flex-col justify-center sm:mb-12 lg:mb-0 lg:w-1/3 lg:pb-24 lg:pt-48">
               <h1 className="mb-4 text-4xl font-bold text-[#003D6A] ">
-              The toggle clamp Manufacturers 
+                The toggle clamp Manufacturers
                 <br />
-               & engineering experts
+                & engineering experts
               </h1>
               <p className="max-w-md leading-relaxed text-gray-500 xl:text-lg">
-              Designed & made by engineers, for engineers
+                Designed & made by engineers, for engineers
               </p>
             </div>
             <div className="mb-12 flex w-full md:mb-16 lg:w-[800px] h-[400px]">
@@ -109,13 +118,13 @@ const AboutUs = () => {
           <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-6 xl:gap-16">
             {/* feature - start */}
             <div className="flex flex-col items-center bg-white p-2">
-              <div className="mb-2 flex h-12 w-12 items-center justify-center text-[#003D6A] sm:mb-4 md:h-14 md:w-14">
+              <div className="mb-3 flex h-6 w-6 items-center justify-center text-[#003D6A] sm:mb-4 md:h-14 md:w-14">
                 <img src='../src/images/winner.png' />
               </div>
-              <p className="mb-2 text-center text-3xl font-medium ">
+              <p className="mb-2 text-center text-3xl font-medium text-[#003D6A]">
                 #1
               </p>
-              <p className="mb-2 text-center leading-snug text-gray-500">
+              <p className="mb-2 text-center leading-snug text-[#003D6A]">
                 India's # 1 Manufacturer of Toggle clamps
               </p>
 
@@ -123,13 +132,13 @@ const AboutUs = () => {
             {/* feature - end */}
             {/* feature - start */}
             <div className="flex flex-col items-center bg-white p-2">
-              <div className="mb-2 flex h-12 w-12 items-center justify-center text-[#003D6A] sm:mb-4 md:h-14 md:w-14">
-              <img src='../src/images/product.png' />
+              <div className="mb-3 flex h-6 w-6 items-center justify-center text-[#003D6A] sm:mb-4 md:h-14 md:w-14">
+                <img src='../src/images/product.png' />
               </div>
-              <p className="mb-2 text-center text-3xl font-medium ">
+              <p className="mb-2 text-center text-3xl font-medium text-[#003D6A]">
                 500+
               </p>
-              <p className="mb-2 text-center text-gray-500">
+              <p className="mb-2 text-center text-[#003D6A]">
                 More than 500 models offered off the shelf
               </p>
 
@@ -137,13 +146,13 @@ const AboutUs = () => {
             {/* feature - end */}
             {/* feature - start */}
             <div className="flex flex-col items-center bg-white p-2">
-              <div className="mb-2 flex h-12 w-12 items-center justify-center text-[#003D6A] sm:mb-4 md:h-14 md:w-14">
-              <img src='../src/images/product-development.png' />
+              <div className="mb-3 flex h-6 w-6 items-center justify-center text-[#003D6A] sm:mb-4 md:h-14 md:w-14">
+                <img src='../src/images/product-development.png' />
               </div>
-              <p className="mb-2 text-center text-3xl font-medium ">
+              <p className="mb-2 text-center text-3xl font-medium text-[#003D6A]">
                 750,000
               </p>
-              <p className="mb-2 text-center text-gray-500">
+              <p className="mb-2 text-center text-[#003D6A]">
                 Production capacity of 7.5 Lakh clamps /year
               </p>
 
@@ -151,13 +160,13 @@ const AboutUs = () => {
             {/* feature - end */}
             {/* feature - start */}
             <div className="flex flex-col items-center bg-white p-2">
-              <div className="mb-2 flex h-12 w-12 items-center justify-center text-[#003D6A] sm:mb-4 md:h-14 md:w-14">
-              <img src='../src/images/anniversary.png' />
+              <div className="mb-3 flex h-6 w-6 items-center justify-center text-[#003D6A] sm:mb-4 md:h-14 md:w-14">
+                <img src='../src/images/anniversary.png' />
               </div>
-              <p className="mb-2 text-center text-3xl font-medium ">
+              <p className="mb-2 text-center text-3xl font-medium text-[#003D6A]">
                 50+
               </p>
-              <p className="mb-2 text-center text-gray-500">
+              <p className="mb-2 text-center text-[#003D6A]">
                 Established in the year 1970
               </p>
 
@@ -165,13 +174,13 @@ const AboutUs = () => {
             {/* feature - end */}
             {/* feature - start */}
             <div className="flex flex-col items-center bg-white p-2">
-              <div className="mb-2 flex h-12 w-12 items-center justify-center text-[#003D6A] sm:mb-4 md:h-14 md:w-14">
-              <img src='../src/images/squarefeet-icon.png' />
+              <div className="mb-3 flex h-3 w-3 items-center justify-center text-[#003D6A] sm:mb-4 md:h-14 md:w-12">
+                <img src='../src/images/squarefeet-icon.png' />
               </div>
-              <p className="mb-2 text-center text-3xl font-medium ">
+              <p className="mb-2 text-center text-3xl font-medium text-[#003D6A]">
                 40,000
               </p>
-              <p className="mb-1 text-center text-gray-500">
+              <p className="mb-1 text-center text-[#003D6A]">
                 40,000 sq.ft. of manufacturing area
               </p>
 
@@ -179,13 +188,13 @@ const AboutUs = () => {
             {/* feature - end */}
             {/* feature - start */}
             <div className="flex flex-col items-center bg-white p-2">
-              <div className="mb-2 flex h-12 w-12 items-center justify-center text-[#003D6A] sm:mb-4 md:h-14 md:w-14">
-              <img src='../src/images/iso-icon.png' />
+              <div className="mb-3 flex h-6 w-6 items-center justify-center text-[#003D6A] sm:mb-4 md:h-14 md:w-14">
+                <img src='../src/images/iso-icon.png' />
               </div>
-              <p className="mb-1 text-center text-3xl font-medium ">
+              <p className="mb-1 text-center text-3xl font-medium text-[#003D6A]">
                 ISO
               </p>
-              <p className="mb-2 text-center text-gray-500">
+              <p className="mb-2 text-center text-[#003D6A]">
                 ISO 9001:2015
               </p>
 
@@ -193,6 +202,31 @@ const AboutUs = () => {
             {/* feature - end */}
           </div>
         </div>
+      </div>
+
+      <div className='container h-[170px] text-white flex justify-center items-center border-t-[1px] '>
+        <Carousel opts={{ align: "start", }} className="w-full max-w-[1200px]">
+          <CarouselContent>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3"><img alt="content" src="../src/images/logo1.png"/></CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3"><img alt="content" src="../src/images/logo2.png"/></CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3"><img alt="content" src="../src/images/logo3.png"/></CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3"><img alt="content" src="../src/images/logo4.png"/></CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3"><img alt="content" src="../src/images/logo5.png"/></CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3"><img alt="content" src="../src/images/logo6.png"/></CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3"><img alt="content" src="../src/images/logo7.png"/></CarouselItem>
+              {/* <CarouselItem className="md:basis-1/2 lg:basis-1/3"><img alt="content" src="../src/images/logo8.png"/></CarouselItem> */}
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3"><img alt="content" src="../src/images/logo9.png"/></CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3"><img alt="content" src="../src/images/logo10.png"/></CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3"><img alt="content" src="../src/images/logo11.png"/></CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3"><img alt="content" src="../src/images/logo12.png"/></CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3"><img alt="content" src="../src/images/logo13.png"/></CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3"><img alt="content" src="../src/images/logo14.png"/></CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3"><img alt="content" src="../src/images/logo15.png"/></CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3"><img alt="content" src="../src/images/logo16.png"/></CarouselItem>
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
       </div>
 
 

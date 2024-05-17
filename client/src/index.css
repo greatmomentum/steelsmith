@@ -2,95 +2,94 @@
 @tailwind components;
 @tailwind utilities;
 
-
+/* Root Styles */
 :root {
-  font-family: Inter, Helvetica, Arial, sans-serif;
+
+  font-family: 'Inter', sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
+  
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #fff;
-
+  
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-  /* #Mega Menu Styles
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-  .mega-menu {
-    display: none;
-    left: 0;
-    position: absolute;
-    text-align: left;
-    width: 100%;
-  }
+body {
+  font-family: 'Inter', sans-serif;
+}
+h1, h2, h3, p, div, span, ul, li, a, label, th, td, tr, button {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
 
+  /* You can adjust font size, weight, etc. as needed */
+}
 
+/* Mega Menu Styles */
+.mega-menu {
+  @apply hidden absolute left-0 w-full text-left;
+}
 
-  /* #hoverable Class Styles
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-  .hoverable {
-    position: static;
-  }
+/* Hoverable Class Styles */
+.hoverable {
+  @apply static;
+}
 
-  .hoverable > a:after {
-    content: "\25BC";
-    font-size: 10px;
-    padding-left: 6px;
-    position: relative;
-    top: -1px;
-  }
+.hoverable > a:after {
+  content: "\25BC";
+  font-size: 10px;
+  padding-left: 6px;
+  position: relative;
+  top: -1px;
+}
 
-  .hoverable:hover .mega-menu {
-    display: block;
-  }
+.hoverable:hover .mega-menu {
+  @apply block;
+}
 
+/* Toggleable Class Styles */
+.toggleable > label:after {
+  content: "\25BC";
+  font-size: 10px;
+  padding-left: 6px;
+  position: relative;
+  top: -1px;
+}
 
-  /* #toggle Class Styles
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.toggle-input {
+  @apply hidden;
+}
 
-  .toggleable > label:after {
-    content: "\25BC";
-    font-size: 10px;
-    padding-left: 6px;
-    position: relative;
-    top: -1px;
-  }
+.toggle-input:not(:checked) ~ .mega-menu {
+  @apply hidden;
+}
 
-  .toggle-input {
-    display: none;
-  }
-  .toggle-input:not(checked) ~ .mega-menu {
-    display: none;
-  }
+.toggle-input:checked ~ .mega-menu {
+  @apply block;
+}
 
-  .toggle-input:checked ~ .mega-menu {
-    display: block;
-  }
+.toggle-input:checked + label {
+  @apply text-white bg-blue-800; /* Uses Tailwind classes */
+}
 
-  .toggle-input:checked + label {
-    color: white;
-    background: #2c5282; /*@apply bg-blue-800 */
-  }
+.toggle-input:checked ~ label:after {
+  content: "\25B2";
+  font-size: 10px;
+  padding-left: 6px;
+  position: relative;
+  top: -1px;
+}
 
-  .toggle-input:checked ~ label:after {
-    content: "\25B2";
-    font-size: 10px;
-    padding-left: 6px;
-    position: relative;
-    top: -1px;
-  }
+/* Active Class Styles */
+.active {
+  @apply text-black;
+}
 
-
-  .active{
-    color: black;
-  }
-
-  .nav-link:hover {
-    cursor: pointer;
-  }
-
-  
+/* Navigation Link Hover Styles */
+.nav-link:hover {
+  @apply cursor-pointer;
+}

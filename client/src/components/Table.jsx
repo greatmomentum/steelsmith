@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../css/Table.css'; // Import CSS file from the css folder
+import '../utils/tablefilter.js';
 
 
 const Table = () => {
@@ -66,39 +67,207 @@ const Table = () => {
 
   return (
     <div className="outer-wrapper">
-      <div className="table-wrapper">
-        <table id="emp-table">
+      <div className='w-full flex justify-end'>
+        <button id="reset-button" className='flex justify-center text-xs h-10 items-center my-1 mx-1  w-[120px] bg-[#003D6A] text-white p-2' onClick={handleResetFilters}>Reset</button>
+      </div>
+      <div className="table-wrapper w-full">
+        <table id="emp-table ">
           {/* Table header */}
-          <thead>
-            <tr>
-              <th>Order No.</th>
-              <th>Main Color</th>
-              <th>Size</th>
-              <th>X</th>
-              <th>T</th>
-              <th>D</th>
-              <th>D1</th>
-              <th>D2</th>
-            </tr>
-          </thead>
+
+
+          <div>
+            <thead className='flex w-full justify-start'>
+              <th className='w-[84px] '>
+                <select className="table-filter" onchange="filter_rows()">
+                  <option value="all" />
+                </select>
+                <span className='h-[40px] flex items-center justify-center'>
+                No.
+                </span>
+              </th>
+
+              <th className='w-[80px]'>
+                <select className="table-filter" onchange="filter_rows()">
+                  <option value="all" />
+                </select>
+                <span className='h-[40px] flex items-center justify-center'>
+                Main Color
+                </span>
+              </th>
+              <th className='w-[80px]'>
+                <select className="table-filter" onchange="filter_rows()">
+                  <option value="all" />
+                </select>
+                <span className='h-[40px] flex items-center justify-center'>
+                Size
+                </span>
+              </th>
+              <th className='w-[80px]'>
+                <select className="table-filter" onchange="filter_rows()">
+                  <option value="all" />
+                </select>
+                <span className='h-[40px] flex items-center justify-center'>
+                X
+                </span>
+              </th>
+              <th className='w-[80px]'>
+                <select className="table-filter" onchange="filter_rows()">
+                  <option value="all" />
+                </select>
+                <span className='h-[40px] flex items-center justify-center'>
+                T
+                </span>
+              </th>
+              <th className='w-[80px]'>
+                <select className="table-filter" onchange="filter_rows()">
+                  <option value="all" />
+                </select>
+                <span className='h-[40px] flex items-center justify-center'>
+                D
+                </span>
+              </th>
+              <th className='w-[80px]'>
+                <select className="table-filter" onchange="filter_rows()">
+                  <option value="all" />
+                </select>
+                <span className='h-[40px] flex items-center justify-center'>
+                D1
+                </span>
+              </th>
+              <th className='w-[80px]'>
+                <select className="table-filter" onchange="filter_rows()">
+                  <option value="all" />
+                </select>
+                <span className='h-[40px] flex items-center justify-center'>
+                D2
+                </span>
+              </th>
+              <th className='w-[80px]'>
+                <select className="table-filter" onchange="filter_rows()">
+                  <option value="all" />
+                </select>
+                <span className='h-[40px] flex items-center justify-center'>
+                H
+                </span>
+              </th>
+              <th className='w-[80px]'>
+                <select className="table-filter" onchange="filter_rows()">
+                  <option value="all" />
+                </select>
+                <span className='h-[40px] flex items-center justify-center'>
+                H1
+                </span>
+              </th>
+              <th className='w-[80px]'>
+                <select className="table-filter" onchange="filter_rows()">
+                  <option value="all" />
+                </select>
+                <span className='h-[40px] flex items-center justify-center'>
+                H2
+                </span>
+              </th>
+              <th className='w-[80px]'>
+                <select className="table-filter" onchange="filter_rows()">
+                  <option value="all" />
+                </select>
+                <span className='h-[40px] flex items-center justify-center'>
+                H3
+                </span>
+              </th>
+              <th className='w-[80px]'>
+                <select className="table-filter" onchange="filter_rows()">
+                  <option value="all" />
+                </select>
+                <span className='h-[40px] flex items-center justify-center'>
+                H4
+                </span>
+              </th>
+              <th className='w-[80px]'>
+                <select className="table-filter" onchange="filter_rows()">
+                  <option value="all" />
+                </select>
+                <span className='h-[40px] flex items-center justify-center'>
+                A
+                </span>
+              </th>
+              <th className='w-[80px]'>
+                <select className="table-filter" onchange="filter_rows()">
+                  <option value="all" />
+                </select>
+                <span className='h-[40px] flex items-center justify-center'>
+                A1
+                </span>
+              </th>
+              <th className='w-[80px]'>
+                <select className="table-filter" onchange="filter_rows()">
+                  <option value="all" />
+                </select>
+                <span className='h-[40px] flex items-center justify-center'>
+                B
+                </span>
+              </th>
+              <th className='w-[80px]'>
+                <select className="table-filter" onchange="filter_rows()">
+                  <option value="all" />
+                </select>
+                <span className='h-[40px] flex items-center justify-center'>
+                CAD
+                </span>
+              </th>
+              <th className='w-[80px]'>
+                <span>
+                <select className="table-filter" onchange="filter_rows()">
+                  <option value="all" />
+                </select>
+                </span>
+                <span className='h-[40px] flex items-center justify-center'>
+                CART
+                </span>
+              </th>
+            </thead>
+          </div>
           {/* Table body */}
-          <tbody>
-            {tableData.map((item, index) => (
-              <tr key={index}>
-                <td>{item.orderNo}</td>
-                <td>{item.mainColor}</td>
-                <td>{item.size}</td>
-                <td>{item.x}</td>
-                <td>{item.t}</td>
-                <td>{item.d}</td>
-                <td>{item.d1}</td>
-                <td>{item.d2}</td>
-              </tr>
-            ))}
-          </tbody>
+          <div className='w-full'>
+            <tbody>
+              {tableData.map((item, index) => (
+                <tr key={index}>
+                  <td className='w-[80px]'><a href='/productsingle'>{item.orderNo}</a></td>
+                  <td className='w-[80px]'>{item.mainColor}</td>
+                  <td className='w-[80px]'>{item.size}</td>
+                  <td className='w-[80px]'>{item.x}</td>
+                  <td className='w-[80px]'>{item.t}</td>
+                  <td className='w-[80px]'>{item.d}</td>
+                  <td className='w-[80px]'>{item.d1}</td>
+                  <td className='w-[80px]'>{item.d2}</td>
+                  <td className='w-[80px]'>{item.x}</td>
+                  <td className='w-[80px]'>{item.t}</td>
+                  <td className='w-[80px]'>{item.d}</td>
+                  <td className='w-[80px]'>{item.d1}</td>
+                  <td className='w-[80px]'>{item.d2}</td>
+                  <td className='w-[80px]'>{item.d}</td>
+                  <td className='w-[80px]'>{item.d1}</td>
+                  <td className='w-[80px]'>{item.d2}</td>
+                  <td className='w-[80px]'> 
+                    <span className='h-[40px] flex items-center justify-center'>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+  <path strokeLinecap="round" strokeLinejoin="round" d="m21 7.5-9-5.25L3 7.5m18 0-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9" />
+</svg>
+
+                    </span>
+                  </td>
+                  <td className='w-[80px]'> 
+                    <span className='h-[40px] flex items-center justify-center'>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+</svg>
+
+                    </span>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </div>
         </table>
-        {/* Reset button */}
-        <button id="reset-button" onClick={handleResetFilters}>Reset</button>
       </div>
     </div>
   );

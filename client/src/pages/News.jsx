@@ -20,14 +20,14 @@ const News = () => {
         
         {/* col 1 */}   
       <div class="flex flex-col items-center gap-4 md:flex-row lg:gap-6">
-        <a href="#" class="group relative block h-86 w-full shrink-0 self-start overflow-hidden rounded-lg bg-gray-100 shadow-md border md:h-24 md:w-24 lg:h-40 lg:w-80">
+        <a href="#" class="group relative block h-86 w-full shrink-0 self-start overflow-hidden rounded-lg bg-gray-100 border md:h-24 md:w-24 lg:h-40 lg:w-80">
           <img src="./src/images/news-img-1.jpg" loading="lazy" alt="Steelsmith News" class="absolute inset-0 h-full w-full object-contain object-center transition duration-200 group-hover:scale-110" />
         </a>
         <div class="flex flex-col gap-2">
           {/* <span class="text-sm text-gray-400">July 19, 2021</span> */}
 
           <h2 class="text-lg font-bold text-gray-800">
-            <a href="#" class="text-[#003D6A] no-underline transition duration-100 hover:text-[#003D6A] active:text-[#003D6A]">Spring Swing Clamp – IMAO</a>
+            <a href="#" class="text-[#003D6A] no-underline font-medium transition duration-100 hover:text-[#003D6A] active:text-[#003D6A]">Spring Swing Clamp – IMAO</a>
           </h2>
 
           {/* <p class="text-gray-500">This is a section of some simple filler text, also known as placeholder text.</p> */}
@@ -40,8 +40,8 @@ const News = () => {
  
       {/* col 2 */}
       <div class="flex flex-col items-center gap-4 md:flex-row lg:gap-6">
-        <a href="#" class="group relative block h-56 w-full shrink-0 self-start overflow-hidden rounded-lg bg-gray-100 shadow-md border md:h-24 md:w-24 lg:h-40 lg:w-80">
-          <img src="./src/images/news-img-2.jpg" loading="lazy" alt="Photo by Lorenzo Herrera" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+        <a href="#" class="group relative block h-56 w-full shrink-0 self-start overflow-hidden rounded-lg bg-gray-100 border md:h-24 md:w-24 lg:h-40 lg:w-80">
+          <img src="./src/images/news-img-2.jpg" loading="lazy" alt="SteelSmith News" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
         </a>
 
         <div class="flex flex-col gap-2">
@@ -61,8 +61,8 @@ const News = () => {
 
       {/* col 3 */}
       <div class="flex flex-col items-center gap-4 md:flex-row lg:gap-6">
-        <a href="#" class="group relative block h-56 w-full shrink-0 self-start overflow-hidden rounded-lg bg-gray-100 shadow-md border md:h-24 md:w-24 lg:h-40 lg:w-80">
-          <img src="./src/images/news-img-3.jpg" loading="lazy" alt="Photo by Magicle" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+        <a href="#" class="group relative block h-56 w-full shrink-0 self-start overflow-hidden rounded-lg bg-gray-100 border md:h-24 md:w-24 lg:h-40 lg:w-80">
+          <img src="./src/images/news-img-3.jpg" loading="lazy" alt="SteelSmith News" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
         </a>
 
         <div class="flex flex-col gap-2">
@@ -82,8 +82,8 @@ const News = () => {
 
       {/* col 4 */}
       <div class="flex flex-col items-center gap-4 md:flex-row lg:gap-6">
-        <a href="#" class="group relative block h-56 w-full shrink-0 self-start overflow-hidden rounded-lg bg-gray-100 shadow-md border md:h-24 md:w-24 lg:h-40 lg:w-80">
-          <img src="./src/images/news-img-4.jpg" loading="lazy" alt="Photo by Martin Sanchez" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+        <a href="#" class="group relative block h-56 w-full shrink-0 self-start overflow-hidden rounded-lg bg-gray-100 border md:h-24 md:w-24 lg:h-40 lg:w-80">
+          <img src="./src/images/news-img-4.jpg" loading="lazy" alt="SteelSmith News" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
         </a>
 
         <div class="flex flex-col gap-2">
@@ -104,8 +104,8 @@ const News = () => {
       
       {/* col 2 */}
       <div class="flex flex-col items-center gap-4 md:flex-row lg:gap-6">
-        <a href="#" class="group relative block h-56 w-full shrink-0 self-start overflow-hidden rounded-lg bg-gray-100 shadow-md border md:h-24 md:w-24 lg:h-40 lg:w-80">
-          <img src="./src/images/news-img-2.jpg" loading="lazy" alt="Photo by Lorenzo Herrera" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+        <a href="#" class="group relative block h-56 w-full shrink-0 self-start overflow-hidden rounded-lg bg-gray-100 border md:h-24 md:w-24 lg:h-40 lg:w-80">
+          <img src="./src/images/news-img-2.jpg" loading="lazy" alt="SteelSmith News" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
         </a>
 
         <div class="flex flex-col gap-2">
@@ -126,7 +126,7 @@ const News = () => {
 
       {/* col 6  */}
       <div class="flex flex-col items-center gap-4 md:flex-row lg:gap-6">
-        <a href="#" class="group relative block h-86 w-full shrink-0 self-start overflow-hidden rounded-lg bg-gray-100 shadow-md border md:h-24 md:w-24 lg:h-40 lg:w-80">
+        <a href="#" class="group relative block h-86 w-full shrink-0 self-start overflow-hidden rounded-lg bg-gray-100 border md:h-24 md:w-24 lg:h-40 lg:w-80">
           <img src="./src/images/news-img-1.jpg" loading="lazy" alt="Steelsmith News" class="absolute inset-0 h-full w-full object-contain object-center transition duration-200 group-hover:scale-110" />
         </a>
         <div class="flex flex-col gap-2">
@@ -146,8 +146,8 @@ const News = () => {
 
       {/* col 3 */}
       <div class="flex flex-col items-center gap-4 md:flex-row lg:gap-6">
-        <a href="#" class="group relative block h-56 w-full shrink-0 self-start overflow-hidden rounded-lg bg-gray-100 shadow-md border md:h-24 md:w-24 lg:h-40 lg:w-80">
-          <img src="./src/images/news-img-3.jpg" loading="lazy" alt="Photo by Magicle" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+        <a href="#" class="group relative block h-56 w-full shrink-0 self-start overflow-hidden rounded-lg bg-gray-100 border md:h-24 md:w-24 lg:h-40 lg:w-80">
+          <img src="./src/images/news-img-3.jpg" loading="lazy" alt="Steelsmith News" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
         </a>
 
         <div class="flex flex-col gap-2">
@@ -167,8 +167,8 @@ const News = () => {
 
       {/* col 2 */}
       <div class="flex flex-col items-center gap-4 md:flex-row lg:gap-6">
-        <a href="#" class="group relative block h-56 w-full shrink-0 self-start overflow-hidden rounded-lg bg-gray-100 shadow-md border md:h-24 md:w-24 lg:h-40 lg:w-80">
-          <img src="./src/images/news-img-2.jpg" loading="lazy" alt="Photo by Lorenzo Herrera" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+        <a href="#" class="group relative block h-56 w-full shrink-0 self-start overflow-hidden rounded-lg bg-gray-100 border md:h-24 md:w-24 lg:h-40 lg:w-80">
+          <img src="./src/images/news-img-2.jpg" loading="lazy" alt="Steelsmith News" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
         </a>
 
         <div class="flex flex-col gap-2">

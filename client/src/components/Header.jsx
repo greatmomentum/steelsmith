@@ -5,8 +5,15 @@ import { Button, MegaMenu, Modal, TextInput, Label, Checkbox, Drawer } from 'flo
 import '../dropdown.css';
 import EnquiryCart from '../pages/EnquiryCart';
 
-
-
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  navigationMenuTriggerStyle,
+} from "@/components/ui/navigation-menu";
 
 const Header = () => {
   const [openLoginModal, setOpenLoginModal] = useState(false); // State for login modal
@@ -51,6 +58,7 @@ const Header = () => {
 
 
 
+
   return (
     <div className="bg-white border-b-1 border-black shadow-md fixed z-50 w-full">
       <div className="flex flex-wrap w-[1300px] mx-auto">
@@ -63,8 +71,9 @@ const Header = () => {
 
 
           <div className="flex-auto inline-flex justify-start items-center mr-1 bg-white pl-4 px-1 ">
-            <div><NavLink className='p-2 mx-1 text-base no-underline text-[#003D6A] hover:bg-[#003D6A] hover:text-white hover:no-underline ' to="/" activeClassName="active">Home</NavLink></div>
-            <div><NavLink className='p-2 mx-1 text-base no-underline text-[#003D6A] hover:bg-[#003D6A] hover:text-white hover:no-underline ' to="/aboutus" activeClassName="active">About us</NavLink></div>
+            <div><NavLink className='p-2 mx-1 text-base font-medium no-underline text-[#003D6A] hover:bg-[#003D6A] hover:text-white hover:no-underline ' to="/" activeClassName="active">Home</NavLink></div>
+            <div><NavLink className='p-2 mx-1 text-base font-medium no-underline text-[#003D6A] hover:bg-[#003D6A] hover:text-white hover:no-underline ' to="/aboutus" activeClassName="active">About us</NavLink></div>
+
 
 
 
@@ -72,7 +81,7 @@ const Header = () => {
 
             <div className='p-2 mx-1 text-base no-underline  text-[#003D6A] hover:bg-[#003D6A] hover:text-white hover:no-underline  '>  <MegaMenu.Dropdown toggle={<>Products</>}>
               {/* <div className={isDropdownVisible ? 'visible' : 'hidden'}> */}
-              <div className="hidden w-full overflow-hidden  -lg lg:block bg-gray-100 ">
+              <div className="hidden w-full overflow-hidden  -lg lg:block  ">
 
                 <div className="mx-auto flex items-center p-8">
 
@@ -81,7 +90,7 @@ const Header = () => {
                     <div className="grid grid-cols-4 gap-2">
 
                       {/* Box 1 */}
-                      <div className="group border p-4 bg-white ">
+                      <div className="group border-r-[1px] p-4 bg-white ">
                         <a href="/products" >
                           <div className="justify-center">
                             <img className="lg:w-152" src="./src/images/brand-1.jpg" alt="Logo" />
@@ -106,7 +115,7 @@ const Header = () => {
                       </div>
 
                       {/* Box 2 */}
-                      <div className="group border p-4 bg-white ">
+                      <div className="group border-r-[1px] p-4 bg-white ">
                         <a href="/products" >
                           <div className="justify-center">
                             <img className="lg:w-152" src="./src/images/brand-2.jpg" alt="Logo" />
@@ -131,7 +140,7 @@ const Header = () => {
                       </div>
 
                       {/* Box 3 */}
-                      <div className="group border p-4 bg-white ">
+                      <div className="group border-r-[1px] p-4 bg-white ">
                         <a href="/products" >
                           <div className="justify-center">
                             <img className="lg:w-152" src="./src/images/brand-3.jpg" alt="Logo" />
@@ -157,7 +166,7 @@ const Header = () => {
 
 
                       {/* Box 4 */}
-                      <div className="group border p-4 bg-white ">
+                      <div className="group p-4 bg-white ">
                         <a href="/products" >
                           <div className="justify-center">
                             <img className="lg:w-152" src="./src/images/brand-4.jpg" alt="Logo" />
@@ -225,10 +234,39 @@ const Header = () => {
             <div><NavLink className='p-2 mx-1 text-base no-underline text-[#003D6A] hover:bg-[#003D6A] hover:text-white hover:no-underline ' to="/dealernetwork" activeClassName="active">Dealer Network</NavLink></div>
             <div className='p-2 mx-1 text-base no-underline text-[#003D6A] hover:bg-[#003D6A] hover:text-white hover:no-underline '>
               <MegaMenu.Dropdown toggle={<>Media</>}>
-                <ul className="space-y-4 p-4 text-base text-gray-800 no-underline"> {/* Apply your custom class */}
-                  <li><a className='no-underline' href='/news'><span className='no-underline text-base font-medium text-[#003D6A]'>News</span></a></li>
-                  <li><a className='no-underline' href='/events'><span className='no-underline text-base font-medium text-[#003D6A]'>Events</span></a></li>
-                  <li><a className='no-underline' href='/downloads'><span className='no-underline text-base font-medium text-[#003D6A]'>Downloads</span></a></li>
+                <ul className="w-[200px] text-base text-gray-800 no-underline "> {/* Apply your custom class */}
+                  <li className='border-b-[1px] px-3 py-2 hover:bg-slate-200'>
+                    <a className='no-underline' href='/news'>
+                      <span className='no-underline text-base font-medium text-[#003D6A] flex items-center'>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 m-2">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5M6 7.5h3v3H6v-3Z" />
+                        </svg>
+                        News
+                      </span>
+                    </a>
+                  </li>
+                  <li className='border-b-[1px] px-3 py-2 hover:bg-slate-200'>
+                    <a className='no-underline' href='/events'>
+                      <span className='no-underline text-base font-medium text-[#003D6A] flex items-center'>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 m-2">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
+                        </svg>
+
+                        Events
+                      </span>
+                    </a>
+                  </li>
+                  <li className='border-b-[1px] px-3 py-2 hover:bg-slate-200'>
+                    <a className='no-underline' href='/downloads'>
+                      <span className='no-underline text-base font-medium text-[#003D6A] flex items-center'>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 m-2">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                        </svg>
+
+                        Downloads
+                      </span>
+                    </a>
+                  </li>
                 </ul>
               </MegaMenu.Dropdown>
             </div>
@@ -301,52 +339,52 @@ const Header = () => {
 
           <span className='p-1 text-gray-700'><button onClick={handleSearchIconClick}><img className="lg:w-7 transition ease-in-out delay-2 p-1 hover:-translate-1 hover:scale-110" src="./src/images/search.png" alt="Search" /></button></span>
           <span>
-            <Modal show={openSearchModal} size="xl" id="searchmodal"  onClose={onCloseModal} popup>
-              <div aria-hidden="searchmodal"  ref={modalRef}>
+            <Modal show={openSearchModal} size="xl" id="searchmodal" onClose={onCloseModal} popup>
+              <div aria-hidden="searchmodal" ref={modalRef}>
                 <Modal.Header />
                 <Modal.Body >
 
-                    
-                    <div className="space-y-6">
-                      <h3 className="text-xl font-medium text-gray-900 dark:text-white">Search for Products like Toogle Clamps, VTC-6561</h3>
-                      <div>
-                        <div className="flex items-center border border-gray-300 rounded-md px-3 py-2 focus-within:border-blue-500 focus-within:ring-blue-500">
-                          <input
-                            type="text"
-                            className="block w-full border-0 p-0 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-0"
-                            placeholder="Search products..."
-                          />
-                          <span className="text-gray-400 cursor-pointer ml-2">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              stroke="currentColor"
-                              className="w-5 h-5"
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M9 5l7 7-7 7"
-                              />
-                            </svg>
-                          </span>
-                        </div>
-                        <div className="absolute z-10 mt-1 w-2/3  bg-white border border-gray-300 rounded-md shadow-lg">
-                          {/* Suggestions */}
-                          <ul className="py-1">
-                            {/* Dummy entries */}
-                            <li className="px-3 py-2 hover:bg-gray-50 cursor-pointer">Toggle Clamp 1</li>
-                            <li className="px-3 py-2 hover:bg-gray-50 cursor-pointer">Toggle Clamp 2</li>
-                            <li className="px-3 py-2 hover:bg-gray-50 cursor-pointer">Toggle Clamp 3</li>
-                            {/* Add more dummy entries as needed */}
-                          </ul>
-                        </div>
+
+                  <div className="space-y-6">
+                    <h3 className="text-xl font-medium text-gray-900 dark:text-white">Search for Products like Toogle Clamps, VTC-6561</h3>
+                    <div>
+                      <div className="flex items-center border border-gray-300 rounded-md px-3 py-2 focus-within:border-blue-500 focus-within:ring-blue-500">
+                        <input
+                          type="text"
+                          className="block w-full border-0 p-0 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-0"
+                          placeholder="Search products..."
+                        />
+                        <span className="text-gray-400 cursor-pointer ml-2">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            className="w-5 h-5"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M9 5l7 7-7 7"
+                            />
+                          </svg>
+                        </span>
+                      </div>
+                      <div className="absolute z-10 mt-1 w-2/3  bg-white border border-gray-300 rounded-md shadow-lg">
+                        {/* Suggestions */}
+                        <ul className="py-1">
+                          {/* Dummy entries */}
+                          <li className="px-3 py-2 hover:bg-gray-50 cursor-pointer">Toggle Clamp 1</li>
+                          <li className="px-3 py-2 hover:bg-gray-50 cursor-pointer">Toggle Clamp 2</li>
+                          <li className="px-3 py-2 hover:bg-gray-50 cursor-pointer">Toggle Clamp 3</li>
+                          {/* Add more dummy entries as needed */}
+                        </ul>
                       </div>
                     </div>
+                  </div>
 
-                  
+
                 </Modal.Body>
               </div>
             </Modal>

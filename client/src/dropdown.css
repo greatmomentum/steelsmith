@@ -1,3 +1,9 @@
+
+body {
+  font-family: 'Inter', cursive;
+}
+
+
 .group:focus .group-focus\:ring-white {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(15 15 15 / var(--tw-ring-opacity));
@@ -172,45 +178,3 @@ border-radius: 0 !important;
 .modal-content {
   height: 100vh; /* Adjust the height as needed */
 }
-
-
-
-
-
-
-
-
-
-
-
-  /* --- Gallery Images End --- */
-
-
-/*
-
-[aria-label="Slide 3"] {
-
-  color: black;
-  background-color: rgb(95, 95, 95, 0.5) !important;
-
-}
-
-[aria-label="Slide 2"] {
-
-  color: black;
-  background-color: rgb(95, 95, 95, 0.5) !important;
-
-}
-
-[aria-label="Slide 1"] {
-
-  color: black;
-  background-color: rgb(95, 95, 95, 0.5) !important;
-
-}
-
-.-translate-x-1\/2{
-  background-color: rgb(95, 95, 95, 0.5) !important;
-} 
-
-*/

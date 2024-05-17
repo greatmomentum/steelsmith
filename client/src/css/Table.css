@@ -21,6 +21,12 @@ h1 {
     
 }
 
+.sticky-col {
+    position: -webkit-sticky;
+    position: sticky;
+    background-color: white;
+  }
+
 
 .outer-wrapper {
     margin-top: 40px;
@@ -53,6 +59,7 @@ table {
     
     min-width: max-content;
     max-width: 100%;
+    width: 100%;
     border-collapse: separate;
     border-spacing: 0px;  
     background-color: white;  
@@ -74,6 +81,9 @@ table {
 	background-position: 50% 50%;
 }
 
+table th {
+    color: white !important;
+}
 /*.table-filter:hover{
 background-image: url(http://www.steelsmith.com/table/www_icon_configurator_line_over.gif);
 background-repeat: no-repeat;
