@@ -335,6 +335,10 @@ const Header = () => {
         </div>
         <div className="flex-none inline-flex justify-end items-center text-white mr-1 bg-white ">
 
+
+
+
+
           {/* Starts - Search Icon Modal Box */}
 
           <span className='p-1 text-gray-700'><button onClick={handleSearchIconClick}><img className="lg:w-7 transition ease-in-out delay-2 p-1 hover:-translate-1 hover:scale-110" src="./src/images/search.png" alt="Search" /></button></span>

@@ -57,42 +57,42 @@ const ProductSingle = () => {
               <div className='flex my-2 space-x-1'>
                 <div className='items-center'>
                   <button>
-                    <div className='p-3 bg-[#003D6A] text-white'>
+                    <div className='px-3 py-1 bg-[#003D6A] text-white'>
                       <span className='text-sm'>IGS</span>
                     </div>
                   </button>
                 </div>
                 <div>
                   <button>
-                    <div className='p-3  bg-[#003D6A] text-white'>
+                    <div className='px-3 py-1  bg-[#003D6A] text-white'>
                       <span className='text-sm'>STEP</span>
                     </div>
                   </button>
                 </div>
                 <div>
                   <button>
-                    <div className='p-3 bg-[#003D6A] text-white'>
+                    <div className='px-3 py-1 bg-[#003D6A] text-white'>
                       <span className='text-sm'>CAD</span>
                     </div>
                   </button>
                 </div>
                 <div>
                   <button>
-                    <div className='p-3 bg-[#003D6A] text-white'>
+                    <div className='px-3 py-1 bg-[#003D6A] text-white'>
                       <span className='text-sm'>PDF</span>
                     </div>
                   </button>
                 </div>
                 <div>
                   <button>
-                    <div className='p-3 bg-[#003D6A] text-white'>
+                    <div className='px-3 py-1 bg-[#003D6A] text-white'>
                       <span className='text-sm'>3D PDF</span>
                     </div>
                   </button>
                 </div>
                 <div>
                   <button>
-                    <div className='p-3 bg-[#003D6A] text-white'>
+                    <div className='px-3 py-1 bg-[#003D6A] text-white'>
                       <span className='text-sm'>Technical Data</span>
                     </div>
                   </button>
