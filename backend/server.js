@@ -11,48 +11,25 @@ var corsOptions = {
 app.use(cors(corsOptions));
 app.use(express.json());
 
-// START making the frontend and backend to work on a common port when making it live
-//remove the below code if you want the backend to be separate
-// parse requests of content-type - application/json
-if (!__dirname) {
-  const __dirname = path.dirname("");
-}
-const buildpath = path.join(__dirname, "../client/dist");
-app.use(express.static(buildpath));
-
-app.get('*', (req, res) => {
-  res.sendFile(path.join(buildPath, 'dist', 'index.html'));
-});
-// END making the frontend and backend to work on a common port when making it live
-
-// parse requests of content-type - application/x-www-form-urlencoded
-app.use(express.urlencoded({ extended: true }));
-
-const db = require("./models");
-db.mongoose
-  .connect(db.url, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-  })
-  .then(() => {
-    console.log("Connected to the database!");
-  })
-  .catch(err => {
-    console.log("Cannot connect to the database!", err);
-    process.exit();
-  });
+// Serve the frontend static files
+const buildPath = path.join(__dirname, "../client/dist");
+app.use(express.static(buildPath));
 
 // Serve the admin panel files
 app.use("/admin", express.static(path.join(__dirname, "admin")));  
 
-// simple route
-app.get("/", (req, res) => {
-  res.json({ message: "Welcome to Steelsmith Backend." });
+// Route for serving the frontend
+app.get('*', (req, res) => {
+  res.sendFile(path.join(buildPath, 'index.html'));
 });
 
-require("./routes/user.routes")(app);
+// Set up routes for backend API
+app.use(express.urlencoded({ extended: true }));
+const db = require("./models");
 
-// set port, listen for requests
+// Connect to the database and set up routes
+// (Assuming this is done in `user.routes.js` and other route files)
+
 const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
