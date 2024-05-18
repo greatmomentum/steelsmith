@@ -19,6 +19,10 @@ if (!__dirname) {
 }
 const buildpath = path.join(__dirname, "../client/dist");
 app.use(express.static(buildpath));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(buildPath, 'dist', 'index.html'));
+});
 // END making the frontend and backend to work on a common port when making it live
 
 // parse requests of content-type - application/x-www-form-urlencoded
