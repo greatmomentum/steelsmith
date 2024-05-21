@@ -7,6 +7,36 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import photogrid from '../images/photo-grid.jpg';
+import factory from '../images/factory.jpg';
+import qualitystandards from '../images/surpassing-quality-standards.jpg';
+import aboutimgcategory from '../images/about-img-category.jpg';
+import productimg from '../images/product.png';
+import winner from '../images/winner.png';
+import productdevelopment from '../images/product-development.png';
+import anniversary from '../images/anniversary.png';
+import squarefeet from '../images/squarefeet-icon.png';
+import isoicon from '../images/iso-icon.png';
+import logo1 from '../images/logo1.png';
+import logo2 from '../images/logo2.png';
+import logo3 from '../images/logo3.png';
+import logo4 from '../images/logo4.png';
+import logo5 from '../images/logo5.png';
+import logo6 from '../images/logo6.png';
+import logo7 from '../images/logo7.png';
+import logo9 from '../images/logo9.png';
+import logo10 from '../images/logo10.png';
+import logo11 from '../images/logo11.png';
+import logo12 from '../images/logo12.png';
+import logo13 from '../images/logo13.png';
+import logo14 from '../images/logo14.png';
+import logo15 from '../images/logo15.png';
+import logo16 from '../images/logo16.png';
+
+
+
+
+
 
 
 const AboutUs = () => {
@@ -16,6 +46,7 @@ const AboutUs = () => {
         <div class="mx-auto px-4 md:px-8">
           <div class=" bg-gray-100 px-4 py-6 md:py-8 lg:py-12">
             <p class="mb-2 text-center font-semibold text-[#003D6A] md:mb-3 lg:text-lg">Introduction</p>
+            
 
             <h2 class="mb-4 text-center text-3xl font-semibold text-[#003D6A] md:mb-6 ">India's leader in toggle clamps for 50+ years</h2>
 
@@ -32,19 +63,19 @@ const AboutUs = () => {
         <section className="mx-auto max-w-screen-2xl px-4 md:px-8">
           <div className="mb-8 flex flex-wrap justify-between md:mb-16">
             <div className="mb-6 flex w-full flex-col justify-center sm:mb-12 lg:mb-0 lg:w-1/3 lg:pb-24 lg:pt-48">
-              <h1 className="mb-4 text-4xl font-bold text-[#003D6A] ">
+              <span className="mb-4 text-4xl font-bold leading-10 text-[#003D6A] ">
                 The toggle clamp Manufacturers
                 <br />
                 & engineering experts
-              </h1>
-              <p className="max-w-md leading-relaxed text-gray-500 xl:text-lg">
+              </span>
+              <p className="max-w-md leading-normal text-gray-500 xl:text-lg">
                 Designed & made by engineers, for engineers
               </p>
             </div>
             <div className="mb-12 flex w-full md:mb-16 lg:w-[800px] h-[400px]">
               <div className="relative left-12 top-12 z-10 -ml-12 overflow-hidden bg-gray-100 shadow-lg md:left-16 md:top-16 lg:ml-0">
                 <img
-                  src="../src/images/photo-grid.jpg"
+                  src={photogrid}
                   loading="lazy"
                   alt="Photo by Kaung Htet"
                   className="h-full w-full object-cover object-center"
@@ -52,7 +83,7 @@ const AboutUs = () => {
               </div>
               <div className="overflow-hidden bg-gray-100 shadow-lg">
                 <img
-                  src="../src/images/factory.jpg"
+                  src={factory}
                   loading="lazy"
                   alt="Photo by Manny Moreno"
                   className="h-full w-full object-cover object-center"
@@ -69,13 +100,13 @@ const AboutUs = () => {
       <section className="text-gray-600 body-font bg-slate-200">
         <div className="container px-5 py-14 mx-auto items-center">
           <div className="flex flex-wrap text-center space-x-4">
-            <div className="w-[49%] h-[560px] mb-2 px-4 bg-white shadow-xl ">
+            <div className="w-[49%] h-[600px] mb-2 px-4 bg-white  ">
               <div className="h-64 overflow-hidden my-6">
                 <img
-                  alt="content" src="../src/images/surpassing-quality-standards.jpg"
+                  alt="content" src={qualitystandards}
                 />
               </div>
-              <h2 className="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">
+              <h2 className="title-font text-2xl font-medium text-gray-900 mt-6 mb-3  py-1">
                 Surpassing Quality Standards
               </h2>
               <p className="leading-relaxed text-base  text-gray-700">
@@ -85,13 +116,13 @@ const AboutUs = () => {
           Button
         </button> */}
             </div>
-            <div className="w-[49%] h-[560px] mb-10 px-4 bg-white shadow-xl ">
+            <div className="w-[49%] h-[600px] mb-10 px-4 bg-white ">
               <div className="h-64 w-auto overflow-hidden my-6">
                 <img
-                  alt="content" src="../src/images/about-img-category.jpg"
+                  alt="content" src={aboutimgcategory}
                 />
               </div>
-              <h2 className="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">
+              <h2 className="title-font text-2xl font-medium text-gray-900 mt-6 mb-3 py-1">
                 The Catalyzer
               </h2>
               <p className="leading-relaxed text-base">
@@ -119,7 +150,7 @@ const AboutUs = () => {
             {/* feature - start */}
             <div className="flex flex-col items-center bg-white p-2">
               <div className="mb-3 flex h-6 w-6 items-center justify-center text-[#003D6A] sm:mb-4 md:h-14 md:w-14">
-                <img src='../src/images/winner.png' />
+                <img src={winner} />
               </div>
               <p className="mb-2 text-center text-3xl font-medium text-[#003D6A]">
                 #1
@@ -133,7 +164,7 @@ const AboutUs = () => {
             {/* feature - start */}
             <div className="flex flex-col items-center bg-white p-2">
               <div className="mb-3 flex h-6 w-6 items-center justify-center text-[#003D6A] sm:mb-4 md:h-14 md:w-14">
-                <img src='../src/images/product.png' />
+                <img src={productimg} />
               </div>
               <p className="mb-2 text-center text-3xl font-medium text-[#003D6A]">
                 500+
@@ -147,7 +178,7 @@ const AboutUs = () => {
             {/* feature - start */}
             <div className="flex flex-col items-center bg-white p-2">
               <div className="mb-3 flex h-6 w-6 items-center justify-center text-[#003D6A] sm:mb-4 md:h-14 md:w-14">
-                <img src='../src/images/product-development.png' />
+                <img src={productdevelopment} />
               </div>
               <p className="mb-2 text-center text-3xl font-medium text-[#003D6A]">
                 750,000
@@ -161,7 +192,7 @@ const AboutUs = () => {
             {/* feature - start */}
             <div className="flex flex-col items-center bg-white p-2">
               <div className="mb-3 flex h-6 w-6 items-center justify-center text-[#003D6A] sm:mb-4 md:h-14 md:w-14">
-                <img src='../src/images/anniversary.png' />
+                <img src={anniversary} />
               </div>
               <p className="mb-2 text-center text-3xl font-medium text-[#003D6A]">
                 50+
@@ -175,7 +206,7 @@ const AboutUs = () => {
             {/* feature - start */}
             <div className="flex flex-col items-center bg-white p-2">
               <div className="mb-3 flex h-3 w-3 items-center justify-center text-[#003D6A] sm:mb-4 md:h-14 md:w-12">
-                <img src='../src/images/squarefeet-icon.png' />
+                <img src={squarefeet} />
               </div>
               <p className="mb-2 text-center text-3xl font-medium text-[#003D6A]">
                 40,000
@@ -189,7 +220,7 @@ const AboutUs = () => {
             {/* feature - start */}
             <div className="flex flex-col items-center bg-white p-2">
               <div className="mb-3 flex h-6 w-6 items-center justify-center text-[#003D6A] sm:mb-4 md:h-14 md:w-14">
-                <img src='../src/images/iso-icon.png' />
+                <img src={isoicon} />
               </div>
               <p className="mb-1 text-center text-3xl font-medium text-[#003D6A]">
                 ISO
@@ -207,22 +238,22 @@ const AboutUs = () => {
       <div className='container h-[170px] text-white flex justify-center items-center border-t-[1px] '>
         <Carousel opts={{ align: "start", }} className="w-full max-w-[1200px]">
           <CarouselContent>
-              <CarouselItem className="md:basis-1/2 lg:basis-1/3"><img alt="content" src="../src/images/logo1.png"/></CarouselItem>
-              <CarouselItem className="md:basis-1/2 lg:basis-1/3"><img alt="content" src="../src/images/logo2.png"/></CarouselItem>
-              <CarouselItem className="md:basis-1/2 lg:basis-1/3"><img alt="content" src="../src/images/logo3.png"/></CarouselItem>
-              <CarouselItem className="md:basis-1/2 lg:basis-1/3"><img alt="content" src="../src/images/logo4.png"/></CarouselItem>
-              <CarouselItem className="md:basis-1/2 lg:basis-1/3"><img alt="content" src="../src/images/logo5.png"/></CarouselItem>
-              <CarouselItem className="md:basis-1/2 lg:basis-1/3"><img alt="content" src="../src/images/logo6.png"/></CarouselItem>
-              <CarouselItem className="md:basis-1/2 lg:basis-1/3"><img alt="content" src="../src/images/logo7.png"/></CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3"><img alt="content" src={logo1}/></CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3"><img alt="content" src={logo2}/></CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3"><img alt="content" src={logo3}/></CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3"><img alt="content" src={logo4}/></CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3"><img alt="content" src={logo5}/></CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3"><img alt="content" src={logo6}/></CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3"><img alt="content" src={logo7}/></CarouselItem>
               {/* <CarouselItem className="md:basis-1/2 lg:basis-1/3"><img alt="content" src="../src/images/logo8.png"/></CarouselItem> */}
-              <CarouselItem className="md:basis-1/2 lg:basis-1/3"><img alt="content" src="../src/images/logo9.png"/></CarouselItem>
-              <CarouselItem className="md:basis-1/2 lg:basis-1/3"><img alt="content" src="../src/images/logo10.png"/></CarouselItem>
-              <CarouselItem className="md:basis-1/2 lg:basis-1/3"><img alt="content" src="../src/images/logo11.png"/></CarouselItem>
-              <CarouselItem className="md:basis-1/2 lg:basis-1/3"><img alt="content" src="../src/images/logo12.png"/></CarouselItem>
-              <CarouselItem className="md:basis-1/2 lg:basis-1/3"><img alt="content" src="../src/images/logo13.png"/></CarouselItem>
-              <CarouselItem className="md:basis-1/2 lg:basis-1/3"><img alt="content" src="../src/images/logo14.png"/></CarouselItem>
-              <CarouselItem className="md:basis-1/2 lg:basis-1/3"><img alt="content" src="../src/images/logo15.png"/></CarouselItem>
-              <CarouselItem className="md:basis-1/2 lg:basis-1/3"><img alt="content" src="../src/images/logo16.png"/></CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3"><img alt="content" src={logo9}/></CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3"><img alt="content" src={logo10}/></CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3"><img alt="content" src={logo11}/></CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3"><img alt="content" src={logo12}/></CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3"><img alt="content" src={logo13}/></CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3"><img alt="content" src={logo14}/></CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3"><img alt="content" src={logo15}/></CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3"><img alt="content" src={logo16}/></CarouselItem>
           </CarouselContent>
           <CarouselPrevious />
           <CarouselNext />

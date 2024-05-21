@@ -1,5 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
+import steelsmithlogowhite from '../images/steelsmith-logo-white.png';
+
 
 const Footer = () => {
   return (
@@ -8,7 +10,7 @@ const Footer = () => {
       <div className="container flex mx-auto">
         <div className="w-[370px] ">
 
-          <img className='w-[210px] pl-2 mb-3' src="../../src/images/steelsmith-logo-white.png" />
+          <img className='w-[210px] pl-2 mb-3' src={steelsmithlogowhite} />
 
           {/* icon 1 */}
           <div className='flex py-2 '>

@@ -17,7 +17,7 @@ function App() {
           {/* Each Route should have a path and corresponding component */}
           <Route path="/" exact component={Home} />
           <Route path="/about" component={About} />
-          <Route path="/contact" component={Contact} />
+          <Route path="/contact" component={Contact} /> 
         
           {/* This route will catch any other routes not defined above */}
           <Route component={NotFound} />

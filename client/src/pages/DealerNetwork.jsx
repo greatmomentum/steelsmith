@@ -1,6 +1,6 @@
 import React from 'react'
 import { Dropdown } from "flowbite-react";
-import '../dropdown.css';
+
 
 const DealerNetwork = () => {
   return (

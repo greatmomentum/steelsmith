@@ -3,17 +3,22 @@ import { Breadcrumb } from "flowbite-react";
 import { HiHome } from "react-icons/hi";
 import EcommerceGallery from '../components/EcommerceGallery';
 import Table from '../components/Table'; // Import the Table component
-
+import proimg1 from '../images/pro-img1.jpg';
+import proimg2 from '../images/pro-img2.jpg';
+import caddraw from '../images/cadd-draw.jpg';
 
 
 const ProductModels = () => {
 
 
   const images = [
-    '../src/images/pro-img1.jpg',
-    '../src/images/pro-img2.jpg',
-    '../src/images/pro-img1.jpg',
-    '../src/images/pro-img2.jpg',
+    proimg1,
+    proimg2,
+    proimg1,
+    proimg2,
+    // '../images/pro-img2.jpg',
+    // '../images/pro-img1.jpg',
+    // '../images/pro-img2.jpg',
     // Add more image URLs as needed
   ];
 
@@ -32,7 +37,7 @@ const ProductModels = () => {
       </div>
 
       <div>
-        <div className="text-xl font-bold text-gray-800 p-2"> Vertical Hold Down Action T – Handle Flanged Base</div>
+      <div className="text-xl font-medium text-gray-800 p-2"> <strong>Vertical Hold Down Action T – Handle Flanged Base</strong> </div>
         {/* <span><a href="#" className="inline-block rounded-lg border bg-white px-4  text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:px-8 md:py-3 md:text-base">Show more</a></span> */}
         <div className=' mb-6 p-2'>Discover top-tier steel products from Steel-Smith alongside the esteemed offerings of Kipp, IMAO & Turnlock.
           As an official distributor, we bring you a curated selection of high-quality products & solutions, ensuring excellence and reliability in every project.</div>
@@ -58,11 +63,11 @@ const ProductModels = () => {
           {/* button end */}
         </div>
         <div className='w-1/2  p-6 '>
-          <span className="text-xl font-bold text-gray-800p-2"> <a href='/productsingle' className=' no-underline text-[#003d6a]'>Vertical Hold Down Action T – Handle Flanged Base</a></span>
+          <span className="text-lg font-normal text-gray-800 p-2"> <a href='/productsingle' className=' no-underline text-[#003d6a]'><strong>Vertical Hold Down Action T – Handle Flanged Base</strong></a></span>
           {/* section 1 */}
           <div className='pt-3'>
             <p className='p-2'>
-              <span className='font-medium'>Material:</span>
+              <span className='font-normal text-gray-700'><strong>Material:</strong></span>
               <ul>
                 <li>Clamp stainless steel</li>
                 <li>Grip polyamide</li>
@@ -72,12 +77,12 @@ const ProductModels = () => {
                 <li>Grub screw stainless steel</li>
                 <li>Protective cap thermoplastic</li>
               </ul>
-              <span className='font-medium'>Version:</span>
+              <span className='font-normal text-gray-700'><strong>Version:</strong></span>
               <ul>
                 <li>Stainless steel parts bright</li>
                 <li>Protective cap black</li>
               </ul>
-              <span className='font-medium'>Note:</span>
+              <span className='font-normal text-gray-700'><strong>Note:</strong></span>
               <ul>
                 <li>incl. 1 set clamping elements K1464</li>
                 <li>Technical data:</li>
@@ -85,11 +90,11 @@ const ProductModels = () => {
                 <li>Nom. force Fnom: clamping force F4</li>
                 <li>Calibration range: 0 - clamping force F4</li>
               </ul>
-              <span className='font-medium'>Accessory:</span>
+              <span className='font-normal text-gray-700'><strong>Accessory:</strong></span>
               <ul>
                 <li>K1464</li>
               </ul>
-              <span className='font-medium'>Drawing reference:</span>
+              <span className='font-normal text-gray-700'><strong>Drawing reference:</strong></span>
               <ul>
                 <li>1 - Clamping element K1464</li>
               </ul>
@@ -144,7 +149,7 @@ const ProductModels = () => {
                   </svg>
 
                   </span>
-                  <span>Accessories1</span>
+                  <span>Accessories</span>
                 </div>
               </button>
             </div>
@@ -154,7 +159,7 @@ const ProductModels = () => {
           {/* CAD image starts*/}
           <div className="flex justify-center items-center">
             <div className=' bg-blue-200 w-3/4'>
-              <img className=' h-auto' src='../src/images/cadd-draw.jpg'></img>
+              <img className=' h-auto' src={caddraw}></img>
             </div>
           </div>
           {/* CAD image ends */}
@@ -219,7 +224,7 @@ const ProductModels = () => {
           {/* CAD image starts*/}
           <div className="flex justify-center items-center">
             <div className=' bg-blue-200 w-3/4'>
-              <img className=' h-auto' src='../src/images/cadd-draw.jpg'></img>
+              <img className=' h-auto' src={caddraw}></img>
             </div>
           </div>
           {/* CAD image ends */}

@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './index.css';
 
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import MainLayout from './layouts/MainLayout';

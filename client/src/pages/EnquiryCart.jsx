@@ -1,4 +1,5 @@
 import React from 'react'
+import product from '../images/product1-img.jpg';
 
 const EnquiryCart = () => {
     return (
@@ -15,7 +16,7 @@ const EnquiryCart = () => {
                                 <div className="d-flex align-items-start  pb-3 ">
                                     <div className="me-4">
                                         <img
-                                            src="../src/images/product1-img.jpg"
+                                            src={product}
                                             loading="lazy"
                                             alt="Vertical Hold Down Action Heavy Duty Flanged Base"
                                             className="h-[110px] w-auto object-cover object-center transition duration-200 group-hover:scale-110"
@@ -63,7 +64,7 @@ const EnquiryCart = () => {
                                 <div className="d-flex align-items-start  pb-3 ">
                                     <div className="me-4">
                                         <img
-                                            src="../src/images/product1-img.jpg"
+                                            src={product}
                                             loading="lazy"
                                             alt="Vertical Hold Down Action Heavy Duty Flanged Base"
                                             className="h-[110px] w-auto object-cover object-center transition duration-200 group-hover:scale-110"
@@ -122,8 +123,8 @@ const EnquiryCart = () => {
                         <div className="mt-5 mt-lg-0 mb-20">
                             <div className="card border shadow-none">
                                 <div className="card-header bg-transparent border-bottom py-3 px-4">
-                                    <h5 className="font-size-16 mb-0">
-                                        Enquiry Cart
+                                    <h5 className="text-lg font-normal mb-0">
+                                       <strong> Enquiry Cart</strong>
                                         {/*  <span className="float-end">#MN0124</span> */}
                                     </h5>
                                 </div>
@@ -139,22 +140,22 @@ const EnquiryCart = () => {
                                                 <label for="last-name" class="mb-2 inline-block text-sm text-gray-800 sm:text-base">Last name*</label>
                                                 <input name="last-name" class="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring" />
                                             </div>
-                                            <div>
+                                            <div className='py-2'>
                                                 <label for="email" class="mb-2 inline-block text-sm text-gray-800 sm:text-base">Email*</label>
                                                 <input name="email" class="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring" />
                                             </div>
-                                            <div>
+                                            <div className='py-2'>
                                                 <label for="mobile" class="mb-2 inline-block text-sm text-gray-800 sm:text-base">Mobile*</label>
                                                 <input name="mobile" class="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring" />
                                             </div>
                                         </div>
 
 
-                                        <div class="sm:col-span-2">
+                                        <div class="sm:col-span-2 py-2">
                                             <label for="city" className="mb-2 inline-block text-sm text-gray-800 sm:text-base">City</label>
                                             <input name="city" className="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring" />
                                         </div>
-                                        <div className='grid grid-cols-2 gap-2 '>
+                                        <div className='grid grid-cols-2 gap-2 py-2'>
                                             <div>
                                                 <label for="username" className="mb-2 inline-block text-sm text-gray-800 sm:text-base">State*</label>
                                                 <select className="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring">

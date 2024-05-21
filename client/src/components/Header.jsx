@@ -2,8 +2,17 @@ import React, { useState, useRef, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Link } from "react-router-dom";
 import { Button, MegaMenu, Modal, TextInput, Label, Checkbox, Drawer } from 'flowbite-react';
-import '../dropdown.css';
 import EnquiryCart from '../pages/EnquiryCart';
+import logo from '../images/SteelSmith.png';
+import steelsmithlogo from '../images/brand-1.jpg';
+import imaologo from '../images/brand-2.jpg';
+import kipplogo from '../images/brand-3.jpg';
+import turnlocklogo from '../images/brand-4.jpg';
+import productthumbimage from '../images/product1-img.jpg';
+import shoppingcart from '../images/shopping-cart.png';
+import searchicon from '../images/search.png';
+
+
 
 import {
   NavigationMenu,
@@ -16,6 +25,7 @@ import {
 } from "@/components/ui/navigation-menu";
 
 const Header = () => {
+  const publicUrl = import.meta.env.VITE_PUBLIC_URL;
   const [openLoginModal, setOpenLoginModal] = useState(false); // State for login modal
   const [openSearchModal, setOpenSearchModal] = useState(false); // State for search modal
   const [email, setEmail] = useState('');
@@ -63,7 +73,7 @@ const Header = () => {
     <div className="bg-white border-b-1 border-black shadow-md fixed z-50 w-full">
       <div className="flex flex-wrap w-[1300px] mx-auto">
         <div className="flex-none w-54 p-2 text-white mr-1 bg-white">
-          <img className="lg:w-52" src="./src/images/SteelSmith.png" alt="Logo" />
+          <img className="lg:w-52" src={logo} alt="Logo" />
         </div>
 
 
@@ -71,8 +81,8 @@ const Header = () => {
 
 
           <div className="flex-auto inline-flex justify-start items-center mr-1 bg-white pl-4 px-1 ">
-            <div><NavLink className='p-2 mx-1 text-base font-medium no-underline text-[#003D6A] hover:bg-[#003D6A] hover:text-white hover:no-underline ' to="/" activeClassName="active">Home</NavLink></div>
-            <div><NavLink className='p-2 mx-1 text-base font-medium no-underline text-[#003D6A] hover:bg-[#003D6A] hover:text-white hover:no-underline ' to="/aboutus" activeClassName="active">About us</NavLink></div>
+            <div><NavLink className='p-2 mx-1 text-base font-normal no-underline text-[#003D6A] hover:bg-[#003D6A] hover:text-white hover:no-underline ' to="/" activeClassName="active">Home</NavLink></div>
+            <div><NavLink className='p-2 mx-1 text-base font-normal no-underline text-[#003D6A] hover:bg-[#003D6A] hover:text-white hover:no-underline ' to="/aboutus" activeClassName="active">About us</NavLink></div>
 
 
 
@@ -93,7 +103,8 @@ const Header = () => {
                       <div className="group border-r-[1px] p-4 bg-white ">
                         <a href="/products" >
                           <div className="justify-center">
-                            <img className="lg:w-152" src="./src/images/brand-1.jpg" alt="Logo" />
+                            {/* <img className="lg:w-152" src="./src/images/brand-1.jpg" alt="Logo" /> */}
+                            <img className="lg:w-52" src={steelsmithlogo} alt="Logo" />
                           </div>
                         </a>
                         <div>
@@ -118,7 +129,8 @@ const Header = () => {
                       <div className="group border-r-[1px] p-4 bg-white ">
                         <a href="/products" >
                           <div className="justify-center">
-                            <img className="lg:w-152" src="./src/images/brand-2.jpg" alt="Logo" />
+                            {/* <img className="lg:w-152" src="./src/images/brand-2.jpg" alt="Logo" /> */}
+                            <img className="lg:w-52" src={imaologo} alt="Logo" />
                           </div>
                         </a>
                         <div>
@@ -143,7 +155,8 @@ const Header = () => {
                       <div className="group border-r-[1px] p-4 bg-white ">
                         <a href="/products" >
                           <div className="justify-center">
-                            <img className="lg:w-152" src="./src/images/brand-3.jpg" alt="Logo" />
+                            {/* <img className="lg:w-152" src="./src/images/brand-3.jpg" alt="Logo" /> */}
+                            <img className="lg:w-52" src={kipplogo} alt="Logo" />
                           </div>
                         </a>
                         <div>
@@ -169,7 +182,8 @@ const Header = () => {
                       <div className="group p-4 bg-white ">
                         <a href="/products" >
                           <div className="justify-center">
-                            <img className="lg:w-152" src="./src/images/brand-4.jpg" alt="Logo" />
+                            {/* <img className="lg:w-152" src="./src/images/brand-4.jpg" alt="Logo" /> */}
+                            <img className="lg:w-52" src={turnlocklogo} alt="Logo" />
                           </div>
                         </a>
                         <div>
@@ -232,6 +246,7 @@ const Header = () => {
             </MegaMenu.Dropdown>
             </div>
             <div><NavLink className='p-2 mx-1 text-base no-underline text-[#003D6A] hover:bg-[#003D6A] hover:text-white hover:no-underline ' to="/dealernetwork" activeClassName="active">Dealer Network</NavLink></div>
+            <div><NavLink className='p-2 mx-1 text-base font-medium no-underline text-[#003D6A] hover:bg-[#003D6A] hover:text-white hover:no-underline ' to="/markets" activeClassName="active">Markets</NavLink></div>
             <div className='p-2 mx-1 text-base no-underline text-[#003D6A] hover:bg-[#003D6A] hover:text-white hover:no-underline '>
               <MegaMenu.Dropdown toggle={<>Media</>}>
                 <ul className="w-[200px] text-base text-gray-800 no-underline "> {/* Apply your custom class */}
@@ -341,7 +356,12 @@ const Header = () => {
 
           {/* Starts - Search Icon Modal Box */}
 
-          <span className='p-1 text-gray-700'><button onClick={handleSearchIconClick}><img className="lg:w-7 transition ease-in-out delay-2 p-1 hover:-translate-1 hover:scale-110" src="./src/images/search.png" alt="Search" /></button></span>
+          <span className='p-1 text-gray-700'><button onClick={handleSearchIconClick}>
+            
+            <img className="lg:w-7 transition ease-in-out delay-2 p-1 hover:-translate-1 hover:scale-110" src={searchicon} alt="Search" />
+
+            </button>
+            </span>
           <span>
             <Modal show={openSearchModal} size="xl" id="searchmodal" onClose={onCloseModal} popup>
               <div aria-hidden="searchmodal" ref={modalRef}>
@@ -350,7 +370,7 @@ const Header = () => {
 
 
                   <div className="space-y-6">
-                    <h3 className="text-xl font-medium text-gray-900 dark:text-white">Search for Products like Toogle Clamps, VTC-6561</h3>
+                    <h3 className="text-xl font-medium text-gray-900 dark:text-white">Search for Models VTC-6561</h3>
                     <div>
                       <div className="flex items-center border border-gray-300 rounded-md px-3 py-2 focus-within:border-blue-500 focus-within:ring-blue-500">
                         <input
@@ -379,9 +399,12 @@ const Header = () => {
                         {/* Suggestions */}
                         <ul className="py-1">
                           {/* Dummy entries */}
-                          <li className="px-3 py-2 hover:bg-gray-50 cursor-pointer">Toggle Clamp 1</li>
-                          <li className="px-3 py-2 hover:bg-gray-50 cursor-pointer">Toggle Clamp 2</li>
-                          <li className="px-3 py-2 hover:bg-gray-50 cursor-pointer">Toggle Clamp 3</li>
+                          <li className="px-3 py-2 hover:bg-gray-50 cursor-pointer">VTC-6561</li>
+                          <li className="px-3 py-2 hover:bg-gray-50 cursor-pointer">VTC-6561</li>
+                          <li className="px-3 py-2 hover:bg-gray-50 cursor-pointer">VTC-6561</li>
+                          <li className="px-3 py-2 hover:bg-gray-50 cursor-pointer">VTC-6561</li>
+                          <li className="px-3 py-2 hover:bg-gray-50 cursor-pointer">VTC-6561</li>
+                          <li className="px-3 py-2 hover:bg-gray-50 cursor-pointer">VTC-6561</li>
                           {/* Add more dummy entries as needed */}
                         </ul>
                       </div>
@@ -399,7 +422,10 @@ const Header = () => {
 
 
           {/* <span className='p-1 text-gray-700'><img className="lg:w-8 transition ease-in-out delay-2 p-1 hover:-translate-1 hover:scale-110" src="./src/images/people.png" alt="User" /></span> */}
-          <span className='p-1 text-gray-700'><button onClick={() => setIsOpen(true)}><img className="lg:w-8 transition ease-in-out delay-2 mt-1 p-1 hover:-translate-1 hover:scale-110" src="./src/images/shopping-cart.png" alt="Enquiry Cart" /></button></span>
+          <span className='p-1 text-gray-700'><button onClick={() => setIsOpen(true)}>
+            <img className="lg:w-8 transition ease-in-out delay-2 mt-1 p-1 hover:-translate-1 hover:scale-110" src={shoppingcart} alt="shopping cart" />
+            </button>
+            </span>
 
 
         </div>
@@ -414,13 +440,17 @@ const Header = () => {
             </p>
             <div className='p-1 border shadow-sm my-2 relative'>
               <div className='grid grid-cols-3 gap-1'>
-                <div class="group block mt-2"><img
+                <div class="group block mt-2">
+                  {/* <img
                   src="../src/images/product1-img.jpg"
                   loading="lazy"
                   alt="Vertical Hold Down Action Heavy Duty Flanged Base"
                   className="h-[80px] w-full object-cover object-center transition duration-200 group-hover:scale-110"
-                /></div>
-                <div className='col-span-2 p-2'><a href="#" className="text-sm text-dark leading-snug"><p>Vertical Hold Down Action Heavy Duty Flanged Base </p></a>
+                /> */}
+                <img className="h-[80px] w-full object-cover object-center transition duration-200 group-hover:scale-110" src={productthumbimage} alt="Vertical Hold Down Action Heavy Duty Flanged Base" />
+                </div>
+                <div className='col-span-2 p-2'><a href="#" className="text-sm leading-snug text-dark no-underline"><span>Vertical Hold Down Action Heavy Duty Flanged Base </span>
+                </a>   
                   <p class="text-muted mb-0">
                     <div className='absolute top-0 right-0 p-2'><a href="#">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#424242" className="w-4 h-4">
@@ -436,18 +466,19 @@ const Header = () => {
             </div>
             <div className='p-1 border shadow-sm my-2 relative'>
               <div className='grid grid-cols-3 gap-1'>
-                <div class="group block mt-2"><img
-                  src="../src/images/product1-img.jpg"
-                  loading="lazy"
-                  alt="Vertical Hold Down Action Heavy Duty Flanged Base"
-                  className="h-[80px] w-full object-cover object-center transition duration-200 group-hover:scale-110"
-                /></div>
-                <div className='col-span-2 p-2'><a href="#" className="text-sm text-dark leading-snug"><p>Vertical Hold Down Action Heavy Duty Flanged Base </p></a>                  <p class="text-muted mb-0">
+                <div class="group block mt-2">
+                <img className="h-[80px] w-full object-cover object-center transition duration-200 group-hover:scale-110" src={productthumbimage} alt="Vertical Hold Down Action Heavy Duty Flanged Base" />
+                </div>
+                <div className='col-span-2 p-2'>
+                  <a href="#" className="text-sm leading-snug text-dark no-underline"><span>Vertical Hold Down Action Heavy Duty Flanged Base </span>
+                </a>                  
+                <p class="text-muted mb-0">
                   <div className='absolute top-0 right-0 p-2'><a href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#424242" className="w-4 h-4">
                       <path strokeLinecap="round" strokeLinejoin="round" d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" />
                     </svg>
-                  </a> </div>
+                  </a> 
+                  </div>
                   <i class="bx bxs-star text-warning"></i>
                   <i class="bx bxs-star text-warning"></i>
                   <i class="bx bxs-star text-warning"></i>
@@ -457,13 +488,13 @@ const Header = () => {
             </div>
             <div className='p-1 border shadow-sm my-2 relative'>
               <div className='grid grid-cols-3 gap-1'>
-                <div class="group block mt-2"><img
-                  src="../src/images/product1-img.jpg"
-                  loading="lazy"
-                  alt="Vertical Hold Down Action Heavy Duty Flanged Base"
-                  className="h-[80px] w-full object-cover object-center transition duration-200 group-hover:scale-110"
-                /></div>
-                <div className='col-span-2 p-2'><a href="#" className="text-sm text-dark leading-snug"><p>Vertical Hold Down Action Heavy Duty Flanged Base </p></a>                  <p class="text-muted mb-0">
+                <div class="group block mt-2">
+                  
+                <img className="h-[80px] w-full object-cover object-center transition duration-200 group-hover:scale-110" src={productthumbimage} alt="Vertical Hold Down Action Heavy Duty Flanged Base" />
+                
+                </div>
+                <div className='col-span-2 p-2'><a href="#" className="text-sm leading-snug text-dark no-underline"><span>Vertical Hold Down Action Heavy Duty Flanged Base </span>
+                </a>                    <p class="text-muted mb-0">
                   <i class="bx bxs-star text-warning">
 
                     <div className='absolute top-0 right-0 p-2'><a href="#">

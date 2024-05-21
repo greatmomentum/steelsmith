@@ -1,10 +1,11 @@
 import React from 'react'
+import acmeeimg1 from '../images/acmee-img-2.jpg';
 
 const Events = () => {
   return (
     <div class=" w-full bg-white py-6 mt-8  sm:py-8 lg:py-6">
-        <div class="  py-6" >
-        <span class="flex justify-center text-xl font-medium text-gray-800 lg:text-xl">Events</span>
+        <div class="  py-0" >
+        {/* <span class="flex justify-center text-xl font-medium text-gray-800 lg:text-xl">Events</span> */}
 
       {/* <p class="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">This is a section of some simple filler text, also known as placeholder text. It shares some characteristics of a real written text but is random or otherwise generated.</p> */}
     </div>
@@ -18,7 +19,7 @@ const Events = () => {
         <div className="h-full border-2 border-gray-200 border-opacity-60  overflow-hidden">
         <img
             className="lg:h-48 md:h-36 w-full object-cover object-center"
-            src="./src/images/acmee-img-2.jpg"
+            src={acmeeimg1}
             alt="blog" />
           <div className="p-6">
             
@@ -35,7 +36,7 @@ const Events = () => {
         <div className="h-full border-2 border-gray-200 border-opacity-60  overflow-hidden">
           <img
             className="lg:h-48 md:h-36 w-full object-cover object-center"
-            src="./src/images/acmee-img-2.jpg"
+            src={acmeeimg1}
             alt="blog" />
           <div className="p-6">
             
@@ -52,7 +53,7 @@ const Events = () => {
         <div className="h-full border-2 border-gray-200 border-opacity-60  overflow-hidden">
           <img
             className="lg:h-48 md:h-36 w-full object-cover object-center"
-            src="./src/images/acmee-img-2.jpg"
+            src={acmeeimg1}
             alt="blog"
           />
           <div className="p-6">
@@ -70,7 +71,7 @@ const Events = () => {
         <div className="h-full border-2 border-gray-200 border-opacity-60  overflow-hidden">
         <img
             className="lg:h-48 md:h-36 w-full object-cover object-center"
-            src="./src/images/acmee-img-2.jpg"
+            src={acmeeimg1}
             alt="blog" />
           <div className="p-6">
             
@@ -87,7 +88,7 @@ const Events = () => {
         <div className="h-full border-2 border-gray-200 border-opacity-60  overflow-hidden">
           <img
             className="lg:h-48 md:h-36 w-full object-cover object-center"
-            src="./src/images/acmee-img-2.jpg"
+            src={acmeeimg1}
             alt="blog" />
           <div className="p-6">
             
@@ -104,7 +105,7 @@ const Events = () => {
         <div className="h-full border-2 border-gray-200 border-opacity-60  overflow-hidden">
           <img
             className="lg:h-48 md:h-36 w-full object-cover object-center"
-            src="./src/images/acmee-img-2.jpg"
+            src={acmeeimg1}
             alt="blog"
           />
           <div className="p-6">

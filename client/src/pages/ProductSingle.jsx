@@ -4,15 +4,17 @@ import { HiHome } from "react-icons/hi";
 import EcommerceGallery from '../components/EcommerceGallery';
 import Table from '../components/Table'; // Import the Table component
 import { Label, TextInput } from "flowbite-react";
+import proimg1 from '../images/pro-img1.jpg';
+import proimg2 from '../images/pro-img2.jpg';
 
 
 const ProductSingle = () => {
 
   const images = [
-    '../src/images/pro-img1.jpg',
-    '../src/images/pro-img2.jpg',
-    '../src/images/pro-img1.jpg',
-    '../src/images/pro-img2.jpg',
+    proimg1,
+    proimg2,
+    proimg1,
+    proimg2,
     // Add more image URLs as needed
   ];
 
@@ -31,7 +33,7 @@ const ProductSingle = () => {
       </div>
 
       <div>
-        <div className="text-xl font-bold text-gray-800 p-2"> VTC-201-TU</div>
+        <div className="text-xl font-medium text-gray-800 p-2"> <strong>VTC-201-TU</strong></div>
         {/* <span><a href="#" className="inline-block rounded-lg border bg-white px-4  text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:px-8 md:py-3 md:text-base">Show more</a></span> */}
         <div className=' mb-6 p-2'>Discover top-tier steel products from Steel-Smith alongside the esteemed offerings of Kipp, IMAO & Turnlock.
           As an official distributor, we bring you a curated selection of high-quality products & solutions, ensuring excellence and reliability in every project.</div>
@@ -44,15 +46,15 @@ const ProductSingle = () => {
           </div>
 
         </div>
-        <div className='w-1/2  p-6 '>
-          <span className="text-xl font-bold text-gray-800p-2"> <a href='/productsingle' className=' no-underline text-[#003d6a]'>VTC-201-TU</a></span>
+        <div className='w-1/2  px-8 py-2 '>
+          <span className="text-xl font-medium text-gray-800p-2"> <a href='/productsingle' className=' no-underline text-[#003d6a]'><strong>VTC-201-TU</strong></a></span>
           {/* section 1 */}
           <div className='pt-3'>
             <span className='font-medium'>Vertical Hold Down Action T – Handle Flanged Base</span>
 
             {/* button container */}
-            <div className='mt-6'>
-              <span className='text-base font-bold'>Downloads</span>
+            <div className='mt-2 border-b-2 py-3 border-gray-200'>
+            <span className='font-normal'><strong>Downloads</strong></span>
               {/* Buttons Start*/}
               <div className='flex my-2 space-x-1'>
                 <div className='items-center'>
@@ -103,12 +105,12 @@ const ProductSingle = () => {
             {/* Button Container Ends */}
 
             {/* Enquire */}
-            <div className='mt-8 w-full '>
-              <span className='text-base font-bold'>Enquire</span>
+            <div className='mt-0 w-full border-b-2 py-4 border-gray-200 '>
+            <span className='font-normal'><strong>Enquire</strong></span>
               <p className='text-sm font-normal pt-2'>Enter quantity to enquire the price and availability</p>
               <div className='flex items-center'>
                 <div className='w-[80px]'>
-                <input name="first-name" type='number' class="w-full  border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring" />
+                <input name="first-name" type='number' class="w-full  border-[1px] border-gray-300 bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring" />
                 </div>
                 <div className='w-3/4 ml-2'>
 
@@ -130,7 +132,7 @@ const ProductSingle = () => {
             {/* Application */}
 
             <div className='mt-8 w-full '>
-              <span className='text-base font-bold'>Application</span>
+            <span className='font-normal'><strong>Application</strong></span>
               <p className='text-sm font-normal leading-relaxed pt-2'>Welding Fixtures, Assembly Fixtures, Checking Fixtures, Wood-Working, Closures, Food Processing, Pharmaceutical Machines, PCB Assembly.</p>
 
             </div>
@@ -140,18 +142,18 @@ const ProductSingle = () => {
       </div>
 
       <div className='flex pt-10 mb-10'>
-        <div className='w-1/2 p-1'>
+        <div className='w-1/2 p-1 mt-4'>
 
           {/* -------------------------------- */}
           <div>
             <span className='text-lg font-bold flex'><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
               <path strokeLinecap="round" strokeLinejoin="round" d="m15.75 10.5 4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-9A2.25 2.25 0 0 0 2.25 7.5v9a2.25 2.25 0 0 0 2.25 2.25Z" />
-            </svg> <p className='px-2'>Video Preview</p></span>
+            </svg> <p className='px-2 text-gray-800'><strong>Video Preview</strong></p></span>
 
           </div>
 
           <div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/hU0sNEq9K-c?si=u8QYRJNcuHgIzhGM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="100%" height="380" src="https://www.youtube.com/embed/hU0sNEq9K-c?si=u8QYRJNcuHgIzhGM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
 
 
@@ -161,7 +163,7 @@ const ProductSingle = () => {
 
           <div className='p-8 w-full'>
 
-            <span className='text-base font-bold'>Product Attributes</span>
+            <span className='text-base font-nromal'><strong>Product Attributes</strong></span>
             <div className='w-full flex py-2 border-b-[1px] p-2 mt-2 border-gray-300'>
               <span className=' w-1/3 text-sm' >Model No. :</span>
               <span className=' w-2/3 text-sm'>VTC-6561-A</span>

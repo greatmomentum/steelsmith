@@ -1,6 +1,7 @@
 import React from 'react'
 import { Breadcrumb } from "flowbite-react";
 import { HiHome } from "react-icons/hi";
+import productimg from '../images/product1-img.jpg';
 
 
 
@@ -23,7 +24,7 @@ const ProductCategories = () => {
 
           {/* Right Top Row */}
           <div className='w-full flex justify-between items-end p-4 bg-white'>
-            <span className="text-xl font-bold text-gray-800 p-2">Toggle Clamps</span>
+            <span className="text-xl font-normal text-gray-800 p-2"><strong>Toggle Clamps</strong></span>
             {/* <span><a href="#" className="inline-block rounded-lg border bg-white px-4  text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:px-8 md:py-3 md:text-base">Show more</a></span> */}
           </div>
 
@@ -37,14 +38,14 @@ const ProductCategories = () => {
                   className="group relative mb-2 block overflow-hidden bg-gray-100 lg:mb-3"
                 >
                   <img
-                    src="../src/images/product1-img.jpg"
+                    src={productimg}
                     loading="lazy"
                     alt="Vertical Hold Down Action Heavy Duty Flanged Base"
                     className="h-[220px] w-full object-cover object-center transition duration-200 group-hover:scale-110"
                   />
-                  <span className="absolute left-0 top-0 rounded-rt-lg bg-red-500 px-3 py-1 text-xs uppercase tracking-wider text-white">
+                  {/* <span className="absolute left-0 top-0 rounded-rt-lg bg-red-500 px-3 py-1 text-xs uppercase tracking-wider text-white">
                     NEW
-                  </span>
+                  </span> */}
                 </a>
                 <div className='p-2'>
                   <a href="/products" className="leading-none hover:gray-800 mb-1 text-gray-800 transition duration-100 no-underline ">
@@ -61,7 +62,7 @@ const ProductCategories = () => {
                   className="group relative mb-2 block overflow-hidden bg-gray-100 lg:mb-3"
                 >
                   <img
-                    src="../src/images/product1-img.jpg"
+                    src={productimg}
                     loading="lazy"
                     alt="Vertical Hold Down Action Heavy Duty Flanged Base"
                     className="h-[220px] w-full object-cover object-center transition duration-200 group-hover:scale-110"
@@ -85,14 +86,14 @@ const ProductCategories = () => {
                   className="group relative mb-2 block overflow-hidden bg-gray-100 lg:mb-3"
                 >
                   <img
-                    src="../src/images/product1-img.jpg"
+                    src={productimg}
                     loading="lazy"
                     alt="Vertical Hold Down Action Heavy Duty Flanged Base"
                     className="h-[220px] w-full object-cover object-center transition duration-200 group-hover:scale-110"
                   />
-                  <span className="absolute left-0 top-0 rounded-rt-lg bg-red-500 px-3 py-1 text-xs uppercase tracking-wider text-white">
+                  {/* <span className="absolute left-0 top-0 rounded-rt-lg bg-red-500 px-3 py-1 text-xs uppercase tracking-wider text-white">
                     NEW
-                  </span>
+                  </span> */}
                 </a>
                 <div className='p-2'>
                   <a href="#" className="leading-none hover:gray-800 mb-1 text-gray-800 transition duration-100 no-underline ">
@@ -109,14 +110,14 @@ const ProductCategories = () => {
                   className="group relative mb-2 block overflow-hidden bg-gray-100 lg:mb-3"
                 >
                   <img
-                    src="../src/images/product1-img.jpg"
+                    src={productimg}
                     loading="lazy"
                     alt="Vertical Hold Down Action Heavy Duty Flanged Base"
                     className="h-[220px] w-full object-cover object-center transition duration-200 group-hover:scale-110"
                   />
-                  <span className="absolute left-0 top-0 rounded-rt-lg bg-red-500 px-3 py-1 text-xs uppercase tracking-wider text-white">
+                  {/* <span className="absolute left-0 top-0 rounded-rt-lg bg-red-500 px-3 py-1 text-xs uppercase tracking-wider text-white">
                     NEW
-                  </span>
+                  </span> */}
                 </a>
                 <div className='p-2'>
                   <a href="#" className="leading-none hover:gray-800 mb-1 text-gray-800 transition duration-100 no-underline ">
@@ -133,7 +134,7 @@ const ProductCategories = () => {
                   className="group relative mb-2 block overflow-hidden bg-gray-100 lg:mb-3"
                 >
                   <img
-                    src="../src/images/product1-img.jpg"
+                    src={productimg}
                     loading="lazy"
                     alt="Vertical Hold Down Action Heavy Duty Flanged Base"
                     className="h-[220px] w-full object-cover object-center transition duration-200 group-hover:scale-110"
@@ -157,7 +158,7 @@ const ProductCategories = () => {
                   className="group relative mb-2 block overflow-hidden bg-gray-100 lg:mb-3"
                 >
                   <img
-                    src="../src/images/product1-img.jpg"
+                    src={productimg}
                     loading="lazy"
                     alt="Vertical Hold Down Action Heavy Duty Flanged Base"
                     className="h-[220px] w-full object-cover object-center transition duration-200 group-hover:scale-110"
@@ -181,7 +182,7 @@ const ProductCategories = () => {
                   className="group relative mb-2 block overflow-hidden bg-gray-100 lg:mb-3"
                 >
                   <img
-                    src="../src/images/product1-img.jpg"
+                    src={productimg}
                     loading="lazy"
                     alt="Vertical Hold Down Action Heavy Duty Flanged Base"
                     className="h-[220px] w-full object-cover object-center transition duration-200 group-hover:scale-110"
@@ -205,7 +206,7 @@ const ProductCategories = () => {
                   className="group relative mb-2 block overflow-hidden bg-gray-100 lg:mb-3"
                 >
                   <img
-                    src="../src/images/product1-img.jpg"
+                    src={productimg}
                     loading="lazy"
                     alt="Vertical Hold Down Action Heavy Duty Flanged Base"
                     className="h-[220px] w-full object-cover object-center transition duration-200 group-hover:scale-110"
@@ -225,8 +226,8 @@ const ProductCategories = () => {
             </div>
           </div>
           <div className='w-full justify-center py-8'>
-            <nav aria-label="Page navigation example ">
-              <ul class="pagination justify-center ">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination justify-center">
                 <li class="page-item"><a class="page-link" href="#">Previous</a></li>
                 <li class="page-item"><a class="page-link" href="#">1</a></li>
                 <li class="page-item"><a class="page-link" href="#">2</a></li>

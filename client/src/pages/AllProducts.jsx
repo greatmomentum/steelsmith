@@ -2,6 +2,18 @@ import React from 'react'
 import { Breadcrumb } from "flowbite-react";
 import { HiHome } from "react-icons/hi";
 import { Label, RangeSlider } from "flowbite-react";
+import groupproduct1 from '../images/group-product-1.jpg';
+import groupproduct2 from '../images/group-product-2.jpg';
+import groupproduct3 from '../images/group-product-3.jpg';
+import groupproduct4 from '../images/group-product-4.jpg';
+
+
+
+import brand1 from '../images/brand-1.jpg';
+import brand2 from '../images/brand-2.jpg';
+import brand3 from '../images/brand-3.jpg';
+import brand4 from '../images/brand-4.jpg';
+
 
 const Products = () => {
 
@@ -13,7 +25,7 @@ const Products = () => {
                 {/* Block 1 start */}
                 <div className='bg-white-300 border shadow-md p-4  w-full'>
                     <div className=''>
-                        <img className="w-[300px]" src="./src/images/brand-1.jpg" alt="Logo" />
+                        <img className="w-[300px]" src={brand1} alt="Logo" />
                     </div>
 
                     <div className='flex bg-white'>
@@ -34,7 +46,7 @@ const Products = () => {
                                 </a>
                             </p>
                         </div>
-                        <div className='flex items-center w-2/3'><img className="w-auto" src="./src/images/group-product-1.jpg" /></div>
+                        <div className='flex items-center w-2/3'><img className="w-auto" src={groupproduct1} /></div>
                     </div>
                 </div>
                 {/* Block 1 end */}
@@ -42,7 +54,7 @@ const Products = () => {
                 {/* Block 1 start */}
                 <div className='bg-white-300 border shadow-md p-4  w-full'>
                     <div className=''>
-                        <img className="w-[300px]" src="./src/images/brand-2.jpg" alt="Logo" />
+                        <img className="w-[300px]" src={brand2} alt="Logo" />
                     </div>
 
                     <div className='flex bg-white'>
@@ -63,7 +75,7 @@ const Products = () => {
                                 </a>
                             </p>
                         </div>
-                        <div className='flex items-center w-2/3'><img className="w-auto" src="./src/images/group-product-2.jpg" /></div>
+                        <div className='flex items-center w-2/3'><img className="w-auto" src={groupproduct2} /></div>
                     </div>
                 </div>
                 {/* Block 1 end */}
@@ -71,7 +83,7 @@ const Products = () => {
                 {/* Block 1 start */}
                 <div className='bg-white-300 border shadow-md p-4  w-full'>
                     <div className=''>
-                        <img className="w-[300px]" src="./src/images/brand-3.jpg" alt="Logo" />
+                        <img className="w-[300px]" src={brand3} alt="Logo" />
                     </div>
 
                     <div className='flex bg-white'>
@@ -92,7 +104,7 @@ const Products = () => {
                                 </a>
                             </p>
                         </div>
-                        <div className='flex items-center w-2/3'><img className="w-auto" src="./src/images/group-product-3.jpg" /></div>
+                        <div className='flex items-center w-2/3'><img className="w-auto" src={groupproduct3} /></div>
                     </div>
                 </div>
                 {/* Block 1 end */}
@@ -100,7 +112,7 @@ const Products = () => {
                  {/* Block 1 start */}
                  <div className='bg-white-300 border shadow-md p-4  w-full'>
                     <div className=''>
-                        <img className="w-[300px]" src="./src/images/brand-4.jpg" alt="Logo" />
+                        <img className="w-[300px]" src={brand4} alt="Logo" />
                     </div>
 
                     <div className='flex bg-white'>
@@ -121,7 +133,7 @@ const Products = () => {
                                 </a>
                             </p>
                         </div>
-                        <div className='flex items-center w-2/3'><img className="w-auto" src="./src/images/group-product-4.jpg" /></div>
+                        <div className='flex items-center w-2/3'><img className="w-auto" src={groupproduct4} /></div>
                     </div>
                 </div>
                 {/* Block 1 end */}

@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import proimg1 from '../images/pro-img1.jpg';
+import proimg2 from '../images/pro-img2.jpg';
 
 const EcommerceGallery = ({ images }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
