@@ -3,7 +3,7 @@ import acmeeimg1 from '../images/acmee-img-2.jpg';
 
 const Events = () => {
   return (
-    <div class=" w-full bg-white py-6 mt-8  sm:py-8 lg:py-6">
+    <div class=" w-full bg-white py-6 mt-20">
         <div class="  py-0" >
         {/* <span class="flex justify-center text-xl font-medium text-gray-800 lg:text-xl">Events</span> */}
 

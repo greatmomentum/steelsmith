@@ -41,7 +41,7 @@ import logo16 from '../images/logo16.png';
 
 const AboutUs = () => {
   return (
-    <div className=' pt-6'>
+    <div className=' pt-6 mt-10'>
       <div class="w-full bg-white py-6 sm:py-8 lg:py-12 ">
         <div class="mx-auto px-4 md:px-8">
           <div class=" bg-gray-100 px-4 py-6 md:py-8 lg:py-12">

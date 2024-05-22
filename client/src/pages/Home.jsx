@@ -36,8 +36,8 @@ const Home = () => {
     <div className=''>
 
       {/* #1 Hero Section Banner */}
-      <div className="bg-white border-b-[1px] border-gray-100">
-        <div className="w-[1300px] mt-[60px] h-[400px] mx-auto items-center">
+      <div className="bg-gradient-to-r from-slate-200 to-slate-10 border-b-[1px] border-gray-100 pt-3">
+        <div className="w-[1300px] mt-[80px] h-[400px] mx-auto items-center">
           <Carousel>
             {/* Slider1 */}
             <div className="flex items-center justify-center">
@@ -62,7 +62,7 @@ const Home = () => {
                     </button>{" "}
                   </div>
                 </div>
-                <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 shadow-sm">
                   <img
                     className="object-cover object-center "
                     alt="hero"
@@ -95,7 +95,7 @@ const Home = () => {
                     </button>{" "}
                   </div>
                 </div>
-                <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 shadow-sm">
                   <img
                     className="object-cover object-center "
                     alt="hero"
@@ -128,7 +128,7 @@ const Home = () => {
                     </button>{" "}
                   </div>
                 </div>
-                <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 shadow-sm">
                   <img
                     className="object-cover object-center "
                     alt="hero"
@@ -688,14 +688,14 @@ const Home = () => {
                   alt="blog"
                 />
                 <div className="p-6">
-                  <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
+                  {/* <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
                     Steel-Smith
-                  </h2>
+                  </h2> */}
                   <h1 className="title-font text-lg font-bold text-gray-900 mb-3">
                     VTC-207-UM
                   </h1>
                   <p className="text-sm leading-relaxed mb-3">
-                    Vertical Hold Down Toggle Clamps
+                    Vertical Hold Down Action Toggle Clamps
                   </p>
                   <div className="flex items-center flex-wrap ">
                     <a className="text-blue-800 inline-flex items-center md:mb-2 lg:mb-0">
@@ -726,14 +726,14 @@ const Home = () => {
                   alt="blog"
                 />
                 <div className="p-6">
-                  <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
+                  {/* <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
                     Steel-Smith
-                  </h2>
+                  </h2> */}
                   <h1 className="title-font text-lg font-bold text-gray-900 mb-3">
                     H-215-U-TRIG
                   </h1>
                   <p className="text-sm leading-relaxed mb-3">
-                    Horizontal Hold Down  Toggle Clamps
+                    Horizontal Hold Down Action Toggle Clamps
                   </p>
                   <div className="flex items-center flex-wrap">
                     <a className="text-blue-800 inline-flex items-center md:mb-2 lg:mb-0">
@@ -764,14 +764,14 @@ const Home = () => {
                   alt="blog"
                 />
                 <div className="p-6">
-                  <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
+                  {/* <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
                     Steel-Smith
-                  </h2>
+                  </h2> */}
                   <h1 className="title-font text-lg font-bold text-gray-900 mb-3">
                     HTC-2030-PS
                   </h1>
                   <p className="text-sm leading-relaxed mb-3">
-                    Straight Line Action Toggle Clamps
+                    Straight Line Action Toggle <br></br>Clamps
                   </p>
                   <div className="flex items-center flex-wrap ">
                     <a className="text-blue-800 inline-flex items-center md:mb-2 lg:mb-0">
@@ -802,14 +802,14 @@ const Home = () => {
                   alt="blog"
                 />
                 <div className="p-6">
-                  <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
+                  {/* <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
                     Steel-Smith
-                  </h2>
+                  </h2> */}
                   <h1 className="title-font text-lg font-bold text-gray-900 mb-3">
                     PAH-15-500
                   </h1>
                   <p className="text-sm leading-relaxed mb-3">
-                    Pull Action Clamps Toggle Clamps
+                    Pull Action Clamps Toggle <br></br>Clamps
                   </p>
                   <div className="flex items-center flex-wrap ">
                     <a className="text-blue-800 inline-flex items-center md:mb-2 lg:mb-0">

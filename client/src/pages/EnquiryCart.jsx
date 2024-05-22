@@ -6,7 +6,7 @@ const EnquiryCart = () => {
         <div className='pt-20'>
 
             {/* start */}
-            <div className="container">
+            <div className="container mt-20">
                 <div className="row">
                     <div className="col-xl-8">
 

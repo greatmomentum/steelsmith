@@ -8,7 +8,7 @@ const ContactUs = () => {
       {/* Form */}
       <>
         {/* ====== Contact Section Start */}
-        <section className="pt-[120px]">
+        <section className="pt-[160px]">
           <div className="container mx-auto">
             <div className="flex flex-wrap -mx-4 lg:justify-between">
               <div className="w-1/2 ">

@@ -8,7 +8,7 @@ const News = () => {
   return (
     <div>News
 
-<div class=" w-full bg-white mt-2  sm:py-8 lg:py-6">
+<div class=" w-full bg-white pt-20 ">
   <div class="mx-auto ">
 
     <div class="mb-14   py-0" >

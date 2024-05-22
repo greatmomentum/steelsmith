@@ -42,7 +42,7 @@ const Downloads = () => {
 
 
   return (
-    <div class=" w-full bg-white mt-8  sm:py-8 lg:py-6">
+    <div class=" w-full bg-white mt-40 ">
 
       <div class="mb-14  py-0" >
         {/* <span class="flex justify-center text-xl font-medium text-gray-800 lg:text-xl">Downloads</span> */}

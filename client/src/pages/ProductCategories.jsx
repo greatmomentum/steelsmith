@@ -8,7 +8,7 @@ import productimg from '../images/product1-img.jpg';
 const ProductCategories = () => {
   return (
 
-<div className='container pt-20 '>
+<div className='container pt-20 mt-10'>
       <div><Breadcrumb aria-label="Solid background breadcrumb example" className="bg-white py-2 items-center dark:bg-gray-800">
         <Breadcrumb.Item href="#" icon={HiHome}>
           Home

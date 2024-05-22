@@ -1,6 +1,6 @@
 // Import necessary modules
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
@@ -12,16 +12,16 @@ function App() {
     <Router>
       <div>
         {/* Your navigation bar or menu can go here */}
-        <Switch>
+        <Routes>
           {/* Define routes using Route component */}
           {/* Each Route should have a path and corresponding component */}
-          <Route path="/" exact component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/contact" component={Contact} /> 
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
         
           {/* This route will catch any other routes not defined above */}
-          <Route component={NotFound} />
-        </Switch>
+          <Route path="*" element={<NotFound />} />
+        </Routes>
       </div>
     </Router>
   );

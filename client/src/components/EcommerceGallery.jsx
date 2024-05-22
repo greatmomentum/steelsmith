@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import proimg1 from '../images/pro-img1.jpg';
-import proimg2 from '../images/pro-img2.jpg';
 
 const EcommerceGallery = ({ images }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -33,11 +31,14 @@ const EcommerceGallery = ({ images }) => {
 
   return (
     <div className="gallery-container">
-      <div className={`preview-image-container ${isZoomed ? 'zoomed' : ''}`}>
+      <div className="preview-image-container">
+        {isZoomed && <div className="background-mask" onClick={handleCloseButtonClick}></div>}
         {isZoomed && (
-          <button className="close-button" onClick={handleCloseButtonClick}>
-            Close
-          </button>
+          <div className="close-button" onClick={handleCloseButtonClick}>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </div>
         )}
         <img
           src={images[currentImageIndex]}

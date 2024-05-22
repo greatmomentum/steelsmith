@@ -12,7 +12,7 @@ const Markets = () => {
   return (
     <div>
 
-      <section className="text-gray-600 py-28 body-font">
+      <section className="text-gray-600 py-28 body-font pt-40">
         <div className="container  mx-auto">
           <div className="flex flex-wrap -m-4">
             <div className="p-4 md:w-1/3">

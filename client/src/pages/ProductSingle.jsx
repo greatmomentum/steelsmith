@@ -20,7 +20,7 @@ const ProductSingle = () => {
 
   return (
 
-    <div className='container'>
+    <div className='container pt-10'>
       <div className='mt-20'>
         <Breadcrumb aria-label="breadcrumb" className="bg-white py-2 items-center dark:bg-gray-800 pl-0">
           <Breadcrumb.Item href="#" icon={HiHome}>Home</Breadcrumb.Item>

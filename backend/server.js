@@ -10,21 +10,27 @@ var corsOptions = {
 
 app.use(cors(corsOptions));
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 // Serve the frontend static files
-const buildPath = path.join(__dirname, "../client/dist");
-app.use(express.static(buildPath));
+const clientBuildPath = path.join(__dirname, "../client/dist");
+app.use(express.static(clientBuildPath));
 
 // Serve the admin panel files
-app.use("/admin", express.static(path.join(__dirname, "admin")));  
+const adminBuildPath = path.join(__dirname, "admin/dist");
+app.use("/admin", express.static(adminBuildPath));
 
 // Route for serving the frontend
 app.get('*', (req, res) => {
-  res.sendFile(path.join(buildPath, 'index.html'));
+  res.sendFile(path.join(clientBuildPath, 'index.html'));
+});
+
+// Route for serving the admin panel (catch-all route)
+app.get('/admin/*', (req, res) => {
+  res.sendFile(path.join(adminBuildPath, 'index.html'));
 });
 
 // Set up routes for backend API
-app.use(express.urlencoded({ extended: true }));
 const db = require("./models");
 
 // Connect to the database and set up routes

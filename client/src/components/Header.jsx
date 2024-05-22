@@ -71,13 +71,16 @@ const Header = () => {
 
   return (
     <div className="bg-white border-b-1 border-black shadow-md fixed z-50 w-full">
+
+
       <div className="flex flex-wrap w-[1300px] mx-auto">
         <div className="flex-none w-54 p-2 text-white mr-1 bg-white">
-          <img className="lg:w-52" src={logo} alt="Logo" />
+          <NavLink  to="/" activeClassName="active"><img className="lg:w-52" src={logo} alt="Logo" /></NavLink>
         </div>
 
 
         <div className="flex-auto inline-flex">
+
 
 
           <div className="flex-auto inline-flex justify-start items-center mr-1 bg-white pl-4 px-1 ">
@@ -357,11 +360,11 @@ const Header = () => {
           {/* Starts - Search Icon Modal Box */}
 
           <span className='p-1 text-gray-700'><button onClick={handleSearchIconClick}>
-            
+
             <img className="lg:w-7 transition ease-in-out delay-2 p-1 hover:-translate-1 hover:scale-110" src={searchicon} alt="Search" />
 
-            </button>
-            </span>
+          </button>
+          </span>
           <span>
             <Modal show={openSearchModal} size="xl" id="searchmodal" onClose={onCloseModal} popup>
               <div aria-hidden="searchmodal" ref={modalRef}>
@@ -424,8 +427,8 @@ const Header = () => {
           {/* <span className='p-1 text-gray-700'><img className="lg:w-8 transition ease-in-out delay-2 p-1 hover:-translate-1 hover:scale-110" src="./src/images/people.png" alt="User" /></span> */}
           <span className='p-1 text-gray-700'><button onClick={() => setIsOpen(true)}>
             <img className="lg:w-8 transition ease-in-out delay-2 mt-1 p-1 hover:-translate-1 hover:scale-110" src={shoppingcart} alt="shopping cart" />
-            </button>
-            </span>
+          </button>
+          </span>
 
 
         </div>
@@ -447,10 +450,10 @@ const Header = () => {
                   alt="Vertical Hold Down Action Heavy Duty Flanged Base"
                   className="h-[80px] w-full object-cover object-center transition duration-200 group-hover:scale-110"
                 /> */}
-                <img className="h-[80px] w-full object-cover object-center transition duration-200 group-hover:scale-110" src={productthumbimage} alt="Vertical Hold Down Action Heavy Duty Flanged Base" />
+                  <img className="h-[80px] w-full object-cover object-center transition duration-200 group-hover:scale-110" src={productthumbimage} alt="Vertical Hold Down Action Heavy Duty Flanged Base" />
                 </div>
                 <div className='col-span-2 p-2'><a href="#" className="text-sm leading-snug text-dark no-underline"><span>Vertical Hold Down Action Heavy Duty Flanged Base </span>
-                </a>   
+                </a>
                   <p class="text-muted mb-0">
                     <div className='absolute top-0 right-0 p-2'><a href="#">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#424242" className="w-4 h-4">
@@ -467,48 +470,48 @@ const Header = () => {
             <div className='p-1 border shadow-sm my-2 relative'>
               <div className='grid grid-cols-3 gap-1'>
                 <div class="group block mt-2">
-                <img className="h-[80px] w-full object-cover object-center transition duration-200 group-hover:scale-110" src={productthumbimage} alt="Vertical Hold Down Action Heavy Duty Flanged Base" />
+                  <img className="h-[80px] w-full object-cover object-center transition duration-200 group-hover:scale-110" src={productthumbimage} alt="Vertical Hold Down Action Heavy Duty Flanged Base" />
                 </div>
                 <div className='col-span-2 p-2'>
                   <a href="#" className="text-sm leading-snug text-dark no-underline"><span>Vertical Hold Down Action Heavy Duty Flanged Base </span>
-                </a>                  
-                <p class="text-muted mb-0">
-                  <div className='absolute top-0 right-0 p-2'><a href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#424242" className="w-4 h-4">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" />
-                    </svg>
-                  </a> 
-                  </div>
-                  <i class="bx bxs-star text-warning"></i>
-                  <i class="bx bxs-star text-warning"></i>
-                  <i class="bx bxs-star text-warning"></i>
-                  <i class="bx bxs-star-half text-warning"></i>
-                </p></div>
+                  </a>
+                  <p class="text-muted mb-0">
+                    <div className='absolute top-0 right-0 p-2'><a href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#424242" className="w-4 h-4">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" />
+                      </svg>
+                    </a>
+                    </div>
+                    <i class="bx bxs-star text-warning"></i>
+                    <i class="bx bxs-star text-warning"></i>
+                    <i class="bx bxs-star text-warning"></i>
+                    <i class="bx bxs-star-half text-warning"></i>
+                  </p></div>
               </div>
             </div>
             <div className='p-1 border shadow-sm my-2 relative'>
               <div className='grid grid-cols-3 gap-1'>
                 <div class="group block mt-2">
-                  
-                <img className="h-[80px] w-full object-cover object-center transition duration-200 group-hover:scale-110" src={productthumbimage} alt="Vertical Hold Down Action Heavy Duty Flanged Base" />
-                
+
+                  <img className="h-[80px] w-full object-cover object-center transition duration-200 group-hover:scale-110" src={productthumbimage} alt="Vertical Hold Down Action Heavy Duty Flanged Base" />
+
                 </div>
                 <div className='col-span-2 p-2'><a href="#" className="text-sm leading-snug text-dark no-underline"><span>Vertical Hold Down Action Heavy Duty Flanged Base </span>
                 </a>                    <p class="text-muted mb-0">
-                  <i class="bx bxs-star text-warning">
+                    <i class="bx bxs-star text-warning">
 
-                    <div className='absolute top-0 right-0 p-2'><a href="#">
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#424242" className="w-4 h-4">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" />
-                      </svg></a>
-                    </div>
+                      <div className='absolute top-0 right-0 p-2'><a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#424242" className="w-4 h-4">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" />
+                        </svg></a>
+                      </div>
 
-                  </i>
-                  <i class="bx bxs-star text-warning"></i>
-                  <i class="bx bxs-star text-warning"></i>
-                  <i class="bx bxs-star text-warning"></i>
-                  <i class="bx bxs-star-half text-warning"></i>
-                </p></div>
+                    </i>
+                    <i class="bx bxs-star text-warning"></i>
+                    <i class="bx bxs-star text-warning"></i>
+                    <i class="bx bxs-star text-warning"></i>
+                    <i class="bx bxs-star-half text-warning"></i>
+                  </p></div>
               </div>
             </div>
             <div className='pt-6'>
@@ -530,6 +533,109 @@ const Header = () => {
         {/* Drawer Ends */}
 
       </div>
+
+
+      {/* my menu */}
+      <div className='w-screen bg-[#003D6A] py-[10px] '>
+        <div className='mx-auto w-[1300px] '>
+          <nav className='flex justify-around'>
+            <span><NavLink className='media-menu-item py-[12px] px-4 text-base font-normal no-underline text-white hover:bg-[#0e5284] hover:text-white hover:no-underline' to="/" activeClassName="active">Home</NavLink></span>
+            <span><NavLink className='media-menu-item py-[12px] px-4 text-base font-normal no-underline text-white hover:bg-[#0e5284] hover:text-white hover:no-underline' to="/aboutus" activeClassName="active">About us</NavLink></span>
+            <span>
+              <NavLink className='mega-menu-item py-[12px] pr-4 pl-2 items-center text-base font-normal no-underline text-white hover:bg-[#0e5284] hover:text-white hover:no-underline' to="/allproducts" activeClassName="active">
+                Products
+                <span className='absolute'><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 mx-1 mt-1">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg></span>
+                <div className="mega-menu bg-white shadow">
+                  <div className="flex w-[1300px] mx-auto divide-x-2 divide-solid">
+                    <div className="logo-box bg-white">
+                      <NavLink to="/ProductCategories" activeClassName="active">
+                        <div className="justify-center">
+                          {/* <img className="lg:w-152" src="./src/images/brand-1.jpg" alt="Logo" /> */}
+                          <img className="w-auto" src={steelsmithlogo} alt="Logo" />
+                        </div>
+                        </NavLink>
+                    </div>
+                    <div className="logo-box bg-white"> 
+                    <NavLink to="/ProductCategories" activeClassName="active">
+                      <div className="justify-center">
+                        {/* <img className="lg:w-152" src="./src/images/brand-1.jpg" alt="Logo" /> */}
+                        <img className="w-auto" src={imaologo} alt="Logo" />
+                      </div>
+                      </NavLink>
+                    </div>
+                    <div className="logo-box bg-white"> 
+                    <NavLink to="/ProductCategories" activeClassName="active">
+                      <div className="justify-center">
+                        {/* <img className="lg:w-152" src="./src/images/brand-1.jpg" alt="Logo" /> */}
+                        <img className="w-auto" src={kipplogo} alt="Logo" />
+                      </div>
+                      </NavLink>
+                    </div>
+                    <div className="logo-box bg-white"> 
+                    <NavLink to="/ProductCategories" activeClassName="active">
+                      <div className="justify-center">
+                        {/* <img className="lg:w-152" src="./src/images/brand-1.jpg" alt="Logo" /> */}
+                        <img className="w-auto" src={turnlocklogo} alt="Logo" />
+                      </div>
+                      </NavLink>
+                    </div>
+                  </div>
+                </div>
+              </NavLink>
+            </span>
+            <span><NavLink className='media-menu-item py-[12px] px-4 text-base font-normal no-underline text-white hover:bg-[#0e5284] hover:text-white hover:no-underline ' to="/dealernetwork" activeClassName="active">Dealer Network</NavLink></span>
+            <span><NavLink className='media-menu-item py-[12px] px-4 text-base font-normal no-underline text-white hover:bg-[#0e5284] hover:text-white hover:no-underline ' to="/markets" activeClassName="active">Markets</NavLink></span>
+            <span><NavLink className='media-menu-item py-[12px] px-4 text-base font-normal no-underline text-white hover:bg-[#0e5284] hover:text-white hover:no-underline ' to="/downloads" activeClassName="active">Downloads</NavLink></span>            
+            <span className="relative group">
+              <NavLink className='media-menu-item py-[12px] pr-4 pl-2 text-base font-normal no-underline text-white hover:bg-[#0e5284] hover:text-white hover:no-underline' to="/" activeClassName="active">
+                Media
+                <span className='absolute'><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 p-1">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg></span>
+                <div className="media-menu">
+                  <div className='media-logo-box'>
+                    <ul className='media-dropdown-menu divide-y-2 divide-solid shadow'>
+                    <li className=' flex text-base font-normal  bg-white p-2 items-center'>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 m-2 text-gray-800">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5M6 7.5h3v3H6v-3Z" />
+                          </svg>
+                        <NavLink className='text-[#003D6A]' to="/news" activeClassName="active">News
+                        </NavLink>
+                      </li>
+                      
+                      <li className=' flex text-base font-normal  bg-white p-2 items-center'>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 m-2 text-gray-800">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
+                          </svg>
+                        <NavLink className='text-[#003D6A]' to="/events" activeClassName="active">Events
+                        </NavLink>
+                      </li>
+                      {/* <li className='text-base font-normal  bg-white hover:text-[#003D6A] hover:bg-[#52b7ff]'>
+                        <a className='no-underline tracking-tight flex items-center text-gray-900 py-2 px-2' href='/events'>
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 m-2">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                          </svg>
+                          Downloads
+                        </a>
+                      </li> */}
+                      {/* <li>4</li> */}
+                    </ul>
+                    {/* <span><NavLink className='p-2 mx-1 text-base font-normal no-underline text-white hover:bg-[#003D6A] hover:text-white hover:no-underline ' to="/" activeClassName="active">Markets</NavLink></span>
+                  <span><NavLink className='p-2 mx-1 text-base font-normal no-underline text-white hover:bg-[#003D6A] hover:text-white hover:no-underline ' to="/" activeClassName="active">Markets</NavLink></span>
+                  <span><NavLink className='p-2 mx-1 text-base font-normal no-underline text-white hover:bg-[#003D6A] hover:text-white hover:no-underline ' to="/" activeClassName="active">Markets</NavLink></span>
+                  <span><NavLink className='p-2 mx-1 text-base font-normal no-underline text-white hover:bg-[#003D6A] hover:text-white hover:no-underline ' to="/" activeClassName="active">Markets</NavLink></span> */}
+                  </div>
+                </div>
+              </NavLink>
+            </span>
+
+            <span><NavLink className='media-menu-item py-[12px] px-4 text-base font-normal no-underline text-white hover:bg-[#0e5284] hover:text-white hover:no-underline ' to="/contactus" activeClassName="active">Contact us</NavLink></span>
+          </nav>
+        </div>
+      </div>
+      {/* my menu */}
     </div>
   );
 };
