@@ -77,7 +77,7 @@ const AboutUs = () => {
                 <img
                   src={photogrid}
                   loading="lazy"
-                  alt="Photo by Kaung Htet"
+                  alt="SteelSmith"
                   className="h-full w-full object-cover object-center"
                 />
               </div>
@@ -85,7 +85,7 @@ const AboutUs = () => {
                 <img
                   src={factory}
                   loading="lazy"
-                  alt="Photo by Manny Moreno"
+                  alt="SteelSmith"
                   className="h-full w-full object-cover object-center"
                 />
               </div>

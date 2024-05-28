@@ -15,42 +15,13 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+
 body {
   font-family: 'Inter', sans-serif;
 }
 
-h1 {
-  font-family: 'Inter', sans-serif;
-
-  font-size: 2rem;  /* Example for a different size */
-  color: #1a202c;   /* Example color */
-}
-
-h2 {
-  font-family: 'Inter', sans-serif;
-  font-weight: 600;
-  font-size: 1.75rem;
-  color: #2d3748;
-}
-
-p {
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
-  color: #4a5568;
-}
-
-div {
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-}
-
-span {
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-}
-
-ul, li, a, label, th, td, tr, button {
+h1, h2, h3, p, ul, li, a,div, label, th, td, tr, button, input, span, Link, table th, table td  {
   font-family: 'Inter', sans-serif;
   font-weight: 500;
 }
@@ -145,20 +116,56 @@ ul {
   padding-left: 1px !important;
  }
 
- .carousel-control-prev-icon,
+ /* .carousel-control-prev-icon,
 .carousel-control-next-icon {
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+} */
+
+
+[data-testid="carousel-indicator"] {
+  background-color: #c4c4c4 !important;
 }
 
-.group:focus .group-focus\:ring-white {
-  background-color: rgb(95, 95, 95, 0.5) !important;
-  
+[aria-label="Slide 3"]:focus {
+  background-color: rgb(104, 104, 104)!important;
+  outline: 1px dotted;
+}
+[aria-label="Slide 3"].bg-white {
+  background-color: rgb(104, 104, 104)!important;
+  outline: 1px dotted;
 }
 
-.bg-white\/30 {
-  background-color: rgb(95, 95, 95, 0.5) !important;
-  
+[aria-label="Slide 2"]:focus {
+    background-color: rgb(104, 104, 104)!important;
+    outline: 1px dotted;
 }
+[aria-label="Slide 2"].bg-white {
+  background-color: rgb(104, 104, 104)!important;
+  outline: 1px dotted;
+}
+
+[aria-label="Slide 1"]:focus {
+  background-color: rgb(104, 104, 104)!important;
+  outline: 1px dotted;
+}
+
+[aria-label="Slide 1"].bg-white {
+  background-color: rgb(104, 104, 104)!important;
+  outline: 1px dotted;
+}
+
+[aria-label="Previous slide"]{
+  display: none;
+}
+
+[aria-label="Next slide"]{
+  display: none;
+}
+
+/* 
+.bg-white\/50 {
+  background-color: #c4c4c4 !important;
+} */
 
 /* --- Gallery Images Start --- */
 
@@ -347,7 +354,7 @@ border-radius: 0 !important;
 /* Initially hide the mega menu */
 .mega-menu {
   position: absolute;
-  top: 100%;
+  top: 80%;
   left: 0;
   width: 100%;
   height: 150px;
@@ -399,5 +406,15 @@ border-radius: 0 !important;
 
 
 /* dropdown Mennu for Media Link */
+
+
+/* Shopping Cart icon */
+
+[aria-label="login-user"]{
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+
+
+}
 
 

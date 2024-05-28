@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 const NotFound = () => {
   const [isCollapsed, setIsCollapsed] = useState(false);
@@ -23,6 +24,7 @@ const NotFound = () => {
         <div className={`flex-grow text-white ${isCollapsed ? 'hidden' : 'block'}`}>
           <div className='p-3'>
             {/* button 1 */}
+            <NavLink to={'/'}>
             <div className='bg-[#374252] hover:bg-[#3f4b5d] active:bg-[#3f4b5d]  active:ring-1 active:ring-[#326fa8] hover:ring-blue-400 outline-offset-1 m-1 rounded px-4 flex items-center divide-x-[1px] divide-[#3c4c64]'>
               <div className='text-base font-normal '>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5 mr-3">
@@ -31,10 +33,10 @@ const NotFound = () => {
               </div>
               <div className='text-sm tracking-wide font-normal p-2'>Dashboard</div>
             </div>
+            </NavLink>
 
             {/* products Group Start */}
             <div className='my-1'>
-
 
               {/* small txt products */}
               <div className="flex items-center py-2 mx-4">
@@ -43,8 +45,8 @@ const NotFound = () => {
                 <hr className="flex-grow border-[#607788]" />
               </div>
 
-
               {/* button 2 */}
+              <NavLink to={'/ProductCategories'}>
               <div className='bg-[#374252] hover:bg-[#3f4b5d] active:bg-[#3f4b5d]  active:ring-1 active:ring-[#326fa8] hover:ring-blue-400 outline-offset-1 m-1 rounded px-4 flex items-center divide-x-[1px] divide-[#3c4c64]'>
                 <div className='text-base font-normal '>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5 mr-3">
@@ -53,8 +55,10 @@ const NotFound = () => {
                 </div>
                 <div className='text-sm tracking-wide font-normal p-2'>Product Categories</div>
               </div>
+              </NavLink>
 
               {/* button 3 */}
+              <NavLink to={'/Products'}>
               <div className='bg-[#374252] hover:bg-[#3f4b5d] active:bg-[#3f4b5d]  active:ring-1 active:ring-[#326fa8] hover:ring-blue-400 outline-offset-1 m-1 rounded px-4 flex items-center divide-x-[1px] divide-[#3c4c64]'>
                 <div className='text-base font-normal '>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5 mr-3">
@@ -63,8 +67,10 @@ const NotFound = () => {
                 </div>
                 <div className='text-sm tracking-wide font-normal p-2'>Products</div>
               </div>
+              </NavLink>
 
               {/* button 4 */}
+              <NavLink to={'/Models'}>
               <div className='bg-[#374252] hover:bg-[#3f4b5d] active:bg-[#3f4b5d]  active:ring-1 active:ring-[#326fa8] hover:ring-blue-400 outline-offset-1 m-1 rounded px-4 flex items-center divide-x-[1px] divide-[#3c4c64]'>
                 <div className='text-base font-normal '>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5 mr-3">
@@ -73,16 +79,19 @@ const NotFound = () => {
                 </div>
                 <div className='text-sm tracking-wide font-normal p-2'>Models</div>
               </div>
+              </NavLink>
 
               {/* button 5 */}
+              <NavLink to={'/Catalogues'}>
               <div className='bg-[#374252] hover:bg-[#3f4b5d] active:bg-[#3f4b5d]  active:ring-1 active:ring-[#326fa8] hover:ring-blue-400 outline-offset-1 m-1 rounded px-4 flex items-center divide-x-[1px] divide-[#3c4c64]'>
                 <div className='text-base font-normal '>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5 mr-3">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M10.125 2.25h-4.5c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125v-9M10.125 2.25h.375a9 9 0 0 1 9 9v.375M10.125 2.25A3.375 3.375 0 0 1 13.5 5.625v1.5c0 .621.504 1.125 1.125 1.125h1.5a3.375 3.375 0 0 1 3.375 3.375M9 15l2.25 2.25L15 12" />
                   </svg>
                 </div>
-                <div className='text-sm tracking-wide font-normal p-2'>Catalogues </div>
+                <div className='text-sm tracking-wide font-normal p-2'>Catalogues</div>
               </div>
+              </NavLink>
 
             </div>
             {/* products Group End */}
@@ -95,6 +104,7 @@ const NotFound = () => {
             </div>
 
             {/* button 6 */}
+            <NavLink to={'/DealerNetwork'}>
             <div className='bg-[#374252] hover:bg-[#3f4b5d] active:bg-[#3f4b5d]  active:ring-1 active:ring-[#326fa8] hover:ring-blue-400 outline-offset-1 m-1 rounded px-4 flex items-center divide-x-[1px] divide-[#3c4c64]'>
               <div className='text-base font-normal '>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5 mr-3">
@@ -103,8 +113,10 @@ const NotFound = () => {
               </div>
               <div className='text-sm tracking-wide font-normal p-2'>Dealer Network</div>
             </div>
+            </NavLink>
 
             {/* button 7 */}
+            <NavLink to={'/Markets'}>
             <div className='bg-[#374252] hover:bg-[#3f4b5d] active:bg-[#3f4b5d]  active:ring-1 active:ring-[#326fa8] hover:ring-blue-400 outline-offset-1 m-1 rounded px-4 flex items-center divide-x-[1px] divide-[#3c4c64]'>
               <div className='text-base font-normal '>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5 mr-3">
@@ -113,8 +125,10 @@ const NotFound = () => {
               </div>
               <div className='text-sm tracking-wide font-normal p-2'>Markets</div>
             </div>
+            </NavLink>
 
             {/* button 8 */}
+            <NavLink to={'/News'}>
             <div className='bg-[#374252] hover:bg-[#3f4b5d] active:bg-[#3f4b5d]  active:ring-1 active:ring-[#326fa8] hover:ring-blue-400 outline-offset-1 m-1 rounded px-4 flex items-center divide-x-[1px] divide-[#3c4c64]'>
               <div className='text-base font-normal '>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5 mr-3">
@@ -123,8 +137,10 @@ const NotFound = () => {
               </div>
               <div className='text-sm tracking-wide font-normal p-2'>News</div>
             </div>
+            </NavLink>
 
             {/* button 9 */}
+            <NavLink to={'/Events'}>
             <div className='bg-[#374252] hover:bg-[#3f4b5d] active:bg-[#3f4b5d]  active:ring-1 active:ring-[#326fa8] hover:ring-blue-400 outline-offset-1 m-1 rounded px-4 flex items-center divide-x-[1px] divide-[#3c4c64]'>
               <div className='text-base font-normal'>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5 mr-3">
@@ -133,11 +149,13 @@ const NotFound = () => {
               </div>
               <div className='text-sm tracking-wide font-normal p-2'>Events</div>
             </div>
+            </NavLink>
 
             {/* Settings Group Start */}
             <div className='my-4 border-t [1px] border-[#3f4b5d] py-4'>
 
               {/* button 10 */}
+              <NavLink to={'/RegisteredUsers'}>
               <div className='bg-[#374252] hover:bg-[#3f4b5d] active:bg-[#3f4b5d]  active:ring-1 active:ring-[#326fa8] hover:ring-blue-400 outline-offset-1 m-1 rounded px-4 flex items-center divide-x-[1px] divide-[#3c4c64]'>
                 <div className='text-base font-normal '>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5 mr-3">
@@ -146,8 +164,10 @@ const NotFound = () => {
                 </div>
                 <div className='text-sm tracking-wide font-normal p-2'>Registered Users</div>
               </div>
+              </NavLink>
 
               {/* button 11 */}
+              <NavLink to={'/Login'}>
               <div className='bg-[#374252] hover:bg-[#3f4b5d] active:bg-[#3f4b5d]  active:ring-1 active:ring-[#326fa8] hover:ring-blue-400 outline-offset-1 m-1 rounded px-4 flex items-center divide-x-[1px] divide-[#3c4c64]'>
                 <div className='text-base font-normal '>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5 mr-3">
@@ -156,6 +176,7 @@ const NotFound = () => {
                 </div>
                 <div className='text-sm tracking-wide font-normal p-2'>Logout</div>
               </div>
+              </NavLink>
 
 
 
@@ -265,8 +286,8 @@ const NotFound = () => {
             </div>
             {/* Stats End */}
 
-            <div className='p-8 bg-white m-4 rounded-xl'>
-              <h1 className='text-base font-bold px-3 py-2 border-b text-gray-800 border-[#c5c5c5]'>Welcome to the Admin Panel</h1>
+            <div className='p-8 bg-white m-4 rounded-xl border-[1px] border-slate-300'>
+              <h1 className='text-base font-bold px-3 py-2 border-b text-slate-600 border-slate-300'>Welcome to the Admin Panel</h1>
               <div className='p-4'>
                 <p className='text-base font-semibold py-2 text-[#cf2b2b]'>Manage your application with care and follow these guidelines to ensure a smooth and secure experience:</p>
                 <ul className='text-base font-normal text-gray-600 '>
@@ -282,8 +303,8 @@ const NotFound = () => {
                 </ul>
               </div>
             </div>
-            <div className='p-8 bg-white m-4 rounded-xl'>
-              <h1 className='text-base font-bold px-3 py-2 border-b text-gray-800 border-[#c5c5c5]'>Welcome to the Admin Panel</h1>
+            <div className='p-8 bg-white m-4 rounded-xl border-[1px] border-slate-300'>
+              <h1 className='text-base font-bold px-3 py-2 border-b text-slate-600 border-slate-300'>Welcome to the Admin Panel</h1>
               <div className='p-4'>
                 <p className='text-base font-semibold py-2 text-[#cf2b2b]'>Manage your application with care and follow these guidelines to ensure a smooth and secure experience:</p>
                 <ul className='text-base font-normal text-gray-600 '>
