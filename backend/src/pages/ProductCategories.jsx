@@ -2,10 +2,18 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import DataTable from '../components/DataTable';
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
+
+
+
+
 // import 'primereact/resources/themes/saga-blue/theme.css';
 import defaultImage from '../assets/no-image.jpg'; // Import default image
 
 const ProductCategories = () => {
+
+    const [modalShow, setModalShow] = useState(false);
     const [isCollapsed, setIsCollapsed] = useState(false);
 
     const toggleSidebar = () => {
@@ -19,47 +27,47 @@ const ProductCategories = () => {
     };
 
     const data = [
-        { id: 1, name: 'John Doe', age: 30, view: 'View', edit: 'Edit', delete: 'Delete'},
-        { id: 2, name: 'Jane Smith', age: 25, view: 'View', edit: 'Edit', delete: 'Delete'},
-        { id: 3, name: 'Jane Smith', age: 25, view: 'View', edit: 'Edit', delete: 'Delete'},
-        { id: 4, name: 'John Doe', age: 30, view: 'View', edit: 'Edit', delete: 'Delete'},
-        { id: 5, name: 'Jane Smith', age: 25, view: 'View', edit: 'Edit', delete: 'Delete'},
-        { id: 6, name: 'Jane Smith', age: 25, view: 'View', edit: 'Edit', delete: 'Delete'},
-        { id: 7, name: 'John Doe', age: 30, view: 'View', edit: 'Edit', delete: 'Delete'},
-        { id: 8, name: 'Jane Smith', age: 25, view: 'View', edit: 'Edit', delete: 'Delete'},
-        { id: 9, name: 'Jane Smith', age: 25, view: 'View', edit: 'Edit', delete: 'Delete'},
-        { id: 10, name: 'John Doe', age: 30, view: 'View', edit: 'Edit', delete: 'Delete'},
-        { id: 11, name: 'Jane Smith', age: 25, view: 'View', edit: 'Edit', delete: 'Delete'},
-        { id: 12, name: 'Jane Smith', age: 25, view: 'View', edit: 'Edit', delete: 'Delete'},
-        { id: 13, name: 'John Doe', age: 30, view: 'View', edit: 'Edit', delete: 'Delete'},
-        { id: 14, name: 'Jane Smith', age: 25, view: 'View', edit: 'Edit', delete: 'Delete'},
-        { id: 15, name: 'Jane Smith', age: 25, view: 'View', edit: 'Edit', delete: 'Delete'},
-        { id: 16, name: 'John Doe', age: 30, view: 'View', edit: 'Edit', delete: 'Delete'},
-        { id: 17, name: 'Jane Smith', age: 25, view: 'View', edit: 'Edit', delete: 'Delete'},
-        { id: 18, name: 'Jane Smith', age: 25, view: 'View', edit: 'Edit', delete: 'Delete'},
-        { id: 19, name: 'John Doe', age: 30, view: 'View', edit: 'Edit', delete: 'Delete'}, 
-        { id: 20, name: 'Jane Smith', age: 25, view: 'View', edit: 'Edit', delete: 'Delete'},
-        { id: 21, name: 'Jane Smith', age: 25, view: 'View', edit: 'Edit', delete: 'Delete'},
-        { id: 22, name: 'John Doe', age: 30, view: 'View', edit: 'Edit', delete: 'Delete'},
-        { id: 23, name: 'Jane Smith', age: 25, view: 'View', edit: 'Edit', delete: 'Delete'},
-        { id: 24, name: 'Jane Smith', age: 25, view: 'View', edit: 'Edit', delete: 'Delete'},
+        { id: 1, name: 'John Doe', age: 30, view: 'View', edit: 'Edit', delete: 'Delete' },
+        { id: 2, name: 'Parminder Singh Chopra', age: 25, view: 'View', edit: 'Edit', delete: 'Delete' },
+        { id: 3, name: 'Jane Smith', age: 25, view: 'View', edit: 'Edit', delete: 'Delete' },
+        { id: 4, name: 'John Doe', age: 30, view: 'View', edit: 'Edit', delete: 'Delete' },
+        { id: 5, name: 'Ashwinijha Mujumdar Karelia', age: 25, view: 'View', edit: 'Edit', delete: 'Delete' },
+        { id: 6, name: 'Jane Smith', age: 25, view: 'View', edit: 'Edit', delete: 'Delete' },
+        { id: 7, name: 'John Doe', age: 30, view: 'View', edit: 'Edit', delete: 'Delete' },
+        { id: 8, name: 'Jane Smith', age: 25, view: 'View', edit: 'Edit', delete: 'Delete' },
+        { id: 9, name: 'Jane Smith', age: 25, view: 'View', edit: 'Edit', delete: 'Delete' },
+        { id: 10, name: 'John Doe', age: 30, view: 'View', edit: 'Edit', delete: 'Delete' },
+        { id: 11, name: 'Jane Smith', age: 25, view: 'View', edit: 'Edit', delete: 'Delete' },
+        { id: 12, name: 'Jane Smith', age: 25, view: 'View', edit: 'Edit', delete: 'Delete' },
+        { id: 13, name: 'John Doe', age: 30, view: 'View', edit: 'Edit', delete: 'Delete' },
+        { id: 14, name: 'Jane Smith', age: 25, view: 'View', edit: 'Edit', delete: 'Delete' },
+        { id: 15, name: 'Jane Smith', age: 25, view: 'View', edit: 'Edit', delete: 'Delete' },
+        { id: 16, name: 'John Doe', age: 30, view: 'View', edit: 'Edit', delete: 'Delete' },
+        { id: 17, name: 'Jane Smith', age: 25, view: 'View', edit: 'Edit', delete: 'Delete' },
+        { id: 18, name: 'Jane Smith', age: 25, view: 'View', edit: 'Edit', delete: 'Delete' },
+        { id: 19, name: 'John Doe', age: 30, view: 'View', edit: 'Edit', delete: 'Delete' },
+        { id: 20, name: 'Jane Smith', age: 25, view: 'View', edit: 'Edit', delete: 'Delete' },
+        { id: 21, name: 'Jane Smith', age: 25, view: 'View', edit: 'Edit', delete: 'Delete' },
+        { id: 22, name: 'John Doe', age: 30, view: 'View', edit: 'Edit', delete: 'Delete' },
+        { id: 23, name: 'Jane Smith', age: 25, view: 'View', edit: 'Edit', delete: 'Delete' },
+        { id: 24, name: 'Jane Smith', age: 25, view: 'View', edit: 'Edit', delete: 'Delete' },
         // Add more data as needed
     ];
 
     const columns = [
-        
+
         { field: 'name', header: 'Name' },
         { field: 'age', header: 'Age' },
         { field: 'view', header: 'View' },
         { field: 'edit', header: 'Edit' },
         { field: 'delete', header: 'Delete' },
-        
+
         // Add more columns as needed
     ];
 
-      
 
-    
+
+
 
     return (
         <div className='w-full fixed top-0 left-0 h-screen flex bg-slate-300'>
@@ -316,9 +324,9 @@ const ProductCategories = () => {
                                             onClick={() => handleTabClick(3)}
                                         >
                                             <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
-  <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-</svg>
-</span>
+                                                <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                            </svg>
+                                            </span>
                                             <span>Add Categories</span>
                                         </div>
                                     </div>
@@ -328,15 +336,15 @@ const ProductCategories = () => {
                                         {activeTab === 1 &&
                                             <div className="p-4 border-[1px] bg-white border-slate-300">
 
-                                            <h1 className='text-xl font-semibold'>Product Categories</h1>
-                                            <DataTable data={data} columns={columns} rowsPerPageOptions={[5, 10, 20]} />
+                                                <h1 className='text-xl font-semibold'>Product Categories</h1>
+                                                <DataTable data={data} columns={columns} rowsPerPageOptions={[5, 10, 20]} />
 
                                             </div>
-                                            }
+                                        }
 
                                         {/* Content for Tab 2 */}
                                         {activeTab === 2 &&
-                                            
+
                                             <div className="p-4 border-[1px] bg-gray-100 border-slate-300">
 
                                                 <div className=" bg-white flex flex-col md:ml-auto w-full p-8">
@@ -379,12 +387,12 @@ const ProductCategories = () => {
                                                 </div>
 
                                             </div>
-                                            
-                                            }
+
+                                        }
 
                                         {/* Content for Tab 3 */}
                                         {activeTab === 3 &&
-                                            
+
                                             <div className="p-4 border-[1px] bg-gray-100 border-slate-300">
 
                                                 <div className=" bg-white flex flex-col md:ml-auto w-full p-8">
@@ -427,9 +435,9 @@ const ProductCategories = () => {
                                                 </div>
 
                                             </div>
-                                            
-                                            
-                                            }
+
+
+                                        }
 
                                     </div>
                                 </div>

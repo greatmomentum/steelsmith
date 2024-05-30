@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link, NavLink } from 'react-router-dom';
 
 import { Carousel } from "flowbite-react";
 import productsimage from '../images/products-img.jpg';
@@ -515,14 +516,14 @@ const Home = () => {
                     Steel-Smith
                   </h2> */}
 
-                  <div className="text-lg font-normal text-gray-800 mb-1">
+                  <div className="text-lg font-normal text-gray-900 mb-1">
                     <b>PAH-15-500</b>
                   </div>
                   <div className="text-sm leading-relaxed mb-3">
                     Pull Action Clamps Toggle <br></br>Clamps
                   </div>
                   <div className="flex items-center flex-wrap ">
-                    <a className="text-blue-800 inline-flex items-center">
+                    <a className="text-gray-900 inline-flex items-center">
                       Learn More
                       <svg
                         className="w-4 h-4 ml-2"
@@ -547,7 +548,7 @@ const Home = () => {
         </div>
       </section>
       {/* #6. Figures  */}
-      <section className="text-gray-600 body-font bg-gray-100">
+      <section className="text-gray-900 body-font bg-gray-100">
         <div className="container px-5 py-14  w-[1300px] mx-auto">
 
           <div className="flex flex-wrap">
@@ -555,8 +556,9 @@ const Home = () => {
             
             {/* box1 */}
             <div className="xl:w-1/4 md:w-1/2 p-1">
+            <NavLink to="/CatalogueDownloads" className="hover:no-underline no-underline text-gray-900 hover:text-[#003D6A]">
               <div className="border border-gray-200 hover:bg-white transition delay-100 ease-in-out hover:shadow-xl p-6 -lg ">
-                <div className="w-24 h-24 items-center -full  text-indigo-500 mb-4 ">
+                <div className="w-24 h-24 items-center -full  text-gray-900 mb-4 ">
                   <img
                     src={cataloguesicon}
                     width="450px"
@@ -567,7 +569,7 @@ const Home = () => {
                   <h2 className="text-lg text-gray-900 font-medium title-font mb-2">
                     Catalogues
                   </h2>
-                  <a className="text-blue-800 inline-flex items-center md:mb-2 lg:mb-0 ">
+                  <a className="text-gray-900 inline-flex items-center md:mb-2 lg:mb-0 ">
                     <svg
                       className="w-4 h-4 ml-2"
                       viewBox="0 0 24 24"
@@ -584,12 +586,13 @@ const Home = () => {
                 </div>
                 {/* <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p> */}
               </div>
+              </NavLink>
             </div>
 
             {/* box2 */}
             <div className="xl:w-1/4 md:w-1/2 p-1">
               <div className="border border-gray-200 hover:bg-white transition ease-in-out hover:shadow-xl p-6 -lg">
-                <div className="w-24 h-24 inline-flex items-center justify-center -full  text-indigo-500 mb-4">
+                <div className="w-24 h-24 inline-flex items-center justify-center -full  text-gray-900 mb-4">
                   <img
                     src={cadicon}
                     width="450px"
@@ -600,7 +603,7 @@ const Home = () => {
                   <h2 className="text-lg text-gray-900 font-medium title-font mb-2">
                     CAD Downloads
                   </h2>
-                  <a className="text-blue-800 inline-flex items-center md:mb-2 lg:mb-0 ">
+                  <a className="text-gray-900 inline-flex items-center md:mb-2 lg:mb-0 ">
                     <svg
                       className="w-4 h-4 ml-2"
                       viewBox="0 0 24 24"
@@ -620,8 +623,10 @@ const Home = () => {
 
             {/* box3 */}
             <div className="xl:w-1/4 md:w-1/2 p-1">
+            <NavLink to="/Markets" className="hover:no-underline no-underline">
               <div className="border border-gray-200 hover:bg-white transition ease-in-out hover:shadow-xl p-6 -lg">
-                <div className="w-24 h-24 inline-flex items-center justify-center -full  text-indigo-500 mb-4">
+             
+                <div className="w-24 h-24 inline-flex items-center justify-center -full  text-gray-900 mb-4">
                   <img
                     src={marketsicon}
                     width="450px"
@@ -632,7 +637,7 @@ const Home = () => {
                   <h2 className="text-lg text-gray-900 font-medium title-font mb-2">
                     Markets
                   </h2>
-                  <a className="text-blue-800 inline-flex items-center md:mb-2 lg:mb-0 ">
+                  <p className="text-gray-900 inline-flex items-center md:mb-2 lg:mb-0 ">
                     <svg
                       className="w-4 h-4 ml-2"
                       viewBox="0 0 24 24"
@@ -645,15 +650,18 @@ const Home = () => {
                       <path d="M5 12h14" />
                       <path d="M12 5l7 7-7 7" />
                     </svg>
-                  </a>
+                  </p>
+                 
                 </div>
+                
               </div>
+              </NavLink>
             </div>
 
             {/* box4 */}
             <div className="xl:w-1/4 md:w-1/2 p-1">
               <div className="border border-gray-200 hover:bg-white transition ease-in-out hover:shadow-xl p-6 -lg">
-                <div className="w-24 h-24 inline-flex items-center justify-center -full  text-indigo-500 mb-4">
+                <div className="w-24 h-24 inline-flex items-center justify-center -full  text-gray-900 mb-4">
                   <img
                     src={certificationsicon}
                     width="450px"
@@ -664,7 +672,7 @@ const Home = () => {
                   <h2 className="text-lg text-gray-900 font-medium title-font mb-2">
                     Certification
                   </h2>
-                  <a className="text-blue-800 inline-flex items-center md:mb-2 lg:mb-0 ">
+                  <a className="text-gray-900 inline-flex items-center md:mb-2 lg:mb-0 ">
                     <svg
                       className="w-4 h-4 ml-2"
                       viewBox="0 0 24 24"
@@ -685,7 +693,7 @@ const Home = () => {
             {/* box5 */}
             <div className="xl:w-1/4 md:w-1/2 p-1">
               <div className="border border-gray-200 hover:bg-white transition ease-in-out hover:shadow-xl  p-6 -lg">
-                <div className="w-24 h-24 inline-flex items-center justify-center -full  text-indigo-500 mb-4">
+                <div className="w-24 h-24 inline-flex items-center justify-center -full  text-gray-900 mb-4">
                   <img
                     src={videosicon}
                     width="450px"
@@ -696,7 +704,7 @@ const Home = () => {
                   <h2 className="text-lg text-gray-900 font-medium title-font mb-2">
                     Videos
                   </h2>
-                  <a className="text-blue-800 inline-flex items-center md:mb-2 lg:mb-0 ">
+                  <a className="text-gray-900 inline-flex items-center md:mb-2 lg:mb-0 ">
                     <svg
                       className="w-4 h-4 ml-2"
                       viewBox="0 0 24 24"
@@ -715,9 +723,12 @@ const Home = () => {
             </div>
 
             {/* box6 */}
+            
             <div className="xl:w-1/4 md:w-1/2 p-1">
+            <NavLink to="/IntroductionToClamps" className="hover:no-underline no-underline text-gray-900 hover:text-[#003D6A]">
               <div className="border border-gray-200 hover:bg-white transition ease-in-out hover:shadow-xl p-6 -lg">
-                <div className="w-24 h-24 inline-flex items-center justify-center -full  text-indigo-500 mb-4">
+              
+                <div className="w-24 h-24 inline-flex items-center justify-center -full  text-gray-900 mb-4">
                   <img
                     src={clampsicon}
                     width="450px"
@@ -728,7 +739,7 @@ const Home = () => {
                   <h2 className="text-lg text-gray-900 font-medium title-font mb-2">
                     Introduction to Clamps
                   </h2>
-                  <a className="text-blue-800 inline-flex items-center md:mb-2 lg:mb-0 ">
+                  <p className="text-gray-900 inline-flex items-center md:mb-2 lg:mb-0 ">
                     <svg
                       className="w-4 h-4 ml-2"
                       viewBox="0 0 24 24"
@@ -741,13 +752,17 @@ const Home = () => {
                       <path d="M5 12h14" />
                       <path d="M12 5l7 7-7 7" />
                     </svg>
-                  </a>
+                  </p>
                 </div>
+                
               </div>
+              </NavLink>
             </div>
+            
 
             {/* box7 */}
             <div className="xl:w-1/4 md:w-1/2 p-1">
+            <NavLink to="/TestingFacilities" className="hover:no-underline no-underline text-gray-900 hover:text-[#003D6A]">
               <div className="border border-gray-200 hover:bg-white transition ease-in-out hover:shadow-xl p-6 -lg">
                 <div className="w-24 h-24 inline-flex items-center justify-center -full  text-indigo-500 mb-4">
                   <img
@@ -776,10 +791,12 @@ const Home = () => {
                   </a>
                 </div>
               </div>
+              </NavLink>
             </div>
 
             {/* box8 */}
             <div className="xl:w-1/4 md:w-1/2 p-1">
+            <NavLink to="/Applications" className="hover:no-underline no-underline text-gray-900 hover:text-[#003D6A]">
               <div className="border border-gray-200 hover:bg-white transition ease-in-out hover:shadow-xl p-6">
                 <div className="w-24 h-24 inline-flex items-center justify-center -full  text-indigo-500 mb-4">
                   <img
@@ -808,6 +825,7 @@ const Home = () => {
                   </a>
                 </div>
               </div>
+              </NavLink>
             </div>
           </div>
         </div>

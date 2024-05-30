@@ -1,10 +1,5 @@
 // src/App.jsx
 import React from 'react';
-import 'primereact/resources/themes/saga-blue/theme.css'; // Theme
-import 'primereact/resources/primereact.min.css';         // Core CSS
-import 'primeicons/primeicons.css';                       // Icons
-
-
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import ProductCategories from './pages/ProductCategories';
@@ -18,6 +13,8 @@ import Events from './pages/Events';
 import RegisteredUsers from './pages/RegisteredUsers';
 import Login from './pages/Login';
 import NotFound from './pages/NotFound';
+
+
 
 
 function App() {

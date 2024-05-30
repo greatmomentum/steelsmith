@@ -118,7 +118,7 @@ const Header = () => {
                         <NavLink to="/ProductCategories" activeClassName="active">
                           <div className="justify-center">
                             {/* <img className="lg:w-152" src="./src/images/brand-1.jpg" alt="Logo" /> */}
-                            <img className="w-[200px]" src={steelsmithlogo} alt="Logo" />
+                            <img className="w-[250px]" src={steelsmithlogo} alt="Logo" />
                           </div>
                         </NavLink>
                       </div>
@@ -126,7 +126,7 @@ const Header = () => {
                         <NavLink to="/ProductCategories" activeClassName="active">
                           <div className="justify-center">
                             {/* <img className="lg:w-152" src="./src/images/brand-1.jpg" alt="Logo" /> */}
-                            <img className="w-[200px]" src={imaologo} alt="Logo" />
+                            <img className="w-[250px]" src={imaologo} alt="Logo" />
                           </div>
                         </NavLink>
                       </div>
@@ -134,7 +134,7 @@ const Header = () => {
                         <NavLink to="/ProductCategories" activeClassName="active">
                           <div className="justify-center">
                             {/* <img className="lg:w-152" src="./src/images/brand-1.jpg" alt="Logo" /> */}
-                            <img className="w-[230px]" src={kipplogo} alt="Logo" />
+                            <img className="w-[280px]" src={kipplogo} alt="Logo" />
                           </div>
                         </NavLink>
                       </div>
@@ -142,7 +142,7 @@ const Header = () => {
                         <NavLink to="/ProductCategories" activeClassName="active">
                           <div className="justify-center">
                             {/* <img className="lg:w-152" src="./src/images/brand-1.jpg" alt="Logo" /> */}
-                            <img className="w-[230px]" src={turnlocklogo} alt="Logo" />
+                            <img className="w-[280px]" src={turnlocklogo} alt="Logo" />
                           </div>
                         </NavLink>
                       </div>

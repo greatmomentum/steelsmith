@@ -128,20 +128,20 @@ ul {
 
 [aria-label="Slide 3"]:focus {
   background-color: rgb(104, 104, 104)!important;
-  outline: 1px dotted;
+  outline: 1px solid;
 }
 [aria-label="Slide 3"].bg-white {
   background-color: rgb(104, 104, 104)!important;
-  outline: 1px dotted;
+  outline: 1px solid;
 }
 
 [aria-label="Slide 2"]:focus {
     background-color: rgb(104, 104, 104)!important;
-    outline: 1px dotted;
+    outline: 1px solid;
 }
 [aria-label="Slide 2"].bg-white {
   background-color: rgb(104, 104, 104)!important;
-  outline: 1px dotted;
+  outline: 1px solid;
 }
 
 [aria-label="Slide 1"]:focus {

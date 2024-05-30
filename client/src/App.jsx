@@ -19,6 +19,12 @@ import Markets from './pages/Markets';
 import DealerNetwork from './pages/DealerNetwork';
 import Register from './pages/Register';
 import EnquiryCart from './pages/EnquiryCart';
+import CatalogueDownloads from './pages/CatalogueDownloads.jsx';
+import IntroductionToClamps from './pages/IntroductionToClamps.jsx';
+import TypesOfToggleAction from './pages/TypesOfToggleAction.jsx';
+import WhatIsAToggleClamp from './pages/WhatIsAToggleClamp.jsx';
+import Applications from './pages/Applications.jsx';
+import TestingFacilities from './pages/TestingFacilities.jsx';
 
 
 function App() {
@@ -41,6 +47,12 @@ function App() {
           <Route path="/DealerNetwork" element={<DealerNetwork />} />
           <Route path="/Register" element={<Register />} />
           <Route path="/EnquiryCart" element={<EnquiryCart />} />
+          <Route path="/CatalogueDownloads" element={<CatalogueDownloads />} />
+          <Route path="/IntroductionToClamps" element={<IntroductionToClamps />} />
+          <Route path="/TypesOfToggleAction" element={<TypesOfToggleAction />} />
+          <Route path="/WhatIsAToggleClamp" element={<WhatIsAToggleClamp />} />
+          <Route path="/Applications" element={<Applications />} />
+          <Route path="/TestingFacilities" element={<TestingFacilities />} />
         </Routes>
       </MainLayout>
     </Router>
