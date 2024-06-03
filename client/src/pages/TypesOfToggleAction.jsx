@@ -4,14 +4,21 @@ import HorizontalHoldDownAction from '../images/Toggle-action-Horizontal-Hold-Do
 import StraightLineAction from '../images/Toggle-action-Straight-Line-Action.jpg';
 import PullActionClamps from '../images/Toggle-action-Pull-Action-Clamps.jpg';
 import PullBackClamps from '../images/Toggle-action-Pull-Back-Clamps.jpg';
+import { NavLink } from 'react-router-dom';
 
 const TypesOfToggleAction = () => {
   return (
     <div>
-      <section className="text-gray-600 py-28 body-font ">
+      <section className="text-gray-600 body-font ">
+        <div className='flex justify-center space-x-2 mt-24 items-center' >
+          <NavLink to='/WhatIsAToggleClamp' className='flex bg-[#003D6A] text-white px-4 h-[36px] items-center justify-center no-underline'>What is a Toggle Clamp</NavLink>
+          <NavLink to='/TypesofToggleAction' className='flex bg-[#003D6A] text-white px-4 h-[36px] items-center justify-center no-underline'>Types of Toggle Action</NavLink>
+          <NavLink to='/TestingFacilities' className='flex bg-[#003D6A] text-white px-4 h-[36px] items-center justify-center no-underline'>Testing Facilities</NavLink>
+          <NavLink to='/Applications' className='flex bg-[#003D6A] text-white px-4 h-[36px] items-center justify-center no-underline'>Applications</NavLink>
+        </div>
 
         {/* Row 1 */}
-        <div className="container flex mx-auto items-center bg-white">
+        <div className="container flex mx-auto items-center py-24  bg-white">
           <div className="w-1/2 text-left px-10">
             <h1 className="title-font text-xl mb-3 font-semibold text-gray-900 text-left">
               Vertical Hold Down Action : (VTC- Series)

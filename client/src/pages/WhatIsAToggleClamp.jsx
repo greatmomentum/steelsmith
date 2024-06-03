@@ -3,14 +3,20 @@ import whatisatoggleclamp from '../images/what-is-toggle-clamp.jpg';
 import whatisatoggleclampimg1 from '../images/what-is-toggle-clamp-img1.jpg';
 import whatisatoggleclampimg2 from '../images/what-is-toggle-clamp-img2.jpg';
 import whatisatoggleclampimg3 from '../images/what-is-toggle-clamp-img3.jpg';
+import { NavLink } from 'react-router-dom';
 
 const WhatIsAToggleClamp = () => {
     return (
         <div>
-
             <section className="text-gray-600 body-font">
+                <div className='flex justify-center space-x-2 mt-24 items-center' >
+                    <NavLink to='/WhatIsAToggleClamp' className='flex bg-[#003D6A] text-white px-4 h-[36px] items-center justify-center no-underline'>What is a Toggle Clamp</NavLink>
+                    <NavLink to='/TypesofToggleAction' className='flex bg-[#003D6A] text-white px-4 h-[36px] items-center justify-center no-underline'>Types of Toggle Action</NavLink>
+                    <NavLink to='/TestingFacilities' className='flex bg-[#003D6A] text-white px-4 h-[36px] items-center justify-center no-underline'>Testing Facilities</NavLink>
+                    <NavLink to='/Applications' className='flex bg-[#003D6A] text-white px-4 h-[36px] items-center justify-center no-underline'>Applications</NavLink>
+                </div>
                 <div className="container flex mx-auto ">
-                    <div className="w-3/4 md:items-start md:text-left py-36 mb-16 md:mb-0 items-center text-left px-10 ">
+                    <div className="w-3/4 md:items-start md:text-left py-24 mb-16 md:mb-0 items-center text-left px-10 ">
                         <h1 className="title-font text-xl mb-3 font-semibold text-gray-900 text-left">
                             What is a Toggle Clamp?
                         </h1>
@@ -27,12 +33,12 @@ const WhatIsAToggleClamp = () => {
                         </p>
                         <h4 className="title-font text-lg mb-2 font-medium text-gray-900 text-left">Clamping Force</h4>
                         <p className="mb-8 text-sm font-normal text-justify text-gray-900">
-                        Clamping Force, the amount of force actually applied to the work piece by closing and locking the clamp, is generally less than the stated holding capacity. Actual clamping force depends on many factors including; spindle position, proper spindle height adjustment, spindle cushioning, work piece material and the clamps mechanical advantage. In most cases, roughly 1/3rd of the stated holding capacity can be applied by hand with medium effort.
+                            Clamping Force, the amount of force actually applied to the work piece by closing and locking the clamp, is generally less than the stated holding capacity. Actual clamping force depends on many factors including; spindle position, proper spindle height adjustment, spindle cushioning, work piece material and the clamps mechanical advantage. In most cases, roughly 1/3rd of the stated holding capacity can be applied by hand with medium effort.
                         </p>
 
                         <h4 className="title-font text-lg mb-2 font-medium text-gray-900 text-left">Toggle Principle</h4>
                         <p className="mb-8 text-sm font-normal text-justify text-gray-900">
-                        Toggle action clamps operate through a linkage system of levers and pivots. The fixed length levers, connected by pivot pins supply the action and clamping force. Toggle action has an over centre lock point which is a fixed stop and linkage. Once in the over centre position, the clamp cannot move or unlock unless the linkage is moved. All types of toggle clamps have same action, just oriented differently.
+                            Toggle action clamps operate through a linkage system of levers and pivots. The fixed length levers, connected by pivot pins supply the action and clamping force. Toggle action has an over centre lock point which is a fixed stop and linkage. Once in the over centre position, the clamp cannot move or unlock unless the linkage is moved. All types of toggle clamps have same action, just oriented differently.
                         </p>
 
                         <h4 className="title-font text-lg mb-2 font-medium text-gray-900 text-left">The Toggle Mechanism in a clamp has three functions</h4>
@@ -53,10 +59,10 @@ const WhatIsAToggleClamp = () => {
                                     <img className="object-cover object-center rounded" alt="What is a Toggle Clamp" src={whatisatoggleclampimg3} />
                                 </span>
                             </div>
-                            
-                        
+
+
                         </p>
-                        
+
                     </div>
                     <div className=" align-top mt-20 w-1/4">
                         <img
