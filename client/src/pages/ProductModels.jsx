@@ -6,6 +6,7 @@ import Table from '../components/Table'; // Import the Table component
 import proimg1 from '../images/pro-img1.jpg';
 import proimg2 from '../images/pro-img2.jpg';
 import caddraw from '../images/cadd-draw.jpg';
+import { NavLink } from 'react-router-dom';
 
 
 const ProductModels = () => {
@@ -63,7 +64,7 @@ const ProductModels = () => {
           {/* button end */}
         </div>
         <div className='w-1/2  p-6 '>
-          <span className="text-lg font-normal text-gray-800 p-2"> <a href='/productsingle' className=' no-underline text-[#003d6a]'><strong>Vertical Hold Down Action T – Handle Flanged Base</strong></a></span>
+          <span className="text-lg font-normal text-gray-800 p-2"> <NavLink to='/productsingle' className=' no-underline text-[#003d6a]'><strong>Vertical Hold Down Action T – Handle Flanged Base</strong></NavLink></span>
           {/* section 1 */}
           <div className='pt-3'>
             <p className='p-2'>

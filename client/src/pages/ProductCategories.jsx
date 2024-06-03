@@ -2,6 +2,7 @@ import React from 'react'
 import { Breadcrumb } from "flowbite-react";
 import { HiHome } from "react-icons/hi";
 import productimg from '../images/product1-img.jpg';
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -33,8 +34,8 @@ const ProductCategories = () => {
             <div className="grid gap-x-4 gap-y-8 sm:grid-cols-2 md:gap-x-6 lg:grid-cols-4 xl:grid-cols-4 ">
               {/* product - start */}
               <div className='transition duration-100 hover:shadow-xl border divide-x divide-dashed'>
-                <a
-                  href="/Products"
+                <NavLink
+                  to='/Products'
                   className="group relative mb-2 block overflow-hidden bg-gray-100 lg:mb-3"
                 >
                   <img
@@ -46,19 +47,19 @@ const ProductCategories = () => {
                   {/* <span className="absolute left-0 top-0 rounded-rt-lg bg-red-500 px-3 py-1 text-xs uppercase tracking-wider text-white">
                     NEW
                   </span> */}
-                </a>
+                </NavLink>
                 <div className='p-2'>
-                  <a href="/Products" className="leading-none hover:gray-800 mb-1 text-gray-800 transition duration-100 no-underline ">
+                  <NavLink href='/Products' className="leading-none hover:gray-800 mb-1 text-gray-800 transition duration-100 no-underline ">
                     Vertical Hold Down Action Heavy Duty Flanged Base
-                  </a>
+                  </NavLink>
 
                 </div>
               </div>
               {/* product - end */}
               {/* product - start */}
               <div className='transition duration-100 hover:shadow-xl border divide-x divide-dashed'>
-                <a
-                  href="/Products"
+                <NavLink
+                  to='/Products'
                   className="group relative mb-2 block overflow-hidden bg-gray-100 lg:mb-3"
                 >
                   <img
@@ -70,9 +71,9 @@ const ProductCategories = () => {
                   {/* <span className="absolute left-0 top-0 rounded-rt-lg bg-red-500 px-3 py-1.5 text-sm uppercase tracking-wider text-white">
                     NEW
                   </span> */}
-                </a>
+                </NavLink>
                 <div className='p-2'>
-                  <a href="/Products" className="leading-none hover:gray-800 mb-1 text-gray-800 transition duration-100 no-underline ">
+                  <a href='/Products' className="leading-none hover:gray-800 mb-1 text-gray-800 transition duration-100 no-underline ">
                     Vertical Hold Down Action Heavy Duty Flanged Base
                   </a>
 
@@ -81,7 +82,7 @@ const ProductCategories = () => {
               {/* product - end */}
               {/* product - start */}
               <div className='transition duration-100 hover:shadow-xl border divide-x divide-dashed'>
-                <a
+                <NavLink
                   href="#"
                   className="group relative mb-2 block overflow-hidden bg-gray-100 lg:mb-3"
                 >
@@ -94,7 +95,7 @@ const ProductCategories = () => {
                   {/* <span className="absolute left-0 top-0 rounded-rt-lg bg-red-500 px-3 py-1 text-xs uppercase tracking-wider text-white">
                     NEW
                   </span> */}
-                </a>
+                </NavLink>
                 <div className='p-2'>
                   <a href="#" className="leading-none hover:gray-800 mb-1 text-gray-800 transition duration-100 no-underline ">
                     Vertical Hold Down Action Heavy Duty Flanged Base
