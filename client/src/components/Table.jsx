@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../css/Table.css'; // Import CSS file from the css folder
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Table = () => {
   const [filterValues, setFilterValues] = useState({});
@@ -97,7 +97,7 @@ const Table = () => {
                 {Object.keys(item).map((col, i) => (
                   <td key={i} className='w-[80px] text-center'>
                     {col === 'orderNo' ? (
-                      <NavLink href="/productsingle">{item[col]}</NavLink>
+                      <NavLink to="/productsingle">{item[col]}</NavLink>
                     ) : col === 'CAD' ? (
                       <span className='flex justify-center'>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
