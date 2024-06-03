@@ -34,7 +34,7 @@ const ProductCategories = () => {
               {/* product - start */}
               <div className='transition duration-100 hover:shadow-xl border divide-x divide-dashed'>
                 <a
-                  href="/products"
+                  href="/Products"
                   className="group relative mb-2 block overflow-hidden bg-gray-100 lg:mb-3"
                 >
                   <img
@@ -48,7 +48,7 @@ const ProductCategories = () => {
                   </span> */}
                 </a>
                 <div className='p-2'>
-                  <a href="/products" className="leading-none hover:gray-800 mb-1 text-gray-800 transition duration-100 no-underline ">
+                  <a href="/Products" className="leading-none hover:gray-800 mb-1 text-gray-800 transition duration-100 no-underline ">
                     Vertical Hold Down Action Heavy Duty Flanged Base
                   </a>
 
@@ -58,7 +58,7 @@ const ProductCategories = () => {
               {/* product - start */}
               <div className='transition duration-100 hover:shadow-xl border divide-x divide-dashed'>
                 <a
-                  href="/products"
+                  href="/Products"
                   className="group relative mb-2 block overflow-hidden bg-gray-100 lg:mb-3"
                 >
                   <img
@@ -72,7 +72,7 @@ const ProductCategories = () => {
                   </span> */}
                 </a>
                 <div className='p-2'>
-                  <a href="/products" className="leading-none hover:gray-800 mb-1 text-gray-800 transition duration-100 no-underline ">
+                  <a href="/Products" className="leading-none hover:gray-800 mb-1 text-gray-800 transition duration-100 no-underline ">
                     Vertical Hold Down Action Heavy Duty Flanged Base
                   </a>
 
